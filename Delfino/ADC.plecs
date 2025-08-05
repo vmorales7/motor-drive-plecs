@@ -1,0 +1,358 @@
+Plecs {
+  Name          "ADC"
+  Version       "4.8"
+  CircuitModel  "ContStateSpace"
+  StartTime     "0.0"
+  TimeSpan      "1.0"
+  Timeout       ""
+  Solver        "auto"
+  MaxStep       "1e-3"
+  InitStep      "-1"
+  FixedStep     "1e-3"
+  Refine        "1"
+  ZCStepSize    "1e-9"
+  RelTol        "1e-3"
+  AbsTol        "-1"
+  TurnOnThreshold "0"
+  NonIdealSwitchResistance "1"
+  SyncFixedStepTasks "2"
+  UseSingleCommonBaseRate "2"
+  LossVariableLimitExceededMsg "3"
+  NegativeSwitchLossMsg "3"
+  DivisionByZeroMsg "3"
+  DatatypeOverflowMsg "3"
+  DatatypeInheritanceConflictMsg "2"
+  ContSampleTimeConflictMsg "2"
+  StiffnessDetectionMsg "2"
+  MaxConsecutiveZCs "1000"
+  AlgebraicLoopWithStateMachineMsg "3"
+  AssertionAction "1"
+  FixedPointDatatypeOverride "1"
+  InitializationCommands ""
+  InitialState  "1"
+  SystemState   ""
+  TaskingMode   "1"
+  TaskConfigurations ""
+  CodeGenParameterInlining "2"
+  CodeGenInliningExceptions "AAAACwAAAAABAAAAEABDAG8AbgBzAHQAYQBuAHQ="
+  CodeGenFloatingPointFormat "1"
+  CodeGenAbsTimeUsageMsg "3"
+  CodeGenBaseName ""
+  CodeGenOutputDir ""
+  CodeGenExtraOpts ""
+  CodeGenTarget "TI2837x"
+  CodeGenTargetSettings "AAAAfwAAAAAlUU1hcDxRU3RyaW5nLFFNYXA8UVN0cmluZyxRU3Rya"
+"W5nPiA+AAAAAAEAAAAOAFQASQAyADgAMwA3AHgAAABZAAAAEgB1AHMAZQBJAG4AdABPAHMAYwAAAA"
+"IAMQAAABgAdQBuAGkAZgBsAGEAcwBoAEYAaQBsAGUAAAAAAAAAFgB0AGEAcwBrAEYAcgBlAHEAVAB"
+"vAGwAAAACADEAAAASAHMAeQBzAEMAbABrAE0ASAB6AAAABgAxADkAMAAAABwAaQBuAHMAdABhAGwA"
+"bABEAGkAcgBDAHAAdQAyAAAAAAAAABQAaQBuAHMAdABhAGwAbABEAGkAcgAAAAAAAAAOAGcAZQBuA"
+"E8AbgBsAHkAAAACADIAAAAcAGUAeAB0AE0AbwBkAGUAUwBjAGkAUABpAG4AcwAAAA4AWwA0ADMALA"
+"A0ADIAXQAAACIAZQB4AHQATQBvAGQAZQBCAHUAZgBmAGUAcgBTAGkAegBlAAAACAAxADAAMAAwAAA"
+"AEgBlAHgAdABDAGwAawBNAEgAegAAAAQAMwAwAAAACABjAGgAaQBwAAAAAgAxAAAAFgBiAHUAaQBs"
+"AGQAQwBvAG4AZgBpAGcAAAACADIAAAAKAGIAbwBhAHIAZAAAAAIAMgAAABAAVgByAGUAZgBBAGQAY"
+"wBEAAAABgAzAC4AMAAAABAAVgByAGUAZgBBAGQAYwBDAAAABgAzAC4AMAAAABAAVgByAGUAZgBBAG"
+"QAYwBCAAAABgAzAC4AMAAAABAAVgByAGUAZgBBAGQAYwBBAAAABgAzAC4AMAAAADQAVQBTAEUAXwB"
+"TAFQAQQBSAFQAXwBUAEkATQBFAF8ASQBOAF8ASQBOAEkAVABfAEYAQwBOAAAAAgAwAAAASgBVAFMA"
+"RQBfAEQAQQBUAEEAXwBUAFkAUABFAFMAXwBGAE8AUgBfAFQAVQBOAEEAQgBMAEUAXwBQAEEAUgBBA"
+"E0ARQBUAEUAUgBTAAAAAgAxAAAADgBUAHoAMwBHAHAAaQBvAAAAAgAwAAAAEgBUAHoAMwBFAG4AYQ"
+"BiAGwAZQAAAAIAMAAAAA4AVAB6ADIARwBwAGkAbwAAAAIAMAAAABIAVAB6ADIARQBuAGEAYgBsAGU"
+"AAAACADAAAAAOAFQAegAxAEcAcABpAG8AAAACADAAAAASAFQAegAxAEUAbgBhAGIAbABlAAAAAgAw"
+"AAAAGgBUAEEAUgBHAEUAVABfAEQARQBWAEkAQwBFAAAAFAAwAHwAQwBPAE0AOQB8ADAAfAAwAAAAI"
+"ABTAGEAbQBwAGwAZQBUAGkAbQBlAFIAZQBsAFQAbwBsAAAABAAxADAAAAAUAFAAdwBtADkARwBwAG"
+"kAbwBFAG4AAAACADAAAAASAFAAdwBtADkAQgBHAHAAaQBvAAAABAAxADcAAAASAFAAdwBtADkAQQB"
+"HAHAAaQBvAAAABAAxADYAAAAUAFAAdwBtADgARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADgA"
+"QgBHAHAAaQBvAAAABAAxADUAAAASAFAAdwBtADgAQQBHAHAAaQBvAAAABAAxADQAAAAUAFAAdwBtA"
+"DcARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADcAQgBHAHAAaQBvAAAABAAxADMAAAASAFAAdw"
+"BtADcAQQBHAHAAaQBvAAAABAAxADIAAAAUAFAAdwBtADYARwBwAGkAbwBFAG4AAAACADAAAAASAFA"
+"AdwBtADYAQgBHAHAAaQBvAAAABAAxADEAAAASAFAAdwBtADYAQQBHAHAAaQBvAAAABAAxADAAAAAU"
+"AFAAdwBtADUARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADUAQgBHAHAAaQBvAAAAAgA5AAAAE"
+"gBQAHcAbQA1AEEARwBwAGkAbwAAAAIAOAAAABQAUAB3AG0ANABHAHAAaQBvAEUAbgAAAAIAMAAAAB"
+"IAUAB3AG0ANABCAEcAcABpAG8AAAACADcAAAASAFAAdwBtADQAQQBHAHAAaQBvAAAAAgA2AAAAFAB"
+"QAHcAbQAzAEcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQAzAEIARwBwAGkAbwAAAAIANQAAABIA"
+"UAB3AG0AMwBBAEcAcABpAG8AAAACADQAAAAUAFAAdwBtADIARwBwAGkAbwBFAG4AAAACADAAAAASA"
+"FAAdwBtADIAQgBHAHAAaQBvAAAAAgAzAAAAEgBQAHcAbQAyAEEARwBwAGkAbwAAAAIAMgAAABQAUA"
+"B3AG0AMQBHAHAAaQBvAEUAbgAAAAIAMAAAABIAUAB3AG0AMQBCAEcAcABpAG8AAAACADEAAAASAFA"
+"AdwBtADEAQQBHAHAAaQBvAAAAAgAwAAAAFgBQAHcAbQAxADIARwBwAGkAbwBFAG4AAAACADAAAAAU"
+"AFAAdwBtADEAMgBCAEcAcABpAG8AAAAEADIAMwAAABQAUAB3AG0AMQAyAEEARwBwAGkAbwAAAAQAM"
+"gAyAAAAFgBQAHcAbQAxADEARwBwAGkAbwBFAG4AAAACADAAAAAUAFAAdwBtADEAMQBCAEcAcABpAG"
+"8AAAAEADIAMQAAABQAUAB3AG0AMQAxAEEARwBwAGkAbwAAAAQAMgAwAAAAFgBQAHcAbQAxADAARwB"
+"wAGkAbwBFAG4AAAACADAAAAAUAFAAdwBtADEAMABCAEcAcABpAG8AAAAEADEAOQAAABQAUAB3AG0A"
+"MQAwAEEARwBwAGkAbwAAAAQAMQA4AAAAIgBMAGkAbgBrAGUAcgBDAG8AbQBtAGEAbgBkAEYAaQBsA"
+"GUAAAAAAAAAGgBFAFgAVABFAFIATgBBAEwAXwBNAE8ARABFAAAAAgAxAAAAJgBBAG4AVAByAGkAcA"
+"A0AFQAaAByAGUAcwBoAG8AbABkAEwAbwB3AAAAAgAwAAAAKABBAG4AVAByAGkAcAA0AFQAaAByAGU"
+"AcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAaAEEAbgBUAHIAaQBwADQAUwBpAGcAbgBhAGwAAAAC"
+"ADEAAAAaAEEAbgBUAHIAaQBwADQARQBuAGEAYgBsAGUAAAACADAAAAAcAEEAbgBUAHIAaQBwADQAQ"
+"QBkAGMAVQBuAGkAdAAAAAIAMQAAACIAQQBuAFQAcgBpAHAANABBAGQAYwBDAGgAYQBuAG4AZQBsAA"
+"AAAgAwAAAAJgBBAG4AVAByAGkAcAAzAFQAaAByAGUAcwBoAG8AbABkAEwAbwB3AAAAAgAwAAAAKAB"
+"BAG4AVAByAGkAcAAzAFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAaAEEAbgBUAHIA"
+"aQBwADMAUwBpAGcAbgBhAGwAAAACADEAAAAaAEEAbgBUAHIAaQBwADMARQBuAGEAYgBsAGUAAAACA"
+"DAAAAAcAEEAbgBUAHIAaQBwADMAQQBkAGMAVQBuAGkAdAAAAAIAMQAAACIAQQBuAFQAcgBpAHAAMw"
+"BBAGQAYwBDAGgAYQBuAG4AZQBsAAAAAgAwAAAAJgBBAG4AVAByAGkAcAAyAFQAaAByAGUAcwBoAG8"
+"AbABkAEwAbwB3AAAAAgAwAAAAKABBAG4AVAByAGkAcAAyAFQAaAByAGUAcwBoAG8AbABkAEgAaQBn"
+"AGgAAAACADAAAAAaAEEAbgBUAHIAaQBwADIAUwBpAGcAbgBhAGwAAAACADEAAAAaAEEAbgBUAHIAa"
+"QBwADIARQBuAGEAYgBsAGUAAAACADAAAAAcAEEAbgBUAHIAaQBwADIAQQBkAGMAVQBuAGkAdAAAAA"
+"IAMQAAACIAQQBuAFQAcgBpAHAAMgBBAGQAYwBDAGgAYQBuAG4AZQBsAAAAAgAwAAAAJgBBAG4AVAB"
+"yAGkAcAAxAFQAaAByAGUAcwBoAG8AbABkAEwAbwB3AAAAAgAwAAAAKABBAG4AVAByAGkAcAAxAFQA"
+"aAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAaAEEAbgBUAHIAaQBwADEAUwBpAGcAbgBhA"
+"GwAAAACADEAAAAaAEEAbgBUAHIAaQBwADEARQBuAGEAYgBsAGUAAAACADAAAAAcAEEAbgBUAHIAaQ"
+"BwADEAQQBkAGMAVQBuAGkAdAAAAAIAMQAAACIAQQBuAFQAcgBpAHAAMQBBAGQAYwBDAGgAYQBuAG4"
+"AZQBsAAAAAgAw"
+  ExtendedMatrixPrecision "1"
+  MatrixSignificanceCheck "2"
+  RemoveUnusedStateSpaceOutputs "2"
+  EnableStateSpaceSplitting "2"
+  DisplayStateSpaceSplitting "1"
+  DiscretizationMethod "2"
+  ExternalModeSettings "AAAAfwAAAAAWUU1hcDxRU3RyaW5nLFFTdHJpbmc+AAAAAAcAAAAYAF"
+"QAcgBpAGcAZwBlAHIAVgBhAGwAdQBlAAAAAgAwAAAAGABUAHIAaQBnAGcAZQByAEQAZQBsAGEAeQA"
+"AAAIAMAAAABwAVAByAGkAZwBnAGUAcgBDAGgAYQBuAG4AZQBsAAAABAAtADEAAAAWAFMAZQBuAHMA"
+"aQB0AGkAdgBpAHQAeQAAAAIAMAAAABYAUgBlAGYAcgBlAHMAaABSAGEAdABlAAAABAAyADAAAAAUA"
+"E4AdQBtAFMAYQBtAHAAbABlAHMAAAAGADIAMAAwAAAAFABEAGUAYwBpAG0AYQB0AGkAbwBuAAAAAg"
+"Ax"
+  AlgebraicLoopMethod "1"
+  AlgebraicLoopTolerance "1e-6"
+  ScriptsDialogGeometry ""
+  ScriptsDialogSplitterPos "0"
+  Terminal {
+    Type          Input
+    Index         "1"
+  }
+  Terminal {
+    Type          Output
+    Index         "1"
+  }
+  Schematic {
+    Location      [45, 165; 666, 462]
+    ZoomFactor    1
+    SliderPosition [0, 0]
+    ShowBrowser   off
+    BrowserWidth  100
+    Component {
+      Type          Reference
+      SrcComponent  "TIC2000_Lib/ADC"
+      Name          "ADC\nJ7-69"
+      Show          on
+      Position      [220, 75]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -25; 25, 25]
+      Parameter {
+        Variable      "trig"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "adc"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "input"
+        Value         "[4]"
+        Show          on
+      }
+      Parameter {
+        Variable      "scale"
+        Value         "[1]"
+        Show          off
+      }
+      Parameter {
+        Variable      "offset"
+        Value         "[0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "tacqsel"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "tacq"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "bits"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "vref"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "TargetPortIndices"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [29, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          EventOutput
+        Position      [29, 15]
+        Direction     right
+      }
+      Terminal {
+        Type          EventInput
+        Position      [0, -25]
+        Direction     up
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope"
+      Show          off
+      Position      [375, 75]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [0, 26; 1280, 655]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAEwA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAJcA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAACXAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABxAP///wAAB4AAAAONAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAB"
+"wAAAJYAAAAGAAAAlgAAAAUAAACWAAAABAAAAJYAAAADAAAAlgAAAAIAAACWAAAAAQAAAJYAAAAJAA"
+"AAlgAAAAgAAACWAAABAAAAAAsBAAABAAAAAAAAAAAAAAAAlv////8AAACBAAAAAAAAAAsAAADLAAA"
+"AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
+"AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA"
+"AA1AAAAAQAAAAAAAAPoAAAAADU="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          Comparator
+      Name          "Comparator"
+      Show          off
+      Position      [350, 140]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "TIC2000_Lib/Digital Out"
+      Name          "LED Blinking"
+      Show          on
+      Position      [460, 140]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -20; 25, 20]
+      Parameter {
+        Variable      "gpio"
+        Value         "34"
+        Show          on
+      }
+      Parameter {
+        Variable      "OutputType"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TargetPortIndices"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-25, 0]
+        Direction     left
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant"
+      Show          off
+      Position      [215, 175]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Frame         [-10, -10; 10, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
+        Show          off
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Comparator"
+      SrcTerminal   3
+      DstComponent  "LED Blinking"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "ADC\nJ7-69"
+      SrcTerminal   1
+      Points        [305, 75]
+      Branch {
+        DstComponent  "Scope"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [305, 135]
+        DstComponent  "Comparator"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Constant"
+      SrcTerminal   1
+      Points        [275, 175; 275, 145]
+      DstComponent  "Comparator"
+      DstTerminal   2
+    }
+  }
+}
