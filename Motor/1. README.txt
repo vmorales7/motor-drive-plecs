@@ -1,0 +1,23 @@
+1. Angulo_theta: Este archivo permite operar el motor con frecuencia variable y ofrece diferentes formas para medir la posición eléctrica mediante el encoder. 
+
+2. ControlFrecuenciaADC: Este archivo permite operar el motor con frecuencia variable y la modulante de una de las fases se externaliza mediante uno de los DAC. Cabe destacar que se debe conservar el flujo magnético que es proporcional a la razón entre voltaje y frecuencia.
+
+3. FieldOrientedControl: Este archivo corresponde a un intento de operar el motor en lazo cerrado con FOC. La posición eléctrica se determina mediante los sensores hall y las señales A y B del encoder incremental, empleando un C-Script. 
+
+4. FieldOrientedControl - copia: Este archivo opera el motor en una frecuencia fija, sin embargo, utiliza un bloque eQEP para medir la posición eléctrica del encoder extraída mediante bloques Digital In. Esto se hizo para reemplazar el bloque Quadrature Encoder Counter de PLECS. 
+
+5. FOC - histeresis: Este archivo corresponde a un intento de operar el motor en lazo cerrado mediante un control de corriente por histéresis. Además, cuenta con la decodificación de los sensores hall. 
+
+6. FOC - theta: Este archivo equivale a otro intento de emplear FOC, pero permitiendo usar los sensores hall o el encoder para medir la posición eléctrica. Cabe destacar que permite usar un controlador PI discreto mediante el bloque de PLECS o un subsistema con ganancias y un delay. 
+
+7. FOC: Este archivo es uno de los primeros intentos de emplear FOC donde el controlador PI discreto se realiza exclusivamente con un subsistema con ganancias y delay. 
+
+8. FrecuenciaFija: Este archivo permite la operación del motor con frecuencia fija y mostrando los voltajes medidos por los sensores de corriente. Cabe destacar que las mediciones no están ajustadas para que correspondan a la corriente. 
+
+9. FrecuenciaVariable: Este archivo permite la operación del motor en lazo abierto con frecuencia variable. Se grafican las mediciones de los ADC conectados a los sensores de corriente, pero sin calibrarse.
+
+10. HallCalibration: Este archivo se diseñó para calibrar los sensores hall y agregar un ángulo de bias como se explica en el archivo "an131_r1.0_no-links.pdf" de los manuales asociados al motor. 
+
+11. OpenLoop: Este archivo se enfoca en la operación del motor en lazo abierto con frecuencia fija, visualizando las corrientes mediante los ADCs conectados a los sensores de corriente y la posición eléctrica dada por el encoder y los sensores hall. 
+
+12. vector_control_pm_machine_28069_Launchpad: Este archivo se solicitó directamente al soporte técnico de PLECS y corresponde al archivo desarrollado en el Webinar, cuyo link se encuentra entre los links útiles. Cabe destacar que no se puede cargar directamente, porque no comtempla las actualizaciones del Target Support Package. Sin embargo, se debe rescatar los más posible para lograr el FOC. 
