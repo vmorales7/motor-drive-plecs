@@ -1,7 +1,7 @@
 /*
  * Hardware configuration file for: TI2837x
  * Generated with                 : PLECS 4.9.6
- * Generated on                   : Mon Aug  4 23:03:07 2025
+ * Generated on                   : Tue Aug  5 19:55:29 2025
  */
 
 /* HAL Includes */
@@ -9,8 +9,6 @@
 #include "plx_hal.h"
 #include "plx_dispatcher.h"
 #include "pil.h"
-#include "plx_sci.h"
-#include "string.h"
 #include "pin_map.h"
 #include "gpio.h"
 #include "xbar.h"
@@ -38,109 +36,6 @@ void DSP28x_usDelay(long LoopCount);
 
 PIL_Obj_t PilObj;
 PIL_Handle_t PilHandle = 0;
-// external mode helper symbols
-PIL_CONFIG_DEF(uint32_t, ExtMode_targetFloat_Size, sizeof(Blinky_FloatType));
-PIL_CONFIG_DEF(uint32_t, ExtMode_targetPointer_Size,
-               sizeof(Blinky_FloatType*));
-PIL_CONFIG_DEF(uint32_t, ExtMode_sampleTime_Ptr,
-               (uint32_t)&Blinky_sampleTime);
-PIL_CONFIG_DEF(uint32_t, ExtMode_checksum_Ptr, (uint32_t)&Blinky_checksum);
-#if defined(Blinky_NumTunableParameters) && (Blinky_NumTunableParameters > 0)
-PIL_CONFIG_DEF(uint32_t, ExtMode_P_Ptr, (uint32_t)&Blinky_P);
-PIL_CONFIG_DEF(uint32_t, ExtMode_P_Size,
-               (uint32_t)Blinky_NumTunableParameters);
-#endif
-#if defined(Blinky_NumExtModeSignals) && (Blinky_NumExtModeSignals > 0)
-PIL_CONFIG_DEF(uint32_t, ExtMode_ExtModeSignals_Ptr,
-               (uint32_t)&Blinky_ExtModeSignals[0]);
-PIL_CONFIG_DEF(uint32_t, ExtMode_ExtModeSignals_Size,
-               (uint32_t)Blinky_NumExtModeSignals);
-#endif
-
-#define CODE_GUID {0x09, 0x3c, 0x97, 0x5e, 0xdb, 0x2d, 0xb8, 0x40};
-PIL_CONST_DEF(unsigned char, Guid[], CODE_GUID);
-PIL_CONST_DEF(unsigned char, CompiledDate[], "08/04/2025 11:03 PM");
-PIL_CONST_DEF(unsigned char, CompiledBy[], "PLECS Coder");
-PIL_CONST_DEF(uint16_t, FrameworkVersion, PIL_FRAMEWORK_VERSION);
-PIL_CONST_DEF(char, FirmwareDescription[], "TIC2000 Project (CPU0)");
-PIL_CONST_DEF(uint16_t, StationAddress, 0);
-PIL_CONST_DEF(uint32_t, BaudRate, 115200);
-static void SciPoll(PIL_Handle_t aHandle)
-{
-   PLXHAL_SCI_handleBreak(0);
-
-   while(PLXHAL_SCI_rxIsReady(0))
-   {
-      // assuming that there will be a "break" when FIFO is empty
-      PIL_SERIAL_IN(aHandle, (int16) PLXHAL_SCI_getChar(0));
-   }
-   int16_t ch;
-   if(!PLXHAL_SCI_txIsBusy(0))
-   {
-      if(PIL_SERIAL_OUT(aHandle, &ch))
-      {
-         PLXHAL_SCI_putChar(0, ch);
-      }
-   }
-}
-
-#pragma DATA_SECTION(ScopeBuffer, "scope")
-uint16_t ScopeBuffer[1000] /*__attribute__((aligned(16)))*/;
-extern void PIL_setAndConfigScopeBuffer(PIL_Handle_t aPilHandle,
-                                        uint16_t* aBufPtr, uint16_t aBufSize,
-                                        uint16_t aMaxTraceWidthInWords);
-extern const char * const Blinky_checksum;
-
-uint16_t ScopeFlagCpuRemote;
-#pragma DATA_SECTION(ScopeFlagCpuRemote, "scopeflag_remote")
-#pragma RETAIN(ScopeFlagCpuRemote)
-uint16_t ScopeFlagCpuThis;
-#pragma DATA_SECTION(ScopeFlagCpuThis, "scopeflag_local")
-#pragma RETAIN(ScopeFlagCpuThis)
-PIL_SYMBOL_DEF(ScopeFlagCpuRemote, 0, 1.0, "");
-PIL_SYMBOL_DEF(ScopeFlagCpuThis, 0, 1.0, "");
-extern void PIL_setAndConfigureScopeIndicator(PIL_Handle_t aPilHandle,
-                                              uint16_t* aIndicatorPtr);
-
-PLX_SCI_Obj_t SciObjs[1];
-PLX_SCI_Handle_t SciHandles[1];
-
-uint16_t PLXHAL_SCI_getChar(int16_t aChannel)
-{
-   return PLX_SCI_getChar(SciHandles[aChannel]);
-}
-
-void PLXHAL_SCI_putChar(int16_t aChannel, uint16_t data)
-{
-   PLX_SCI_putChar(SciHandles[aChannel], data);
-}
-
-void PLXHAL_SCI_putStr(int16_t aChannel, uint16_t *str)
-{
-   for (int i = 0; i < strlen((char *)str); i++)
-   {
-      PLXHAL_SCI_putChar(aChannel, str[i]);
-   }
-}
-
-bool PLXHAL_SCI_rxIsReady(int16_t aChannel)
-{
-   return PLX_SCI_rxReady(SciHandles[aChannel]);
-}
-
-bool PLXHAL_SCI_txIsBusy(int16_t aChannel)
-{
-   return PLX_SCI_txIsBusy(SciHandles[aChannel]);
-}
-
-void PLXHAL_SCI_handleBreak(int16_t aChannel)
-{
-   if(PLX_SCI_breakOccurred(SciHandles[aChannel]))
-   {
-      PLX_SCI_reset(SciHandles[aChannel]);
-   }
-}
-
 PLX_DIO_Handle_t DoutHandles[1];
 PLX_DIO_Obj_t DoutObj[1];
 
@@ -234,27 +129,6 @@ void Blinky_initHal()
    ClkCfgRegs.PERCLKDIVSEL.bit.EPWMCLKDIV = 1;
    EDIS;
 
-   PilHandle = PIL_init(&PilObj, sizeof(PilObj));
-   PIL_setGuid(PilHandle, PIL_GUID_PTR);
-   PIL_setChecksum(PilHandle, Blinky_checksum);
-   PIL_setAndConfigScopeBuffer(PilHandle, (uint16_t *)&ScopeBuffer, 1000, 0);
-   PIL_setAndConfigureScopeIndicator(PilHandle, &ScopeFlagCpuThis);
-   PIL_setNodeAddress(PilHandle, PIL_D_StationAddress);
-
-   PIL_setSerialComCallback(PilHandle, (PIL_CommCallbackPtr_t)SciPoll);
-   {
-      for(int i=0; i < 1; i++)
-      {
-         SciHandles[i] =
-            PLX_SCI_init(&SciObjs[i],
-                         sizeof(SciObjs[i]));
-      }
-   }
-
-   PLX_SCI_configure(SciHandles[0],
-                     PLX_SCI_SCI_A, 47500000);
-
-   (void)PLX_SCI_setupPort(SciHandles[0], 115200);
    {
       // early system configuration
       PLX_DIO_sinit();
@@ -306,7 +180,5 @@ void Blinky_initHal()
       // late system configuration
       GPIO_setPadConfig(34, GPIO_PIN_TYPE_STD);
       GPIO_setDirectionMode(34, GPIO_DIR_MODE_OUT);
-      GPIO_setPinConfig(GPIO_43_SCIRXDA);
-      GPIO_setPinConfig(GPIO_42_SCITXDA);
    }
 }

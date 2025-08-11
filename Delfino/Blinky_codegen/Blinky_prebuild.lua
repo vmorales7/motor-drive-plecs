@@ -4,7 +4,7 @@ local debug = require("debug")
 local function checkCGTVersion()
   local cgt_install_dir = 'C:/Users/vicen/AppData/Local/Programs/PLECS C2000 TSP/cgt/ti-cgt-c2000_22.6.1.LTS'
   local min_version = '22.6.0'
-  local cgt_version_file = 'C:/Users/vicen/OneDrive/Documentos/motor-drive-plecs/Delfino/Blinky_codegen/TI2837x_cpu1_cgt_version.txt'
+  local cgt_version_file = 'C:/Users/vicen/Documents/motor-drive-plecs/Delfino/Blinky_codegen/TI2837x_cpu1_cgt_version.txt'
 
   -- determine CGT version in file that was created by 'cl2000 -version'
   local file, e = io.open(cgt_version_file, "r") 

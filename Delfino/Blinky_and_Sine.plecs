@@ -113,7 +113,7 @@ Plecs {
 "xADAAMAAwADAAAAAWAFIAZQBmAHIAZQBzAGgAUgBhAHQAZQAAAAQAMgAwAAAAFgBTAGUAbgBzAGkA"
 "dABpAHYAaQB0AHkAAAACADAAAAAcAFQAcgBpAGcAZwBlAHIAQwBoAGEAbgBuAGUAbAAAAAIAMQAAA"
 "BgAVAByAGkAZwBnAGUAcgBEAGUAbABhAHkAAAACADAAAAAYAFQAcgBpAGcAZwBlAHIAVgBhAGwAdQ"
-"BlAAAABgAwAC4AMg=="
+"BlAAAAEgAwAC4AMAAxADIANQA0ADkAOA=="
   AlgebraicLoopMethod "1"
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
@@ -123,8 +123,8 @@ Plecs {
     Index         "1"
   }
   Schematic {
-    Location      [34, 199; 959, 624]
-    ZoomFactor    1.14437
+    Location      [1025, 30; 2047, 1188]
+    ZoomFactor    2.24591
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -246,7 +246,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "K"
-        Value         "2"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -312,11 +312,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 2048, 1211]
+      Location      [84, 699; 1255, 1332]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASFAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABJMAAAJaAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -328,7 +328,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Tiempo (s)"

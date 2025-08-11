@@ -2,7 +2,7 @@
  * Implementation file for: Blinky
  * Generated with         : PLECS 4.9.6
  *                          TI2837x 1.10.5
- * Generated on           : 4 Aug 2025 23:03:07
+ * Generated on           : 5 Aug 2025 19:55:29
  */
 #include "Blinky.h"
 #ifndef PLECS_HEADER_Blinky_h_
@@ -52,15 +52,10 @@ static uint32_t Blinky_tickLo;
 static int32_t Blinky_tickHi;
 Blinky_BlockOutputs Blinky_B;
 Blinky_ModelStates Blinky_X _ALIGN;
-#if defined(EXTERNAL_MODE) && EXTERNAL_MODE
-const float * const Blinky_ExtModeSignals[] = {
-
-};
-#endif /* defined(EXTERNAL_MODE) */
 const char * Blinky_errorStatus;
 const float Blinky_sampleTime = 0.0001f;
 const char * const Blinky_checksum =
-   "e2bf0461b89eca6276159caba7bf44296d3fdd02";
+   "1866f46399c5de31ce7c7838d45e1589478a18e8";
 /* Target declarations */
 // tag step function to allow special linking
 #pragma CODE_SECTION(Blinky_step, "step")
