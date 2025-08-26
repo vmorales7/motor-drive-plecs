@@ -65,3 +65,4 @@ Thumbs.db
 
 # === Opcional: ignorar modelos PLECS específicos ===
 # *.plecs
+*_codegen/

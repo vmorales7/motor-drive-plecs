@@ -1,7 +1,7 @@
 Plecs {
   Name          "OpenLoop"
-  Version       "4.8"
-  CircuitModel  "ContStateSpace"
+  Version       "4.9"
+  CircuitModel  "DiscStateSpace"
   StartTime     "0.0"
   TimeSpan      "3"
   Timeout       ""
@@ -30,8 +30,8 @@ Plecs {
   FixedPointDatatypeOverride "1"
   InitializationCommands base64 "JSBQYXLDoW1ldHJvcyBNb2R1bGFjacOzbi4KZnMgPSAxM"
 "GUzOwpmbSA9IDI1OwpzX2JpYXMgPSAwLjU7CnNfYW1wID0gMC4yOwoKJSBFbmNvZGVyLgpwID0gMj"
-"sgCm1heENvdW50ID0gMTAyNCo0L3AgLSAxOyAKZW5jT2Zmc2V0ID0gMipwaSoxMi82MjsgCgolIEh"
-"hbGwgc2Vuc29ycy4KaGFsbE9mZnNldCA9IDA7IA=="
+"sgCiVtYXhDb3VudCA9IDEwMjQqNC9wIC0gMTsgCm1heENvdW50ID0gMTAwMCo0L3AgLSAxOyAKZW5"
+"jT2Zmc2V0ID0gMipwaSoxMi82MjsgCgolIEhhbGwgc2Vuc29ycy4KaGFsbE9mZnNldCA9IDA7IA=="
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -44,62 +44,63 @@ Plecs {
   CodeGenOutputDir ""
   CodeGenExtraOpts ""
   CodeGenTarget "TI2837x"
-  CodeGenTargetSettings "AAAAfwAAAAAlUU1hcDxRU3RyaW5nLFFNYXA8UVN0cmluZyxRU3Rya"
-"W5nPiA+AAAAAAEAAAAOAFQASQAyADgAMwA3AHgAAABZAAAAEgB1AHMAZQBJAG4AdABPAHMAYwAAAA"
-"IAMQAAABgAdQBuAGkAZgBsAGEAcwBoAEYAaQBsAGUAAAAAAAAAFgB0AGEAcwBrAEYAcgBlAHEAVAB"
-"vAGwAAAACADEAAAASAHMAeQBzAEMAbABrAE0ASAB6AAAABgAxADkAMAAAABwAaQBuAHMAdABhAGwA"
-"bABEAGkAcgBDAHAAdQAyAAAAAAAAABQAaQBuAHMAdABhAGwAbABEAGkAcgAAAAAAAAAOAGcAZQBuA"
-"E8AbgBsAHkAAAACADIAAAAcAGUAeAB0AE0AbwBkAGUAUwBjAGkAUABpAG4AcwAAAA4AWwA0ADMALA"
-"A0ADIAXQAAACIAZQB4AHQATQBvAGQAZQBCAHUAZgBmAGUAcgBTAGkAegBlAAAACAAxADAAMAAwAAA"
-"AEgBlAHgAdABDAGwAawBNAEgAegAAAAQAMwAwAAAACABjAGgAaQBwAAAAAgAxAAAAFgBiAHUAaQBs"
-"AGQAQwBvAG4AZgBpAGcAAAACADEAAAAKAGIAbwBhAHIAZAAAAAIAMgAAABAAVgByAGUAZgBBAGQAY"
-"wBEAAAABgAzAC4AMwAAABAAVgByAGUAZgBBAGQAYwBDAAAABgAzAC4AMwAAABAAVgByAGUAZgBBAG"
-"QAYwBCAAAABgAzAC4AMwAAABAAVgByAGUAZgBBAGQAYwBBAAAABgAzAC4AMwAAADQAVQBTAEUAXwB"
-"TAFQAQQBSAFQAXwBUAEkATQBFAF8ASQBOAF8ASQBOAEkAVABfAEYAQwBOAAAAAgAwAAAASgBVAFMA"
-"RQBfAEQAQQBUAEEAXwBUAFkAUABFAFMAXwBGAE8AUgBfAFQAVQBOAEEAQgBMAEUAXwBQAEEAUgBBA"
-"E0ARQBUAEUAUgBTAAAAAgAxAAAADgBUAHoAMwBHAHAAaQBvAAAAAgAwAAAAEgBUAHoAMwBFAG4AYQ"
-"BiAGwAZQAAAAIAMAAAAA4AVAB6ADIARwBwAGkAbwAAAAIAMAAAABIAVAB6ADIARQBuAGEAYgBsAGU"
-"AAAACADAAAAAOAFQAegAxAEcAcABpAG8AAAACADAAAAASAFQAegAxAEUAbgBhAGIAbABlAAAAAgAw"
-"AAAAGgBUAEEAUgBHAEUAVABfAEQARQBWAEkAQwBFAAAAFAAwAHwAQwBPAE0AOQB8ADAAfAAwAAAAI"
-"ABTAGEAbQBwAGwAZQBUAGkAbQBlAFIAZQBsAFQAbwBsAAAABAAxADAAAAAUAFAAdwBtADkARwBwAG"
-"kAbwBFAG4AAAACADAAAAASAFAAdwBtADkAQgBHAHAAaQBvAAAABAAxADcAAAASAFAAdwBtADkAQQB"
-"HAHAAaQBvAAAABAAxADYAAAAUAFAAdwBtADgARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADgA"
-"QgBHAHAAaQBvAAAABAAxADUAAAASAFAAdwBtADgAQQBHAHAAaQBvAAAABAAxADQAAAAUAFAAdwBtA"
-"DcARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADcAQgBHAHAAaQBvAAAABAAxADMAAAASAFAAdw"
-"BtADcAQQBHAHAAaQBvAAAABAAxADIAAAAUAFAAdwBtADYARwBwAGkAbwBFAG4AAAACADAAAAASAFA"
-"AdwBtADYAQgBHAHAAaQBvAAAABAAxADEAAAASAFAAdwBtADYAQQBHAHAAaQBvAAAABAAxADAAAAAU"
-"AFAAdwBtADUARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADUAQgBHAHAAaQBvAAAAAgA5AAAAE"
-"gBQAHcAbQA1AEEARwBwAGkAbwAAAAIAOAAAABQAUAB3AG0ANABHAHAAaQBvAEUAbgAAAAIAMAAAAB"
-"IAUAB3AG0ANABCAEcAcABpAG8AAAACADcAAAASAFAAdwBtADQAQQBHAHAAaQBvAAAAAgA2AAAAFAB"
-"QAHcAbQAzAEcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQAzAEIARwBwAGkAbwAAAAIANQAAABIA"
-"UAB3AG0AMwBBAEcAcABpAG8AAAACADQAAAAUAFAAdwBtADIARwBwAGkAbwBFAG4AAAACADAAAAASA"
-"FAAdwBtADIAQgBHAHAAaQBvAAAAAgAzAAAAEgBQAHcAbQAyAEEARwBwAGkAbwAAAAIAMgAAABQAUA"
-"B3AG0AMQBHAHAAaQBvAEUAbgAAAAIAMAAAABIAUAB3AG0AMQBCAEcAcABpAG8AAAACADEAAAASAFA"
-"AdwBtADEAQQBHAHAAaQBvAAAAAgAwAAAAFgBQAHcAbQAxADIARwBwAGkAbwBFAG4AAAACADAAAAAU"
-"AFAAdwBtADEAMgBCAEcAcABpAG8AAAAEADIAMwAAABQAUAB3AG0AMQAyAEEARwBwAGkAbwAAAAQAM"
-"gAyAAAAFgBQAHcAbQAxADEARwBwAGkAbwBFAG4AAAACADAAAAAUAFAAdwBtADEAMQBCAEcAcABpAG"
-"8AAAAEADIAMQAAABQAUAB3AG0AMQAxAEEARwBwAGkAbwAAAAQAMgAwAAAAFgBQAHcAbQAxADAARwB"
-"wAGkAbwBFAG4AAAACADAAAAAUAFAAdwBtADEAMABCAEcAcABpAG8AAAAEADEAOQAAABQAUAB3AG0A"
-"MQAwAEEARwBwAGkAbwAAAAQAMQA4AAAAIgBMAGkAbgBrAGUAcgBDAG8AbQBtAGEAbgBkAEYAaQBsA"
-"GUAAAAAAAAAGgBFAFgAVABFAFIATgBBAEwAXwBNAE8ARABFAAAAAgAxAAAAJgBBAG4AVAByAGkAcA"
-"A0AFQAaAByAGUAcwBoAG8AbABkAEwAbwB3AAAAAgAwAAAAKABBAG4AVAByAGkAcAA0AFQAaAByAGU"
-"AcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAaAEEAbgBUAHIAaQBwADQAUwBpAGcAbgBhAGwAAAAC"
-"ADEAAAAaAEEAbgBUAHIAaQBwADQARQBuAGEAYgBsAGUAAAACADAAAAAcAEEAbgBUAHIAaQBwADQAQ"
-"QBkAGMAVQBuAGkAdAAAAAIAMQAAACIAQQBuAFQAcgBpAHAANABBAGQAYwBDAGgAYQBuAG4AZQBsAA"
-"AAAgAwAAAAJgBBAG4AVAByAGkAcAAzAFQAaAByAGUAcwBoAG8AbABkAEwAbwB3AAAAAgAwAAAAKAB"
-"BAG4AVAByAGkAcAAzAFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAaAEEAbgBUAHIA"
-"aQBwADMAUwBpAGcAbgBhAGwAAAACADEAAAAaAEEAbgBUAHIAaQBwADMARQBuAGEAYgBsAGUAAAACA"
-"DAAAAAcAEEAbgBUAHIAaQBwADMAQQBkAGMAVQBuAGkAdAAAAAIAMQAAACIAQQBuAFQAcgBpAHAAMw"
-"BBAGQAYwBDAGgAYQBuAG4AZQBsAAAAAgAwAAAAJgBBAG4AVAByAGkAcAAyAFQAaAByAGUAcwBoAG8"
-"AbABkAEwAbwB3AAAAAgAwAAAAKABBAG4AVAByAGkAcAAyAFQAaAByAGUAcwBoAG8AbABkAEgAaQBn"
-"AGgAAAACADAAAAAaAEEAbgBUAHIAaQBwADIAUwBpAGcAbgBhAGwAAAACADEAAAAaAEEAbgBUAHIAa"
-"QBwADIARQBuAGEAYgBsAGUAAAACADAAAAAcAEEAbgBUAHIAaQBwADIAQQBkAGMAVQBuAGkAdAAAAA"
-"IAMQAAACIAQQBuAFQAcgBpAHAAMgBBAGQAYwBDAGgAYQBuAG4AZQBsAAAAAgAwAAAAJgBBAG4AVAB"
-"yAGkAcAAxAFQAaAByAGUAcwBoAG8AbABkAEwAbwB3AAAAAgAwAAAAKABBAG4AVAByAGkAcAAxAFQA"
-"aAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAaAEEAbgBUAHIAaQBwADEAUwBpAGcAbgBhA"
-"GwAAAACADEAAAAaAEEAbgBUAHIAaQBwADEARQBuAGEAYgBsAGUAAAACADAAAAAcAEEAbgBUAHIAaQ"
-"BwADEAQQBkAGMAVQBuAGkAdAAAAAIAMQAAACIAQQBuAFQAcgBpAHAAMQBBAGQAYwBDAGgAYQBuAG4"
-"AZQBsAAAAAgAw"
+  CodeGenTargetSettings "AAAAfwAAAAAbQ29kZUdlblRhcmdldDo6U2V0dGluZ3NNYXAAAAAAA"
+"QAAAA4AVABJADIAOAAzADcAeAAAAFsAAAAiAEEAbgBUAHIAaQBwADEAQQBkAGMAQwBoAGEAbgBuAG"
+"UAbAAAAAIAMAAAABwAQQBuAFQAcgBpAHAAMQBBAGQAYwBVAG4AaQB0AAAAAgAxAAAAGgBBAG4AVAB"
+"yAGkAcAAxAEUAbgBhAGIAbABlAAAAAgAwAAAAGgBBAG4AVAByAGkAcAAxAFMAaQBnAG4AYQBsAAAA"
+"AgAxAAAAKABBAG4AVAByAGkAcAAxAFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAmA"
+"EEAbgBUAHIAaQBwADEAVABoAHIAZQBzAGgAbwBsAGQATABvAHcAAAACADAAAAAiAEEAbgBUAHIAaQ"
+"BwADIAQQBkAGMAQwBoAGEAbgBuAGUAbAAAAAIAMAAAABwAQQBuAFQAcgBpAHAAMgBBAGQAYwBVAG4"
+"AaQB0AAAAAgAxAAAAGgBBAG4AVAByAGkAcAAyAEUAbgBhAGIAbABlAAAAAgAwAAAAGgBBAG4AVABy"
+"AGkAcAAyAFMAaQBnAG4AYQBsAAAAAgAxAAAAKABBAG4AVAByAGkAcAAyAFQAaAByAGUAcwBoAG8Ab"
+"ABkAEgAaQBnAGgAAAACADAAAAAmAEEAbgBUAHIAaQBwADIAVABoAHIAZQBzAGgAbwBsAGQATABvAH"
+"cAAAACADAAAAAiAEEAbgBUAHIAaQBwADMAQQBkAGMAQwBoAGEAbgBuAGUAbAAAAAIAMAAAABwAQQB"
+"uAFQAcgBpAHAAMwBBAGQAYwBVAG4AaQB0AAAAAgAxAAAAGgBBAG4AVAByAGkAcAAzAEUAbgBhAGIA"
+"bABlAAAAAgAwAAAAGgBBAG4AVAByAGkAcAAzAFMAaQBnAG4AYQBsAAAAAgAxAAAAKABBAG4AVAByA"
+"GkAcAAzAFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAmAEEAbgBUAHIAaQBwADMAVA"
+"BoAHIAZQBzAGgAbwBsAGQATABvAHcAAAACADAAAAAiAEEAbgBUAHIAaQBwADQAQQBkAGMAQwBoAGE"
+"AbgBuAGUAbAAAAAIAMAAAABwAQQBuAFQAcgBpAHAANABBAGQAYwBVAG4AaQB0AAAAAgAxAAAAGgBB"
+"AG4AVAByAGkAcAA0AEUAbgBhAGIAbABlAAAAAgAwAAAAGgBBAG4AVAByAGkAcAA0AFMAaQBnAG4AY"
+"QBsAAAAAgAxAAAAKABBAG4AVAByAGkAcAA0AFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACAD"
+"AAAAAmAEEAbgBUAHIAaQBwADQAVABoAHIAZQBzAGgAbwBsAGQATABvAHcAAAACADAAAAAaAEUAWAB"
+"UAEUAUgBOAEEATABfAE0ATwBEAEUAAAACADEAAAAiAEwAaQBuAGsAZQByAEMAbwBtAG0AYQBuAGQA"
+"RgBpAGwAZQAAAAAAAAAUAFAAdwBtADEAMABBAEcAcABpAG8AAAAEADEAOAAAABQAUAB3AG0AMQAwA"
+"EIARwBwAGkAbwAAAAQAMQA5AAAAFgBQAHcAbQAxADAARwBwAGkAbwBFAG4AAAACADAAAAAUAFAAdw"
+"BtADEAMQBBAEcAcABpAG8AAAAEADIAMAAAABQAUAB3AG0AMQAxAEIARwBwAGkAbwAAAAQAMgAxAAA"
+"AFgBQAHcAbQAxADEARwBwAGkAbwBFAG4AAAACADAAAAAUAFAAdwBtADEAMgBBAEcAcABpAG8AAAAE"
+"ADIAMgAAABQAUAB3AG0AMQAyAEIARwBwAGkAbwAAAAQAMgAzAAAAFgBQAHcAbQAxADIARwBwAGkAb"
+"wBFAG4AAAACADAAAAASAFAAdwBtADEAQQBHAHAAaQBvAAAAAgAwAAAAEgBQAHcAbQAxAEIARwBwAG"
+"kAbwAAAAIAMQAAABQAUAB3AG0AMQBHAHAAaQBvAEUAbgAAAAIAMAAAABIAUAB3AG0AMgBBAEcAcAB"
+"pAG8AAAACADIAAAASAFAAdwBtADIAQgBHAHAAaQBvAAAAAgAzAAAAFABQAHcAbQAyAEcAcABpAG8A"
+"RQBuAAAAAgAwAAAAEgBQAHcAbQAzAEEARwBwAGkAbwAAAAIANAAAABIAUAB3AG0AMwBCAEcAcABpA"
+"G8AAAACADUAAAAUAFAAdwBtADMARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADQAQQBHAHAAaQ"
+"BvAAAAAgA2AAAAEgBQAHcAbQA0AEIARwBwAGkAbwAAAAIANwAAABQAUAB3AG0ANABHAHAAaQBvAEU"
+"AbgAAAAIAMAAAABIAUAB3AG0ANQBBAEcAcABpAG8AAAACADgAAAASAFAAdwBtADUAQgBHAHAAaQBv"
+"AAAAAgA5AAAAFABQAHcAbQA1AEcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQA2AEEARwBwAGkAb"
+"wAAAAQAMQAwAAAAEgBQAHcAbQA2AEIARwBwAGkAbwAAAAQAMQAxAAAAFABQAHcAbQA2AEcAcABpAG"
+"8ARQBuAAAAAgAwAAAAEgBQAHcAbQA3AEEARwBwAGkAbwAAAAQAMQAyAAAAEgBQAHcAbQA3AEIARwB"
+"wAGkAbwAAAAQAMQAzAAAAFABQAHcAbQA3AEcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQA4AEEA"
+"RwBwAGkAbwAAAAQAMQA0AAAAEgBQAHcAbQA4AEIARwBwAGkAbwAAAAQAMQA1AAAAFABQAHcAbQA4A"
+"EcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQA5AEEARwBwAGkAbwAAAAQAMQA2AAAAEgBQAHcAbQ"
+"A5AEIARwBwAGkAbwAAAAQAMQA3AAAAFABQAHcAbQA5AEcAcABpAG8ARQBuAAAAAgAwAAAAIABTAGE"
+"AbQBwAGwAZQBUAGkAbQBlAFIAZQBsAFQAbwBsAAAABAAxADAAAAAYAFMAZQByAGkAYQBsAE4AdQBt"
+"AGIAZQByAAAAAAAAACoAUwBlAHIAaQBhAGwATgB1AG0AYgBlAHIAUwBwAGUAYwBpAGYAaQBlAGQAA"
+"AACADAAAAAaAFQAQQBSAEcARQBUAF8ARABFAFYASQBDAEUAAAAUADAAfABDAE8ATQA5AHwAMAB8AD"
+"AAAAASAFQAegAxAEUAbgBhAGIAbABlAAAAAgAwAAAADgBUAHoAMQBHAHAAaQBvAAAAAgAwAAAAEgB"
+"UAHoAMgBFAG4AYQBiAGwAZQAAAAIAMAAAAA4AVAB6ADIARwBwAGkAbwAAAAIAMAAAABIAVAB6ADMA"
+"RQBuAGEAYgBsAGUAAAACADAAAAAOAFQAegAzAEcAcABpAG8AAAACADAAAABKAFUAUwBFAF8ARABBA"
+"FQAQQBfAFQAWQBQAEUAUwBfAEYATwBSAF8AVABVAE4AQQBCAEwARQBfAFAAQQBSAEEATQBFAFQARQ"
+"BSAFMAAAACADEAAAA0AFUAUwBFAF8AUwBUAEEAUgBUAF8AVABJAE0ARQBfAEkATgBfAEkATgBJAFQ"
+"AXwBGAEMATgAAAAIAMAAAABAAVgByAGUAZgBBAGQAYwBBAAAABgAzAC4AMwAAABAAVgByAGUAZgBB"
+"AGQAYwBCAAAABgAzAC4AMwAAABAAVgByAGUAZgBBAGQAYwBDAAAABgAzAC4AMwAAABAAVgByAGUAZ"
+"gBBAGQAYwBEAAAABgAzAC4AMwAAAAoAYgBvAGEAcgBkAAAAAgAyAAAAFgBiAHUAaQBsAGQAQwBvAG"
+"4AZgBpAGcAAAACADIAAAAIAGMAaABpAHAAAAACADEAAAASAGUAeAB0AEMAbABrAE0ASAB6AAAABAA"
+"zADAAAAAiAGUAeAB0AE0AbwBkAGUAQgB1AGYAZgBlAHIAUwBpAHoAZQAAAAgAMQAwADAAMAAAABwA"
+"ZQB4AHQATQBvAGQAZQBTAGMAaQBQAGkAbgBzAAAADgBbADQAMwAsADQAMgBdAAAADgBnAGUAbgBPA"
+"G4AbAB5AAAAAgAzAAAAFABpAG4AcwB0AGEAbABsAEQAaQByAAAAAAAAABwAaQBuAHMAdABhAGwAbA"
+"BEAGkAcgBDAHAAdQAyAAAAAAAAABIAcwB5AHMAQwBsAGsATQBIAHoAAAAGADEAOQAwAAAAFgB0AGE"
+"AcwBrAEYAcgBlAHEAVABvAGwAAAACADEAAAAYAHUAbgBpAGYAbABhAHMAaABGAGkAbABlAAAAAAAA"
+"ABIAdQBzAGUASQBuAHQATwBzAGMAAAACADE="
   ExtendedMatrixPrecision "1"
   MatrixSignificanceCheck "2"
   RemoveUnusedStateSpaceOutputs "2"
@@ -153,9 +154,9 @@ Plecs {
     Index         "4"
   }
   Schematic {
-    Location      [0, 23; 1280, 634]
+    Location      [0, 24; 1280, 635]
     ZoomFactor    0.873847
-    SliderPosition [239, 0]
+    SliderPosition [160, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -167,24 +168,24 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-25, -35; 25, 35]
+      Frame         [-30, -50; 30, 50]
       Parameter {
-        Variable      "pwm"
+        Variable      "PwmUnit"
         Value         "[1]"
         Show          off
       }
       Parameter {
-        Variable      "type"
+        Variable      "CarrierType"
         Value         "2"
         Show          off
       }
       Parameter {
-        Variable      "fc"
+        Variable      "CarrierFreq"
         Value         "19e3"
         Show          off
       }
       Parameter {
-        Variable      "fc_tol"
+        Variable      "CarrierFreqTol"
         Value         "1"
         Show          off
       }
@@ -194,38 +195,58 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "outmode"
+        Variable      "OutMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "DelayVar"
+        Variable      "VariableDeadTime"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "delay"
+        Variable      "FixedDeadTime"
         Value         "1e-6"
         Show          off
       }
       Parameter {
-        Variable      "DelayMin"
+        Variable      "MinDeadTime"
         Value         "1e-6"
         Show          off
       }
       Parameter {
-        Variable      "polarity"
+        Variable      "Polarity"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "sequence"
+        Variable      "Sequence"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "show_enable"
+        Variable      "SequenceAq"
+        Value         "[0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "ShowEnable"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CmpShadowMode"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "RedShadowMode"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "FedShadowMode"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -234,7 +255,7 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "SyncIn"
+        Variable      "SyncSrc"
         Value         "1"
         Show          off
       }
@@ -244,27 +265,32 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "socsel"
+        Variable      "PeripheralSyncMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "socsel_prd"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "intsel"
+        Variable      "AdcTriggerMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "intsel_prd"
+        Variable      "AdcTriggerDivider"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "SpecifyOfflinePwmTclk"
+        Variable      "TaskTriggerMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TaskTriggerDivider"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "OfflinePwmTclkOrigin"
         Value         "1"
         Show          off
       }
@@ -295,52 +321,62 @@ Plecs {
       }
       Terminal {
         Type          Input
-        Position      [-25, 0]
+        Position      [-30, 0]
         Direction     left
       }
       Terminal {
         Type          EventOutput
-        Position      [29, 15]
+        Position      [34, 20]
         Direction     right
       }
       Terminal {
         Type          EventOutput
-        Position      [29, -15]
+        Position      [34, -20]
         Direction     right
       }
       Terminal {
         Type          Input
-        Position      [-25, 10]
+        Position      [-30, -20]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, -20]
+        Position      [-30, -30]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, 20]
+        Position      [-30, 30]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, -10]
+        Position      [-30, -10]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, 5]
+        Position      [-30, 5]
         Direction     left
       }
       Terminal {
         Type          EventInput
-        Position      [0, -35]
+        Position      [0, -50]
         Direction     up
       }
       Terminal {
         Type          EventOutput
-        Position      [29, 0]
+        Position      [34, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          EventOutput
+        Position      [34, -35]
         Direction     right
       }
     }
@@ -353,24 +389,24 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-25, -35; 25, 35]
+      Frame         [-30, -50; 30, 50]
       Parameter {
-        Variable      "pwm"
+        Variable      "PwmUnit"
         Value         "[2]"
         Show          off
       }
       Parameter {
-        Variable      "type"
+        Variable      "CarrierType"
         Value         "2"
         Show          off
       }
       Parameter {
-        Variable      "fc"
+        Variable      "CarrierFreq"
         Value         "19e3"
         Show          off
       }
       Parameter {
-        Variable      "fc_tol"
+        Variable      "CarrierFreqTol"
         Value         "1"
         Show          off
       }
@@ -380,38 +416,58 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "outmode"
+        Variable      "OutMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "DelayVar"
+        Variable      "VariableDeadTime"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "delay"
+        Variable      "FixedDeadTime"
         Value         "1e-6"
         Show          off
       }
       Parameter {
-        Variable      "DelayMin"
+        Variable      "MinDeadTime"
         Value         "1e-6"
         Show          off
       }
       Parameter {
-        Variable      "polarity"
+        Variable      "Polarity"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "sequence"
+        Variable      "Sequence"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "show_enable"
+        Variable      "SequenceAq"
+        Value         "[0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "ShowEnable"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CmpShadowMode"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "RedShadowMode"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "FedShadowMode"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -420,7 +476,7 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "SyncIn"
+        Variable      "SyncSrc"
         Value         "1"
         Show          off
       }
@@ -430,27 +486,32 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "socsel"
+        Variable      "PeripheralSyncMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "socsel_prd"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "intsel"
+        Variable      "AdcTriggerMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "intsel_prd"
+        Variable      "AdcTriggerDivider"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "SpecifyOfflinePwmTclk"
+        Variable      "TaskTriggerMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TaskTriggerDivider"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "OfflinePwmTclkOrigin"
         Value         "1"
         Show          off
       }
@@ -481,52 +542,62 @@ Plecs {
       }
       Terminal {
         Type          Input
-        Position      [-25, 0]
+        Position      [-30, 0]
         Direction     left
       }
       Terminal {
         Type          EventOutput
-        Position      [29, 15]
+        Position      [34, 20]
         Direction     right
       }
       Terminal {
         Type          EventOutput
-        Position      [29, -15]
+        Position      [34, -20]
         Direction     right
       }
       Terminal {
         Type          Input
-        Position      [-25, 10]
+        Position      [-30, -20]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, -20]
+        Position      [-30, -30]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, 20]
+        Position      [-30, 30]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, -10]
+        Position      [-30, -10]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, 5]
+        Position      [-30, 5]
         Direction     left
       }
       Terminal {
         Type          EventInput
-        Position      [0, -35]
+        Position      [0, -50]
         Direction     up
       }
       Terminal {
         Type          EventOutput
-        Position      [29, 0]
+        Position      [34, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          EventOutput
+        Position      [34, -35]
         Direction     right
       }
     }
@@ -584,7 +655,7 @@ Plecs {
       LabelPosition south
       Frame         [-25, -20; 25, 20]
       Parameter {
-        Variable      "gpio"
+        Variable      "Gpio"
         Value         "34"
         Show          on
       }
@@ -683,7 +754,7 @@ Plecs {
       LabelPosition south
       Frame         [-25, -20; 25, 20]
       Parameter {
-        Variable      "gpio"
+        Variable      "Gpio"
         Value         "124"
         Show          on
       }
@@ -732,24 +803,24 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-25, -35; 25, 35]
+      Frame         [-30, -50; 30, 50]
       Parameter {
-        Variable      "pwm"
+        Variable      "PwmUnit"
         Value         "[3]"
         Show          off
       }
       Parameter {
-        Variable      "type"
+        Variable      "CarrierType"
         Value         "2"
         Show          off
       }
       Parameter {
-        Variable      "fc"
+        Variable      "CarrierFreq"
         Value         "19e3"
         Show          off
       }
       Parameter {
-        Variable      "fc_tol"
+        Variable      "CarrierFreqTol"
         Value         "1"
         Show          off
       }
@@ -759,38 +830,58 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "outmode"
+        Variable      "OutMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "DelayVar"
+        Variable      "VariableDeadTime"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "delay"
+        Variable      "FixedDeadTime"
         Value         "1e-6"
         Show          off
       }
       Parameter {
-        Variable      "DelayMin"
+        Variable      "MinDeadTime"
         Value         "1e-6"
         Show          off
       }
       Parameter {
-        Variable      "polarity"
+        Variable      "Polarity"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "sequence"
+        Variable      "Sequence"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "show_enable"
+        Variable      "SequenceAq"
+        Value         "[0]"
+        Show          off
+      }
+      Parameter {
+        Variable      "ShowEnable"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CmpShadowMode"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "RedShadowMode"
+        Value         "3"
+        Show          off
+      }
+      Parameter {
+        Variable      "FedShadowMode"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -799,7 +890,7 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "SyncIn"
+        Variable      "SyncSrc"
         Value         "1"
         Show          off
       }
@@ -809,27 +900,32 @@ Plecs {
         Show          off
       }
       Parameter {
-        Variable      "socsel"
+        Variable      "PeripheralSyncMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "socsel_prd"
-        Value         ""
-        Show          off
-      }
-      Parameter {
-        Variable      "intsel"
+        Variable      "AdcTriggerMode"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "intsel_prd"
+        Variable      "AdcTriggerDivider"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "SpecifyOfflinePwmTclk"
+        Variable      "TaskTriggerMode"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TaskTriggerDivider"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "OfflinePwmTclkOrigin"
         Value         "1"
         Show          off
       }
@@ -860,52 +956,62 @@ Plecs {
       }
       Terminal {
         Type          Input
-        Position      [-25, 0]
+        Position      [-30, 0]
         Direction     left
       }
       Terminal {
         Type          EventOutput
-        Position      [29, 15]
+        Position      [34, 20]
         Direction     right
       }
       Terminal {
         Type          EventOutput
-        Position      [29, -15]
+        Position      [34, -20]
         Direction     right
       }
       Terminal {
         Type          Input
-        Position      [-25, 10]
+        Position      [-30, -20]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, -20]
+        Position      [-30, -30]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, 20]
+        Position      [-30, 30]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, -10]
+        Position      [-30, -10]
         Direction     left
       }
       Terminal {
         Type          Input
-        Position      [-25, 5]
+        Position      [-30, 5]
         Direction     left
       }
       Terminal {
         Type          EventInput
-        Position      [0, -35]
+        Position      [0, -50]
         Direction     up
       }
       Terminal {
         Type          EventOutput
-        Position      [29, 0]
+        Position      [34, 0]
+        Direction     right
+      }
+      Terminal {
+        Type          Input
+        Position      [-30, -20]
+        Direction     left
+      }
+      Terminal {
+        Type          EventOutput
+        Position      [34, -35]
         Direction     right
       }
     }
@@ -1158,20 +1264,16 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [47, 170; 1041, 581]
+      Location      [47, 170; 1041, 590]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAAEwA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAJcA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAACXAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABxAP///wAABdMAAAJGAAAA"
+"G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA+IAAAGFAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAB"
-"AAAAJYAAAAFAAAAlgAAAAYAAACWAAAABwAAAJYAAAAIAAAAlgAAAAkAAACWAAAAAQAAAJYAAAACAA"
-"AAlgAAAAMAAACWAAAAjAAAAAsBAAABAAAAAAAAAAAAAAAAlv////8AAACBAAAAAAAAAAsAAABXAAA"
-"AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
-"AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA"
-"AA1AAAAAQAAAAAAAAPoAAAAADU="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":96,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"
@@ -1237,22 +1339,22 @@ Plecs {
       LabelPosition south
       Frame         [-25, -20; 25, 20]
       Parameter {
-        Variable      "qep"
+        Variable      "QepModule"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "abi"
+        Variable      "Gpios"
         Value         "[20,21,23]"
         Show          off
       }
       Parameter {
-        Variable      "prd"
+        Variable      "CounterMax"
         Value         "maxCount"
         Show          off
       }
       Parameter {
-        Variable      "rst"
+        Variable      "CounterResetMode"
         Value         "2"
         Show          off
       }
@@ -1364,7 +1466,7 @@ Plecs {
         Variable      "pairs"
         Prompt        "Counts per electrical revolution"
         Type          FreeText
-        Value         "maxCount+1"
+        Value         "maxCount"
         Show          off
         Tunable       off
         TabName       ""
@@ -1558,13 +1660,18 @@ Plecs {
             Show          off
           }
           Parameter {
-            Variable      "DataType"
+            Variable      "OutputDataType"
             Value         "11"
             Show          off
           }
           Parameter {
             Variable      "DataTypeOverflowMode"
             Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "GainDataType"
+            Value         "11"
             Show          off
           }
         }
@@ -1640,13 +1747,18 @@ Plecs {
             Show          off
           }
           Parameter {
-            Variable      "DataType"
+            Variable      "OutputDataType"
             Value         "11"
             Show          off
           }
           Parameter {
             Variable      "DataTypeOverflowMode"
             Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "GainDataType"
+            Value         "11"
             Show          off
           }
         }
@@ -1852,6 +1964,11 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
     }
     Component {
       Type          From
@@ -1871,6 +1988,11 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
     }
     Component {
       Type          From
@@ -1887,6 +2009,11 @@ Plecs {
       }
       Parameter {
         Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
         Value         "1"
         Show          off
       }
@@ -2156,13 +2283,18 @@ Plecs {
             Show          off
           }
           Parameter {
-            Variable      "DataType"
+            Variable      "OutputDataType"
             Value         "11"
             Show          off
           }
           Parameter {
             Variable      "DataTypeOverflowMode"
             Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "GainDataType"
+            Value         "11"
             Show          off
           }
         }
@@ -2185,13 +2317,18 @@ Plecs {
             Show          off
           }
           Parameter {
-            Variable      "DataType"
+            Variable      "OutputDataType"
             Value         "11"
             Show          off
           }
           Parameter {
             Variable      "DataTypeOverflowMode"
             Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "GainDataType"
+            Value         "11"
             Show          off
           }
         }
@@ -2267,13 +2404,18 @@ Plecs {
             Show          off
           }
           Parameter {
-            Variable      "DataType"
+            Variable      "OutputDataType"
             Value         "11"
             Show          off
           }
           Parameter {
             Variable      "DataTypeOverflowMode"
             Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "GainDataType"
+            Value         "11"
             Show          off
           }
         }
@@ -2554,47 +2696,47 @@ Plecs {
       LabelPosition south
       Frame         [-25, -25; 25, 25]
       Parameter {
-        Variable      "trig"
+        Variable      "TrigSrc"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "adc"
+        Variable      "AdcUnit"
         Value         "3"
         Show          off
       }
       Parameter {
-        Variable      "input"
+        Variable      "Input"
         Value         "[2 4]"
         Show          off
       }
       Parameter {
-        Variable      "scale"
+        Variable      "Scale"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "offset"
+        Variable      "Offset"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "tacqsel"
+        Variable      "AcqTimeSel"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "tacq"
+        Variable      "AcqTime"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "bits"
+        Variable      "BitRes"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "vref"
+        Variable      "VoltageRef"
         Value         ""
         Show          off
       }
@@ -2630,47 +2772,47 @@ Plecs {
       LabelPosition south
       Frame         [-25, -25; 25, 25]
       Parameter {
-        Variable      "trig"
+        Variable      "TrigSrc"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "adc"
+        Variable      "AdcUnit"
         Value         "2"
         Show          off
       }
       Parameter {
-        Variable      "input"
+        Variable      "Input"
         Value         "[2 4]"
         Show          off
       }
       Parameter {
-        Variable      "scale"
+        Variable      "Scale"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "offset"
+        Variable      "Offset"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "tacqsel"
+        Variable      "AcqTimeSel"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "tacq"
+        Variable      "AcqTime"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "bits"
+        Variable      "BitRes"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "vref"
+        Variable      "VoltageRef"
         Value         ""
         Show          off
       }
@@ -2706,47 +2848,47 @@ Plecs {
       LabelPosition south
       Frame         [-25, -25; 25, 25]
       Parameter {
-        Variable      "trig"
+        Variable      "TrigSrc"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "adc"
+        Variable      "AdcUnit"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "input"
+        Variable      "Input"
         Value         "[2 4]"
         Show          off
       }
       Parameter {
-        Variable      "scale"
+        Variable      "Scale"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "offset"
+        Variable      "Offset"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "tacqsel"
+        Variable      "AcqTimeSel"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "tacq"
+        Variable      "AcqTime"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "bits"
+        Variable      "BitRes"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "vref"
+        Variable      "VoltageRef"
         Value         ""
         Show          off
       }
@@ -2803,6 +2945,11 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
     }
     Component {
       Type          SignalDemux
@@ -2836,6 +2983,11 @@ Plecs {
         Value         "1"
         Show          off
       }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
     }
     Component {
       Type          SignalDemux
@@ -2867,6 +3019,11 @@ Plecs {
       Parameter {
         Variable      "Visibility"
         Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
         Show          off
       }
     }

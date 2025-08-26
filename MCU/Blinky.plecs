@@ -1,0 +1,222 @@
+Plecs {
+  Name          "Blinky"
+  Version       "4.9"
+  CircuitModel  "DiscStateSpace"
+  StartTime     "0.0"
+  TimeSpan      "1.0"
+  Timeout       ""
+  Solver        "auto"
+  MaxStep       "1e-3"
+  InitStep      "-1"
+  FixedStep     "100e-6"
+  Refine        "1"
+  ZCStepSize    "1e-9"
+  RelTol        "1e-3"
+  AbsTol        "-1"
+  TurnOnThreshold "0"
+  NonIdealSwitchResistance "1"
+  SyncFixedStepTasks "2"
+  UseSingleCommonBaseRate "2"
+  LossVariableLimitExceededMsg "3"
+  NegativeSwitchLossMsg "3"
+  DivisionByZeroMsg "3"
+  DatatypeOverflowMsg "3"
+  DatatypeInheritanceConflictMsg "2"
+  ContSampleTimeConflictMsg "2"
+  StiffnessDetectionMsg "2"
+  MaxConsecutiveZCs "1000"
+  AlgebraicLoopWithStateMachineMsg "3"
+  AssertionAction "1"
+  FixedPointDatatypeOverride "1"
+  InitializationCommands ""
+  InitialState  "1"
+  SystemState   ""
+  TaskingMode   "1"
+  TaskConfigurations ""
+  CodeGenParameterInlining "2"
+  CodeGenFloatingPointFormat "1"
+  CodeGenAbsTimeUsageMsg "3"
+  CodeGenBaseName ""
+  CodeGenOutputDir ""
+  CodeGenExtraOpts ""
+  CodeGenTarget "TI2837x"
+  CodeGenTargetSettings "AAAAfwAAAAAbQ29kZUdlblRhcmdldDo6U2V0dGluZ3NNYXAAAAAAA"
+"QAAAA4AVABJADIAOAAzADcAeAAAAFsAAAAiAEEAbgBUAHIAaQBwADEAQQBkAGMAQwBoAGEAbgBuAG"
+"UAbAAAAAIAMAAAABwAQQBuAFQAcgBpAHAAMQBBAGQAYwBVAG4AaQB0AAAAAgAxAAAAGgBBAG4AVAB"
+"yAGkAcAAxAEUAbgBhAGIAbABlAAAAAgAwAAAAGgBBAG4AVAByAGkAcAAxAFMAaQBnAG4AYQBsAAAA"
+"AgAxAAAAKABBAG4AVAByAGkAcAAxAFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAmA"
+"EEAbgBUAHIAaQBwADEAVABoAHIAZQBzAGgAbwBsAGQATABvAHcAAAACADAAAAAiAEEAbgBUAHIAaQ"
+"BwADIAQQBkAGMAQwBoAGEAbgBuAGUAbAAAAAIAMAAAABwAQQBuAFQAcgBpAHAAMgBBAGQAYwBVAG4"
+"AaQB0AAAAAgAxAAAAGgBBAG4AVAByAGkAcAAyAEUAbgBhAGIAbABlAAAAAgAwAAAAGgBBAG4AVABy"
+"AGkAcAAyAFMAaQBnAG4AYQBsAAAAAgAxAAAAKABBAG4AVAByAGkAcAAyAFQAaAByAGUAcwBoAG8Ab"
+"ABkAEgAaQBnAGgAAAACADAAAAAmAEEAbgBUAHIAaQBwADIAVABoAHIAZQBzAGgAbwBsAGQATABvAH"
+"cAAAACADAAAAAiAEEAbgBUAHIAaQBwADMAQQBkAGMAQwBoAGEAbgBuAGUAbAAAAAIAMAAAABwAQQB"
+"uAFQAcgBpAHAAMwBBAGQAYwBVAG4AaQB0AAAAAgAxAAAAGgBBAG4AVAByAGkAcAAzAEUAbgBhAGIA"
+"bABlAAAAAgAwAAAAGgBBAG4AVAByAGkAcAAzAFMAaQBnAG4AYQBsAAAAAgAxAAAAKABBAG4AVAByA"
+"GkAcAAzAFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACADAAAAAmAEEAbgBUAHIAaQBwADMAVA"
+"BoAHIAZQBzAGgAbwBsAGQATABvAHcAAAACADAAAAAiAEEAbgBUAHIAaQBwADQAQQBkAGMAQwBoAGE"
+"AbgBuAGUAbAAAAAIAMAAAABwAQQBuAFQAcgBpAHAANABBAGQAYwBVAG4AaQB0AAAAAgAxAAAAGgBB"
+"AG4AVAByAGkAcAA0AEUAbgBhAGIAbABlAAAAAgAwAAAAGgBBAG4AVAByAGkAcAA0AFMAaQBnAG4AY"
+"QBsAAAAAgAxAAAAKABBAG4AVAByAGkAcAA0AFQAaAByAGUAcwBoAG8AbABkAEgAaQBnAGgAAAACAD"
+"AAAAAmAEEAbgBUAHIAaQBwADQAVABoAHIAZQBzAGgAbwBsAGQATABvAHcAAAACADAAAAAaAEUAWAB"
+"UAEUAUgBOAEEATABfAE0ATwBEAEUAAAACADAAAAAiAEwAaQBuAGsAZQByAEMAbwBtAG0AYQBuAGQA"
+"RgBpAGwAZQAAAAAAAAAUAFAAdwBtADEAMABBAEcAcABpAG8AAAAEADEAOAAAABQAUAB3AG0AMQAwA"
+"EIARwBwAGkAbwAAAAQAMQA5AAAAFgBQAHcAbQAxADAARwBwAGkAbwBFAG4AAAACADAAAAAUAFAAdw"
+"BtADEAMQBBAEcAcABpAG8AAAAEADIAMAAAABQAUAB3AG0AMQAxAEIARwBwAGkAbwAAAAQAMgAxAAA"
+"AFgBQAHcAbQAxADEARwBwAGkAbwBFAG4AAAACADAAAAAUAFAAdwBtADEAMgBBAEcAcABpAG8AAAAE"
+"ADIAMgAAABQAUAB3AG0AMQAyAEIARwBwAGkAbwAAAAQAMgAzAAAAFgBQAHcAbQAxADIARwBwAGkAb"
+"wBFAG4AAAACADAAAAASAFAAdwBtADEAQQBHAHAAaQBvAAAAAgAwAAAAEgBQAHcAbQAxAEIARwBwAG"
+"kAbwAAAAIAMQAAABQAUAB3AG0AMQBHAHAAaQBvAEUAbgAAAAIAMAAAABIAUAB3AG0AMgBBAEcAcAB"
+"pAG8AAAACADIAAAASAFAAdwBtADIAQgBHAHAAaQBvAAAAAgAzAAAAFABQAHcAbQAyAEcAcABpAG8A"
+"RQBuAAAAAgAwAAAAEgBQAHcAbQAzAEEARwBwAGkAbwAAAAIANAAAABIAUAB3AG0AMwBCAEcAcABpA"
+"G8AAAACADUAAAAUAFAAdwBtADMARwBwAGkAbwBFAG4AAAACADAAAAASAFAAdwBtADQAQQBHAHAAaQ"
+"BvAAAAAgA2AAAAEgBQAHcAbQA0AEIARwBwAGkAbwAAAAIANwAAABQAUAB3AG0ANABHAHAAaQBvAEU"
+"AbgAAAAIAMAAAABIAUAB3AG0ANQBBAEcAcABpAG8AAAACADgAAAASAFAAdwBtADUAQgBHAHAAaQBv"
+"AAAAAgA5AAAAFABQAHcAbQA1AEcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQA2AEEARwBwAGkAb"
+"wAAAAQAMQAwAAAAEgBQAHcAbQA2AEIARwBwAGkAbwAAAAQAMQAxAAAAFABQAHcAbQA2AEcAcABpAG"
+"8ARQBuAAAAAgAwAAAAEgBQAHcAbQA3AEEARwBwAGkAbwAAAAQAMQAyAAAAEgBQAHcAbQA3AEIARwB"
+"wAGkAbwAAAAQAMQAzAAAAFABQAHcAbQA3AEcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQA4AEEA"
+"RwBwAGkAbwAAAAQAMQA0AAAAEgBQAHcAbQA4AEIARwBwAGkAbwAAAAQAMQA1AAAAFABQAHcAbQA4A"
+"EcAcABpAG8ARQBuAAAAAgAwAAAAEgBQAHcAbQA5AEEARwBwAGkAbwAAAAQAMQA2AAAAEgBQAHcAbQ"
+"A5AEIARwBwAGkAbwAAAAQAMQA3AAAAFABQAHcAbQA5AEcAcABpAG8ARQBuAAAAAgAwAAAAIABTAGE"
+"AbQBwAGwAZQBUAGkAbQBlAFIAZQBsAFQAbwBsAAAABAAxADAAAAAYAFMAZQByAGkAYQBsAE4AdQBt"
+"AGIAZQByAAAAAAAAACoAUwBlAHIAaQBhAGwATgB1AG0AYgBlAHIAUwBwAGUAYwBpAGYAaQBlAGQAA"
+"AACADAAAAAaAFQAQQBSAEcARQBUAF8ARABFAFYASQBDAEUAAAAUADAAfABDAE8ATQA0AHwAMAB8AD"
+"AAAAASAFQAegAxAEUAbgBhAGIAbABlAAAAAgAwAAAADgBUAHoAMQBHAHAAaQBvAAAAAgAwAAAAEgB"
+"UAHoAMgBFAG4AYQBiAGwAZQAAAAIAMAAAAA4AVAB6ADIARwBwAGkAbwAAAAIAMAAAABIAVAB6ADMA"
+"RQBuAGEAYgBsAGUAAAACADAAAAAOAFQAegAzAEcAcABpAG8AAAACADAAAABKAFUAUwBFAF8ARABBA"
+"FQAQQBfAFQAWQBQAEUAUwBfAEYATwBSAF8AVABVAE4AQQBCAEwARQBfAFAAQQBSAEEATQBFAFQARQ"
+"BSAFMAAAACADEAAAA0AFUAUwBFAF8AUwBUAEEAUgBUAF8AVABJAE0ARQBfAEkATgBfAEkATgBJAFQ"
+"AXwBGAEMATgAAAAIAMAAAABAAVgByAGUAZgBBAGQAYwBBAAAABgAzAC4AMAAAABAAVgByAGUAZgBB"
+"AGQAYwBCAAAABgAzAC4AMAAAABAAVgByAGUAZgBBAGQAYwBDAAAABgAzAC4AMAAAABAAVgByAGUAZ"
+"gBBAGQAYwBEAAAABgAzAC4AMAAAAAoAYgBvAGEAcgBkAAAAAgAyAAAAFgBiAHUAaQBsAGQAQwBvAG"
+"4AZgBpAGcAAAACADIAAAAIAGMAaABpAHAAAAACADEAAAASAGUAeAB0AEMAbABrAE0ASAB6AAAABAA"
+"zADAAAAAiAGUAeAB0AE0AbwBkAGUAQgB1AGYAZgBlAHIAUwBpAHoAZQAAAAgAMQAwADAAMAAAABwA"
+"ZQB4AHQATQBvAGQAZQBTAGMAaQBQAGkAbgBzAAAADgBbADQAMwAsADQAMgBdAAAADgBnAGUAbgBPA"
+"G4AbAB5AAAAAgAzAAAAFABpAG4AcwB0AGEAbABsAEQAaQByAAAAAAAAABwAaQBuAHMAdABhAGwAbA"
+"BEAGkAcgBDAHAAdQAyAAAAAAAAABIAcwB5AHMAQwBsAGsATQBIAHoAAAAGADEAOQAwAAAAFgB0AGE"
+"AcwBrAEYAcgBlAHEAVABvAGwAAAACADEAAAAYAHUAbgBpAGYAbABhAHMAaABGAGkAbABlAAAAAAAA"
+"ABIAdQBzAGUASQBuAHQATwBzAGMAAAACADE="
+  ExtendedMatrixPrecision "1"
+  MatrixSignificanceCheck "2"
+  RemoveUnusedStateSpaceOutputs "2"
+  EnableStateSpaceSplitting "2"
+  DisplayStateSpaceSplitting "1"
+  DiscretizationMethod "2"
+  ExternalModeSettings "AAAAfwAAAAAYQ29kZUdlblRhcmdldDo6U2V0dGluZ3MAAAAABgAAAB"
+"QARABlAGMAaQBtAGEAdABpAG8AbgAAAAIANQAAABQATgB1AG0AUwBhAG0AcABsAGUAcwAAAAoANAA"
+"wADkANgAwAAAAFgBSAGUAZgByAGUAcwBoAFIAYQB0AGUAAAAEADIAMAAAABYAUwBlAG4AcwBpAHQA"
+"aQB2AGkAdAB5AAAAAgAwAAAAGABUAHIAaQBnAGcAZQByAEQAZQBsAGEAeQAAAAIAMAAAABgAVAByA"
+"GkAZwBnAGUAcgBWAGEAbAB1AGUAAAACADA="
+  AlgebraicLoopMethod "1"
+  AlgebraicLoopTolerance "1e-6"
+  ScriptsDialogGeometry ""
+  ScriptsDialogSplitterPos "0"
+  Terminal {
+    Type          Output
+    Index         "1"
+  }
+  Schematic {
+    Location      [1025, 30; 2047, 1188]
+    ZoomFactor    1
+    SliderPosition [120, 0]
+    ShowBrowser   off
+    BrowserWidth  100
+    Component {
+      Type          Delay
+      Name          "Delay"
+      Show          on
+      Position      [180, 205]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "N"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "0.5"
+        Show          on
+      }
+    }
+    Component {
+      Type          LogicalOperator
+      Name          "Logical\nOperator"
+      Show          off
+      Position      [275, 205]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Operator"
+        Value         "6"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "TIC2000_Lib/Digital Out"
+      Name          "Digital Out"
+      Show          on
+      Position      [360, 205]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -20; 25, 20]
+      Parameter {
+        Variable      "Gpio"
+        Value         "34"
+        Show          on
+      }
+      Parameter {
+        Variable      "OutputType"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TargetPortIndices"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-25, 0]
+        Direction     left
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Delay"
+      SrcTerminal   2
+      DstComponent  "Logical\nOperator"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Logical\nOperator"
+      SrcTerminal   1
+      Points        [305, 205]
+      Branch {
+        DstComponent  "Digital Out"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [305, 130; 145, 130; 145, 205]
+        DstComponent  "Delay"
+        DstTerminal   1
+      }
+    }
+  }
+}

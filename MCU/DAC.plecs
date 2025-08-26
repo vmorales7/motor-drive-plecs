@@ -1,6 +1,6 @@
 Plecs {
   Name          "DAC"
-  Version       "4.8"
+  Version       "4.9"
   CircuitModel  "DiscStateSpace"
   StartTime     "0.0"
   TimeSpan      "1.0"
@@ -120,7 +120,7 @@ Plecs {
   }
   Schematic {
     Location      [143, 90; 897, 587]
-    ZoomFactor    1
+    ZoomFactor    1.14437
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -135,27 +135,27 @@ Plecs {
       LabelPosition south
       Frame         [-25, -20; 25, 20]
       Parameter {
-        Variable      "dac"
+        Variable      "DacUnit"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "scale"
+        Variable      "Scale"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "offset"
+        Variable      "Offset"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "minOutput"
+        Variable      "MinOutput"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "maxOutput"
+        Variable      "MaxOutput"
         Value         ""
         Show          off
       }
@@ -181,27 +181,27 @@ Plecs {
       LabelPosition south
       Frame         [-25, -20; 25, 20]
       Parameter {
-        Variable      "dac"
+        Variable      "DacUnit"
         Value         "2"
         Show          off
       }
       Parameter {
-        Variable      "scale"
+        Variable      "Scale"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "offset"
+        Variable      "Offset"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "minOutput"
+        Variable      "MinOutput"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "maxOutput"
+        Variable      "MaxOutput"
         Value         ""
         Show          off
       }
@@ -220,34 +220,34 @@ Plecs {
       Type          Reference
       SrcComponent  "TIC2000_Lib/DAC"
       Name          "DAC2"
-      Show          off
+      Show          on
       Position      [195, 325]
       Direction     up
       Flipped       off
       LabelPosition south
       Frame         [-25, -20; 25, 20]
       Parameter {
-        Variable      "dac"
+        Variable      "DacUnit"
         Value         "3"
-        Show          off
+        Show          on
       }
       Parameter {
-        Variable      "scale"
+        Variable      "Scale"
         Value         "1"
         Show          off
       }
       Parameter {
-        Variable      "offset"
+        Variable      "Offset"
         Value         "0"
         Show          off
       }
       Parameter {
-        Variable      "minOutput"
+        Variable      "MinOutput"
         Value         ""
         Show          off
       }
       Parameter {
-        Variable      "maxOutput"
+        Variable      "MaxOutput"
         Value         ""
         Show          off
       }
@@ -299,7 +299,7 @@ Plecs {
     Component {
       Type          SineGenerator
       Name          "Sine Wave1"
-      Show          off
+      Show          on
       Position      [85, 325]
       Direction     right
       Flipped       off
