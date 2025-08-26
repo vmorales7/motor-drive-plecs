@@ -29,7 +29,8 @@ Plecs {
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
   InitializationCommands "Ts_controller = 100e-6;\nM.p = 2;\nM.QepLinePairs = "
-"1000; %1024\nM.QepOffset = 2*pi*12/62;\nM.HallOffset = M.QepOffset;"
+"1000; %1024\nQepElectricCPR = M.QepLinePairs*4/M.p;\nM.QepOffset = 2*pi*12/62"
+";\nM.HallOffset = M.QepOffset;"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -93,7 +94,7 @@ Plecs {
 "AXwBGAEMATgAAAAIAMAAAABAAVgByAGUAZgBBAGQAYwBBAAAABgAzAC4AMAAAABAAVgByAGUAZgBB"
 "AGQAYwBCAAAABgAzAC4AMAAAABAAVgByAGUAZgBBAGQAYwBDAAAABgAzAC4AMAAAABAAVgByAGUAZ"
 "gBBAGQAYwBEAAAABgAzAC4AMAAAAAoAYgBvAGEAcgBkAAAAAgAyAAAAFgBiAHUAaQBsAGQAQwBvAG"
-"4AZgBpAGcAAAACADIAAAAIAGMAaABpAHAAAAACADEAAAASAGUAeAB0AEMAbABrAE0ASAB6AAAABAA"
+"4AZgBpAGcAAAACADEAAAAIAGMAaABpAHAAAAACADEAAAASAGUAeAB0AEMAbABrAE0ASAB6AAAABAA"
 "zADAAAAAiAGUAeAB0AE0AbwBkAGUAQgB1AGYAZgBlAHIAUwBpAHoAZQAAAAgAMQAwADAAMAAAABwA"
 "ZQB4AHQATQBvAGQAZQBTAGMAaQBQAGkAbgBzAAAADgBbADQAMwAsADQAMgBdAAAADgBnAGUAbgBPA"
 "G4AbAB5AAAAAgAyAAAAFABpAG4AcwB0AGEAbABsAEQAaQByAAAAAAAAABwAaQBuAHMAdABhAGwAbA"
@@ -111,7 +112,7 @@ Plecs {
 "xADkAMgAAABYAUgBlAGYAcgBlAHMAaABSAGEAdABlAAAABAAyADAAAAAWAFMAZQBuAHMAaQB0AGkA"
 "dgBpAHQAeQAAAAIAMAAAABwAVAByAGkAZwBnAGUAcgBDAGgAYQBuAG4AZQBsAAAABAAtADEAAAAYA"
 "FQAcgBpAGcAZwBlAHIARABlAGwAYQB5AAAAAgAwAAAAGABUAHIAaQBnAGcAZQByAFYAYQBsAHUAZQ"
-"AAAAYAMAAuADE="
+"AAAAQAMQAw"
   AlgebraicLoopMethod "1"
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
@@ -124,9 +125,13 @@ Plecs {
     Type          Input
     Index         "2"
   }
+  Terminal {
+    Type          Output
+    Index         "1"
+  }
   Schematic {
-    Location      [1, 30; 1023, 476]
-    ZoomFactor    1.30958
+    Location      [1025, 30; 2047, 1188]
+    ZoomFactor    1.14437
     SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
@@ -135,7 +140,7 @@ Plecs {
       SrcComponent  "TIC2000_Lib/Counter"
       Name          "QEP"
       Show          on
-      Position      [170, 140]
+      Position      [90, 115]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -152,7 +157,7 @@ Plecs {
       }
       Parameter {
         Variable      "CounterMax"
-        Value         "M.QepLinePairs*4/M.p - 1"
+        Value         "QepElectricCPR - 1"
         Show          off
       }
       Parameter {
@@ -186,7 +191,7 @@ Plecs {
       SrcComponent  "TIC2000_Lib/Digital In"
       Name          "Hall In"
       Show          on
-      Position      [170, 230]
+      Position      [90, 205]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -216,10 +221,10 @@ Plecs {
       Type          Display
       Name          "QEP OK"
       Show          on
-      Position      [345, 105]
+      Position      [265, 80]
       Direction     up
       Flipped       off
-      LabelPosition south
+      LabelPosition north
       Frame         [-21, -11; 21, 11]
       Parameter {
         Variable      "Notation"
@@ -236,7 +241,7 @@ Plecs {
       Type          Subsystem
       Name          "Hall Decode"
       Show          on
-      Position      [260, 230]
+      Position      [180, 205]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -244,6 +249,10 @@ Plecs {
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
       CodeGenTarget "Generic"
+      MaskType      "Hall Decoder"
+      MaskDescription "Gives the electrical angle for a set of three hall sens"
+"ors A -> B -> C. The input is a digital (0 or 1) signal coming from a Digital"
+" In block connected to the sensor terminals."
       MaskDisplayLang "2"
       MaskIconFrame on
       MaskIconOpaque off
@@ -282,8 +291,8 @@ Plecs {
         Direction     right
       }
       Schematic {
-        Location      [659, 469; 1288, 695]
-        ZoomFactor    1
+        Location      [1025, 646; 2047, 1188]
+        ZoomFactor    1.30957
         SliderPosition [0, 0]
         ShowBrowser   off
         BrowserWidth  100
@@ -693,7 +702,7 @@ Plecs {
       Type          Subsystem
       Name          "QEP Decode"
       Show          on
-      Position      [260, 140]
+      Position      [180, 115]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -714,7 +723,7 @@ Plecs {
         Variable      "pairs"
         Prompt        "Counts per electrical revolution"
         Type          FreeText
-        Value         "M.QepLinePairs*4/M.p"
+        Value         "QepElectricCPR"
         Show          off
         Tunable       off
         TabName       ""
@@ -1198,15 +1207,15 @@ Plecs {
       Type          Scope
       Name          "Electrical Position"
       Show          on
-      Position      [520, 140]
+      Position      [440, 115]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1025, 30; 2047, 1219]
+      Location      [1025, 30; 2047, 1246]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAADhAAAD5/wCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAANAAAA+cAAABjAP///wAAAAIAAAP+AAAAcPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA/4AAABEAP///wAAA/4AAAQQAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA/4AAABEAP///wAAA/4AAAQrAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1299,7 +1308,7 @@ Plecs {
       Type          SignalSwitch
       Name          "Switch"
       Show          off
-      Position      [355, 225]
+      Position      [275, 200]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -1318,13 +1327,13 @@ Plecs {
       Type          ManualSignalSwitch
       Name          "Manual Switch4"
       Show          off
-      Position      [355, 180]
+      Position      [275, 155]
       Direction     down
       Flipped       off
       LabelPosition west
       Parameter {
         Variable      "SwitchState"
-        Value         "2"
+        Value         "1"
         Show          off
       }
     }
@@ -1332,7 +1341,7 @@ Plecs {
       Type          Constant
       Name          "EnableC2"
       Show          off
-      Position      [385, 175]
+      Position      [305, 150]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -1352,15 +1361,15 @@ Plecs {
       Type          Scope
       Name          "Mechanical Position"
       Show          on
-      Position      [690, 95]
+      Position      [525, 70]
       Direction     up
       Flipped       off
-      LabelPosition south
-      Location      [519, 553; 869, 865]
+      LabelPosition north
+      Location      [519, 553; 869, 883]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAV4AAAEZAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAV4AAAErAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1371,7 +1380,7 @@ Plecs {
       TimeRange     "0.0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -1409,10 +1418,10 @@ Plecs {
       Type          Gain
       Name          "Gain"
       Show          on
-      Position      [580, 95]
+      Position      [420, 70]
       Direction     right
       Flipped       off
-      LabelPosition south
+      LabelPosition north
       Parameter {
         Variable      "K"
         Value         "180/pi/M.p"
@@ -1443,15 +1452,15 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [285, 305]
+      Position      [205, 280]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [704, 376; 1054, 616]
+      Location      [1025, 30; 2047, 1210]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAV4AAADRAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA/4AAAR9AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1499,16 +1508,16 @@ Plecs {
     Component {
       Type          Scope
       Name          "Scope1"
-      Show          on
-      Position      [270, 65]
+      Show          off
+      Position      [180, 60]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1025, 30; 2047, 1228]
+      Location      [1025, 30; 2047, 1269]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA/4AAASPAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA/4AAAS4AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1521,7 +1530,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -1597,17 +1606,91 @@ Plecs {
         }
       }
     }
+    Component {
+      Type          Delay
+      Name          "Delay"
+      Show          on
+      Position      [325, 280]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "N"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "X0"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "0.5"
+        Show          on
+      }
+    }
+    Component {
+      Type          LogicalOperator
+      Name          "Logical\nOperator"
+      Show          off
+      Position      [385, 280]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Operator"
+        Value         "6"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "TIC2000_Lib/Digital Out"
+      Name          "Digital Out"
+      Show          on
+      Position      [465, 280]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -20; 25, 20]
+      Parameter {
+        Variable      "Gpio"
+        Value         "34"
+        Show          on
+      }
+      Parameter {
+        Variable      "OutputType"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TargetPortIndices"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Input
+        Position      [-25, 0]
+        Direction     left
+      }
+    }
     Connection {
       Type          Signal
       SrcComponent  "QEP Decode"
       SrcTerminal   2
-      Points        [315, 140]
+      Points        [235, 115]
       Branch {
         DstComponent  "Electrical Position"
         DstTerminal   2
       }
       Branch {
-        Points        [315, 220]
+        Points        [235, 195]
         DstComponent  "Switch"
         DstTerminal   2
       }
@@ -1616,13 +1699,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Hall Decode"
       SrcTerminal   2
-      Points        [315, 230]
+      Points        [235, 205]
       Branch {
         DstComponent  "Switch"
         DstTerminal   3
       }
       Branch {
-        Points        [315, 250; 465, 250; 465, 150]
+        Points        [235, 225; 360, 225; 360, 125]
         DstComponent  "Electrical Position"
         DstTerminal   3
       }
@@ -1638,9 +1721,9 @@ Plecs {
       Type          Signal
       SrcComponent  "QEP Decode"
       SrcTerminal   3
-      Points        [290, 150]
+      Points        [210, 125]
       Branch {
-        Points        [290, 105]
+        Points        [210, 80]
         DstComponent  "QEP OK"
         DstTerminal   1
       }
@@ -1653,7 +1736,7 @@ Plecs {
       Type          Signal
       SrcComponent  "EnableC2"
       SrcTerminal   1
-      Points        [385, 150]
+      Points        [305, 125]
       DstComponent  "Manual Switch4"
       DstTerminal   2
     }
@@ -1661,13 +1744,12 @@ Plecs {
       Type          Signal
       SrcComponent  "Switch"
       SrcTerminal   1
-      Points        [430, 225; 430, 130; 470, 130]
+      Points        [340, 200; 340, 105; 390, 105]
       Branch {
         DstComponent  "Electrical Position"
         DstTerminal   1
       }
       Branch {
-        Points        [470, 95]
         DstComponent  "Gain"
         DstTerminal   1
       }
@@ -1683,13 +1765,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Hall In"
       SrcTerminal   1
-      Points        [210, 230]
+      Points        [130, 205]
       Branch {
         DstComponent  "Hall Decode"
         DstTerminal   1
       }
       Branch {
-        Points        [210, 305]
+        Points        [130, 280]
         DstComponent  "Scope"
         DstTerminal   1
       }
@@ -1698,13 +1780,13 @@ Plecs {
       Type          Signal
       SrcComponent  "QEP"
       SrcTerminal   1
-      Points        [215, 130]
+      Points        [120, 105]
       Branch {
         DstComponent  "QEP Decode"
         DstTerminal   1
       }
       Branch {
-        Points        [215, 55]
+        Points        [120, 50]
         DstComponent  "Scope1"
         DstTerminal   1
       }
@@ -1713,13 +1795,13 @@ Plecs {
       Type          Signal
       SrcComponent  "QEP"
       SrcTerminal   3
-      Points        [210, 140]
+      Points        [130, 115]
       Branch {
         DstComponent  "QEP Decode"
         DstTerminal   4
       }
       Branch {
-        Points        [210, 65]
+        Points        [130, 60]
         DstComponent  "Scope1"
         DstTerminal   2
       }
@@ -1728,21 +1810,38 @@ Plecs {
       Type          Signal
       SrcComponent  "QEP"
       SrcTerminal   2
-      Points        [220, 150]
+      Points        [140, 125]
       Branch {
         DstComponent  "QEP Decode"
         DstTerminal   5
       }
       Branch {
-        Points        [220, 75]
+        Points        [140, 70]
         DstComponent  "Scope1"
         DstTerminal   3
       }
     }
-    Annotation {
-      Name          "<html><body>\n<p align=\"center\">ic not seen in</p>\n<p "
-"align=\"center\">offline simulation!</p></body></html>"
-      Position      [170, 105]
-    } 
+    Connection {
+      Type          Signal
+      SrcComponent  "Delay"
+      SrcTerminal   2
+      DstComponent  "Logical\nOperator"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Logical\nOperator"
+      SrcTerminal   1
+      Points        [420, 280]
+      Branch {
+        DstComponent  "Digital Out"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [420, 250; 285, 250; 285, 280]
+        DstComponent  "Delay"
+        DstTerminal   1
+      }
+    }
   }
 }
