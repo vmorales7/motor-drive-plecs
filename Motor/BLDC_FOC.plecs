@@ -6,12 +6,12 @@ Plecs {
   TimeSpan      "2"
   Timeout       ""
   Solver        "dopri"
-  MaxStep       "1e-3"
+  MaxStep       "1e-4"
   InitStep      "-1"
   FixedStep     "1e-3"
   Refine        "1"
   ZCStepSize    "1e-9"
-  RelTol        "1e-3"
+  RelTol        "1e-4"
   AbsTol        "-1"
   TurnOnThreshold "0"
   NonIdealSwitchResistance "1"
@@ -100,15 +100,15 @@ Plecs {
   ScriptsDialogSplitterPos "0"
   Schematic {
     Location      [0, 24; 2048, 1190]
-    ZoomFactor    1.71499
-    SliderPosition [0, 0]
+    ZoomFactor    1.96258
+    SliderPosition [117, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
       Type          Subsystem
       Name          "Controller"
       Show          on
-      Position      [320, 185]
+      Position      [435, 175]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -258,31 +258,25 @@ Plecs {
         Type          Input
         Position      [-75, -40]
         Direction     left
-        Index         "1"
+        Index         "2"
       }
       Terminal {
         Type          Input
         Position      [-75, 0]
         Direction     left
-        Index         "2"
+        Index         "3"
       }
       Terminal {
         Type          Input
         Position      [-75, 15]
         Direction     left
-        Index         "3"
+        Index         "4"
       }
       Terminal {
         Type          Output
         Position      [79, -30]
         Direction     right
         Index         "1"
-      }
-      Terminal {
-        Type          Input
-        Position      [-75, 35]
-        Direction     left
-        Index         "4"
       }
       Terminal {
         Type          Output
@@ -308,9 +302,15 @@ Plecs {
         Direction     left
         Index         "6"
       }
+      Terminal {
+        Type          Input
+        Position      [-75, -10]
+        Direction     left
+        Index         "1"
+      }
       Schematic {
         Location      [0, 24; 2048, 1190]
-        ZoomFactor    1.14436
+        ZoomFactor    0.999995
         SliderPosition [0, 0]
         ShowBrowser   off
         BrowserWidth  100
@@ -319,7 +319,7 @@ Plecs {
           SrcComponent  "TIC2000_Lib/ADC"
           Name          "ADC-C"
           Show          on
-          Position      [310, 145]
+          Position      [235, 785]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -395,7 +395,7 @@ Plecs {
           SrcComponent  "TIC2000_Lib/Counter"
           Name          "QEP"
           Show          on
-          Position      [90, 750]
+          Position      [565, 820]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -446,7 +446,7 @@ Plecs {
           SrcComponent  "TIC2000_Lib/Digital In"
           Name          "Hall In"
           Show          on
-          Position      [90, 840]
+          Position      [565, 910]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -476,8 +476,8 @@ Plecs {
           Type          Reference
           SrcComponent  "TIC2000_Lib/PWM"
           Name          "PWM"
-          Show          on
-          Position      [180, 195]
+          Show          off
+          Position      [135, 860]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -520,7 +520,7 @@ Plecs {
           Parameter {
             Variable      "FixedDeadTime"
             Value         "D.Tdt"
-            Show          on
+            Show          off
           }
           Parameter {
             Variable      "MinDeadTime"
@@ -695,61 +695,10 @@ Plecs {
         }
         Component {
           Type          Reference
-          SrcComponent  "TIC2000_Lib/Digital In"
-          Name          "Fault"
-          Show          on
-          Position      [140, 45]
-          Direction     up
-          Flipped       off
-          LabelPosition south
-          Frame         [-25, -20; 25, 20]
-          Parameter {
-            Variable      "Gpio"
-            Value         "din_fault"
-            Show          off
-          }
-          Parameter {
-            Variable      "InputType"
-            Value         "2"
-            Show          off
-          }
-          Parameter {
-            Variable      "TargetPortIndices"
-            Value         "5"
-            Show          off
-          }
-          Terminal {
-            Type          Output
-            Position      [29, 0]
-            Direction     right
-          }
-        }
-        Component {
-          Type          Display
-          Name          "OK?"
-          Show          on
-          Position      [220, 45]
-          Direction     up
-          Flipped       off
-          LabelPosition south
-          Frame         [-21, -11; 21, 11]
-          Parameter {
-            Variable      "Notation"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "Precision"
-            Value         "0"
-            Show          off
-          }
-        }
-        Component {
-          Type          Reference
           SrcComponent  "TIC2000_Lib/Control Task\\nTrigger"
           Name          "Control Task\nTrigger"
           Show          off
-          Position      [420, 375]
+          Position      [375, 990]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -759,7 +708,7 @@ Plecs {
           SrcComponent  "TIC2000_Lib_Deprecated/Powerstage"
           Name          "Powerstage"
           Show          on
-          Position      [545, 45]
+          Position      [255, 80]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -806,7 +755,7 @@ Plecs {
           }
           Parameter {
             Variable      "TargetPortIndices"
-            Value         "6"
+            Value         "5"
             Show          off
           }
           Terminal {
@@ -824,7 +773,7 @@ Plecs {
           Type          Subsystem
           Name          "Enabled\nSubsystem"
           Show          off
-          Position      [470, 205]
+          Position      [375, 850]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -971,7 +920,7 @@ Plecs {
           Type          LogicalOperator
           Name          "Logical\nOperator"
           Show          off
-          Position      [470, 145]
+          Position      [375, 800]
           Direction     right
           Flipped       on
           LabelPosition east
@@ -990,7 +939,7 @@ Plecs {
           Type          Sum
           Name          "Subtract"
           Show          off
-          Position      [510, 235]
+          Position      [415, 880]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -1019,13 +968,13 @@ Plecs {
           Type          ManualSignalSwitch
           Name          "Enable"
           Show          on
-          Position      [410, 45]
+          Position      [120, 80]
           Direction     right
           Flipped       off
           LabelPosition south
           Parameter {
             Variable      "SwitchState"
-            Value         "1"
+            Value         "2"
             Show          off
           }
         }
@@ -1034,7 +983,7 @@ Plecs {
           SrcComponent  "Components/Control/Transformations/3ph->RRF"
           Name          "3ph->RRF1"
           Show          off
-          Position      [960, 305]
+          Position      [600, 1205]
           Direction     up
           Flipped       on
           LabelPosition north
@@ -1120,7 +1069,7 @@ Plecs {
           }
           Parameter {
             Variable      "TargetPortIndices"
-            Value         "7"
+            Value         "6"
             Show          off
           }
           Terminal {
@@ -1133,15 +1082,15 @@ Plecs {
           Type          Scope
           Name          "Currents"
           Show          on
-          Position      [420, 480]
+          Position      [135, 215]
           Direction     up
           Flipped       off
           LabelPosition north
-          Location      [0, 24; 2048, 1257]
+          Location      [0, 23; 2048, 1211]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASy"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASF"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1212,7 +1161,7 @@ Plecs {
           Type          Display
           Name          "QEP OK"
           Show          on
-          Position      [265, 715]
+          Position      [740, 785]
           Direction     up
           Flipped       off
           LabelPosition north
@@ -1232,7 +1181,7 @@ Plecs {
           Type          Subsystem
           Name          "Hall Decode"
           Show          on
-          Position      [180, 840]
+          Position      [655, 910]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -1693,7 +1642,7 @@ Plecs {
           Type          Subsystem
           Name          "QEP Decode"
           Show          on
-          Position      [180, 750]
+          Position      [655, 820]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -2198,7 +2147,7 @@ Plecs {
           Type          Scope
           Name          "Electrical Position"
           Show          on
-          Position      [395, 785]
+          Position      [870, 855]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -2299,7 +2248,7 @@ Plecs {
           Type          SignalSwitch
           Name          "Switch"
           Show          off
-          Position      [275, 835]
+          Position      [750, 905]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2316,32 +2265,12 @@ Plecs {
         }
         Component {
           Type          Display
-          Name          "Vdc"
+          Name          "idq vals"
           Show          on
-          Position      [455, 330]
+          Position      [135, 255]
           Direction     up
           Flipped       off
           LabelPosition east
-          Frame         [-26, -11; 26, 11]
-          Parameter {
-            Variable      "Notation"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "Precision"
-            Value         "2"
-            Show          off
-          }
-        }
-        Component {
-          Type          Display
-          Name          "Display"
-          Show          off
-          Position      [420, 520]
-          Direction     up
-          Flipped       off
-          LabelPosition south
           Frame         [-26, -21; 26, 21]
           Parameter {
             Variable      "Notation"
@@ -2358,7 +2287,7 @@ Plecs {
           Type          ManualSignalSwitch
           Name          "Manual Switch4"
           Show          off
-          Position      [275, 790]
+          Position      [750, 860]
           Direction     down
           Flipped       off
           LabelPosition west
@@ -2372,7 +2301,7 @@ Plecs {
           Type          Constant
           Name          "EnableC2"
           Show          off
-          Position      [305, 785]
+          Position      [780, 855]
           Direction     up
           Flipped       off
           LabelPosition east
@@ -2393,7 +2322,7 @@ Plecs {
           SrcComponent  "TIC2000_Lib/ADC"
           Name          "ADC-B"
           Show          on
-          Position      [310, 235]
+          Position      [235, 880]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -2445,7 +2374,7 @@ Plecs {
           }
           Parameter {
             Variable      "TargetPortIndices"
-            Value         "8"
+            Value         "7"
             Show          off
           }
           Terminal {
@@ -2469,7 +2398,7 @@ Plecs {
           SrcComponent  "TIC2000_Lib/ADC"
           Name          "ADC-A"
           Show          on
-          Position      [310, 325]
+          Position      [235, 965]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -2521,7 +2450,7 @@ Plecs {
           }
           Parameter {
             Variable      "TargetPortIndices"
-            Value         "9"
+            Value         "8"
             Show          off
           }
           Terminal {
@@ -2544,7 +2473,7 @@ Plecs {
           Type          SignalDemux
           Name          "Demux1"
           Show          off
-          Position      [370, 325]
+          Position      [285, 965]
           Direction     right
           Flipped       on
           LabelPosition south
@@ -2558,7 +2487,7 @@ Plecs {
           Type          SignalMux
           Name          "Mux"
           Show          off
-          Position      [410, 235]
+          Position      [315, 880]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2572,7 +2501,7 @@ Plecs {
           Type          Display
           Name          "PWM en"
           Show          on
-          Position      [665, 45]
+          Position      [355, 80]
           Direction     up
           Flipped       off
           LabelPosition east
@@ -2592,7 +2521,7 @@ Plecs {
           Type          Constant
           Name          "EnableC"
           Show          off
-          Position      [355, 30]
+          Position      [65, 65]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2612,7 +2541,7 @@ Plecs {
           Type          Constant
           Name          "EnableC3"
           Show          off
-          Position      [355, 60]
+          Position      [65, 95]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2632,7 +2561,7 @@ Plecs {
           Type          Scope
           Name          "Scope"
           Show          off
-          Position      [180, 695]
+          Position      [655, 765]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -2733,10 +2662,10 @@ Plecs {
           Type          Goto
           Name          "Goto"
           Show          off
-          Position      [410, 310]
-          Direction     up
+          Position      [450, 970]
+          Direction     right
           Flipped       off
-          LabelPosition east
+          LabelPosition south
           Parameter {
             Variable      "Tag"
             Value         "vdc"
@@ -2757,7 +2686,7 @@ Plecs {
           Type          Constant
           Name          "Constant"
           Show          on
-          Position      [1470, 805]
+          Position      [1490, 1025]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2778,7 +2707,7 @@ Plecs {
           Type          Goto
           Name          "Goto1"
           Show          off
-          Position      [370, 705]
+          Position      [845, 775]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2802,7 +2731,7 @@ Plecs {
           Type          From
           Name          "From1"
           Show          off
-          Position      [920, 295]
+          Position      [560, 1195]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2826,7 +2755,7 @@ Plecs {
           Type          Subsystem
           Name          "Current PI d-axis"
           Show          on
-          Position      [1080, 700]
+          Position      [1000, 470]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -3278,7 +3207,7 @@ Plecs {
           Type          Product
           Name          "Product"
           Show          off
-          Position      [1005, 730]
+          Position      [925, 500]
           Direction     left
           Flipped       on
           LabelPosition west
@@ -3307,7 +3236,7 @@ Plecs {
           Type          Product
           Name          "Product1"
           Show          off
-          Position      [1010, 845]
+          Position      [930, 615]
           Direction     left
           Flipped       on
           LabelPosition west
@@ -3336,7 +3265,7 @@ Plecs {
           Type          Subsystem
           Name          "Current PI q -axis"
           Show          on
-          Position      [1085, 815]
+          Position      [1005, 585]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -3788,7 +3717,7 @@ Plecs {
           Type          Sum
           Name          "Sum14"
           Show          off
-          Position      [970, 690]
+          Position      [890, 460]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -3817,7 +3746,7 @@ Plecs {
           Type          From
           Name          "From3"
           Show          off
-          Position      [930, 690]
+          Position      [850, 460]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3841,7 +3770,7 @@ Plecs {
           Type          From
           Name          "From4"
           Show          off
-          Position      [930, 715]
+          Position      [850, 485]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3865,7 +3794,7 @@ Plecs {
           Type          Goto
           Name          "Goto2"
           Show          off
-          Position      [650, 70]
+          Position      [355, 105]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3889,7 +3818,7 @@ Plecs {
           Type          From
           Name          "From5"
           Show          off
-          Position      [940, 875]
+          Position      [860, 645]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3913,7 +3842,7 @@ Plecs {
           Type          Sum
           Name          "Sum15"
           Show          off
-          Position      [970, 805]
+          Position      [890, 575]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -3942,7 +3871,7 @@ Plecs {
           Type          From
           Name          "From6"
           Show          off
-          Position      [940, 805]
+          Position      [860, 575]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3966,7 +3895,7 @@ Plecs {
           Type          From
           Name          "From7"
           Show          off
-          Position      [940, 830]
+          Position      [860, 600]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3990,7 +3919,7 @@ Plecs {
           Type          From
           Name          "From10"
           Show          off
-          Position      [960, 765]
+          Position      [880, 535]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4014,7 +3943,7 @@ Plecs {
           Type          Constant
           Name          "id*"
           Show          on
-          Position      [815, 60]
+          Position      [695, 90]
           Direction     right
           Flipped       off
           LabelPosition west
@@ -4034,7 +3963,7 @@ Plecs {
           Type          Goto
           Name          "Goto5"
           Show          off
-          Position      [855, 60]
+          Position      [735, 90]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4058,7 +3987,7 @@ Plecs {
           Type          Constant
           Name          "iq*"
           Show          on
-          Position      [815, 90]
+          Position      [695, 120]
           Direction     right
           Flipped       off
           LabelPosition west
@@ -4078,7 +4007,7 @@ Plecs {
           Type          Goto
           Name          "Goto6"
           Show          off
-          Position      [855, 90]
+          Position      [735, 120]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4102,7 +4031,7 @@ Plecs {
           Type          SignalDemux
           Name          "Demux"
           Show          off
-          Position      [1010, 315]
+          Position      [640, 1215]
           Direction     right
           Flipped       on
           LabelPosition south
@@ -4116,7 +4045,7 @@ Plecs {
           Type          Goto
           Name          "Goto7"
           Show          off
-          Position      [1045, 305]
+          Position      [665, 1205]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4140,7 +4069,7 @@ Plecs {
           Type          Goto
           Name          "Goto8"
           Show          off
-          Position      [1045, 325]
+          Position      [665, 1225]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4164,7 +4093,7 @@ Plecs {
           Type          Goto
           Name          "Goto9"
           Show          off
-          Position      [545, 235]
+          Position      [450, 880]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4188,7 +4117,7 @@ Plecs {
           Type          From
           Name          "From11"
           Show          off
-          Position      [920, 320]
+          Position      [560, 1215]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4209,31 +4138,11 @@ Plecs {
           }
         }
         Component {
-          Type          Constant
-          Name          "Vdq*"
-          Show          on
-          Position      [895, 255]
-          Direction     right
-          Flipped       off
-          LabelPosition west
-          Frame         [-20, -10; 20, 10]
-          Parameter {
-            Variable      "Value"
-            Value         "[1 0]"
-            Show          off
-          }
-          Parameter {
-            Variable      "DataType"
-            Value         "10"
-            Show          off
-          }
-        }
-        Component {
           Type          Reference
           SrcComponent  "Components/Control/Transformations/RRF->3ph"
           Name          "RRF->3ph"
           Show          off
-          Position      [1020, 235]
+          Position      [600, 1150]
           Direction     up
           Flipped       on
           LabelPosition north
@@ -4255,27 +4164,13 @@ Plecs {
           }
         }
         Component {
-          Type          ManualSignalSwitch
-          Name          "Manual Switch3"
-          Show          off
-          Position      [960, 240]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Parameter {
-            Variable      "SwitchState"
-            Value         "1"
-            Show          off
-          }
-        }
-        Component {
           Type          From
           Name          "From2"
           Show          off
-          Position      [985, 220]
-          Direction     down
+          Position      [560, 1140]
+          Direction     right
           Flipped       off
-          LabelPosition west
+          LabelPosition south
           Parameter {
             Variable      "Tag"
             Value         "theta_e"
@@ -4296,7 +4191,7 @@ Plecs {
           Type          Goto
           Name          "Goto10"
           Show          off
-          Position      [1060, 235]
+          Position      [665, 1150]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4320,7 +4215,7 @@ Plecs {
           Type          From
           Name          "From13"
           Show          off
-          Position      [360, 475]
+          Position      [75, 210]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4344,7 +4239,7 @@ Plecs {
           Type          Goto
           Name          "Goto11"
           Show          off
-          Position      [1045, 285]
+          Position      [665, 1185]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4368,7 +4263,7 @@ Plecs {
           Type          From
           Name          "From14"
           Show          off
-          Position      [360, 505]
+          Position      [75, 240]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4392,7 +4287,7 @@ Plecs {
           Type          Product
           Name          "Divide1"
           Show          off
-          Position      [1010, 485]
+          Position      [1710, 430]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -4421,7 +4316,7 @@ Plecs {
           Type          Subsystem
           Name          "V*->d"
           Show          on
-          Position      [1065, 485]
+          Position      [1765, 430]
           Direction     up
           Flipped       off
           LabelPosition north
@@ -4572,7 +4467,7 @@ Plecs {
           Type          MinMax
           Name          "Min/Max"
           Show          off
-          Position      [950, 505]
+          Position      [1650, 450]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -4591,7 +4486,7 @@ Plecs {
           Type          Constant
           Name          "EnableC1"
           Show          off
-          Position      [905, 520]
+          Position      [1605, 465]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4611,7 +4506,7 @@ Plecs {
           Type          Saturation
           Name          "Saturation"
           Show          off
-          Position      [1130, 485]
+          Position      [1830, 430]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4630,7 +4525,7 @@ Plecs {
           Type          From
           Name          "From"
           Show          off
-          Position      [905, 500]
+          Position      [1605, 445]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4654,7 +4549,7 @@ Plecs {
           Type          From
           Name          "From12"
           Show          off
-          Position      [905, 480]
+          Position      [1605, 425]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4678,7 +4573,7 @@ Plecs {
           Type          Goto
           Name          "Goto12"
           Show          off
-          Position      [1170, 485]
+          Position      [1870, 430]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4702,7 +4597,7 @@ Plecs {
           Type          From
           Name          "From15"
           Show          off
-          Position      [130, 195]
+          Position      [85, 860]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4726,7 +4621,7 @@ Plecs {
           Type          SignalMux
           Name          "Mux2"
           Show          off
-          Position      [1165, 780]
+          Position      [1085, 550]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4740,7 +4635,7 @@ Plecs {
           Type          Goto
           Name          "Goto3"
           Show          off
-          Position      [1190, 780]
+          Position      [1110, 550]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4764,7 +4659,7 @@ Plecs {
           Type          From
           Name          "From8"
           Show          off
-          Position      [905, 225]
+          Position      [560, 1160]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -4784,12 +4679,148 @@ Plecs {
             Show          off
           }
         }
-        Connection {
-          Type          Signal
-          SrcComponent  "Fault"
-          SrcTerminal   1
-          DstComponent  "OK?"
-          DstTerminal   1
+        Component {
+          Type          Goto
+          Name          "Goto4"
+          Show          off
+          Position      [190, 105]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "en"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "2"
+            Show          off
+          }
+        }
+        Component {
+          Type          From
+          Name          "From9"
+          Show          off
+          Position      [375, 765]
+          Direction     down
+          Flipped       off
+          LabelPosition west
+          Parameter {
+            Variable      "Tag"
+            Value         "en"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          From
+          Name          "From16"
+          Show          off
+          Position      [75, 310]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "vdc"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Display
+          Name          "Vdc"
+          Show          on
+          Position      [135, 310]
+          Direction     up
+          Flipped       off
+          LabelPosition east
+          Frame         [-26, -11; 26, 11]
+          Parameter {
+            Variable      "Notation"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Precision"
+            Value         "2"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "TIC2000_Lib/Digital In"
+          Name          "OT detect"
+          Show          on
+          Position      [85, 360]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-25, -20; 25, 20]
+          Parameter {
+            Variable      "Gpio"
+            Value         "din_fault"
+            Show          off
+          }
+          Parameter {
+            Variable      "InputType"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "TargetPortIndices"
+            Value         "9"
+            Show          off
+          }
+          Terminal {
+            Type          Output
+            Position      [29, 0]
+            Direction     right
+          }
+        }
+        Component {
+          Type          Display
+          Name          "temp OK?"
+          Show          on
+          Position      [150, 360]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-21, -11; 21, 11]
+          Parameter {
+            Variable      "Notation"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Precision"
+            Value         "0"
+            Show          off
+          }
         }
         Connection {
           Type          Signal
@@ -4805,20 +4836,6 @@ Plecs {
           Points        [1340, 85; 1340, 130]
           DstComponent  "Logical\nOperator1"
           DstTerminal   2
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Enable"
-          SrcTerminal   1
-          Points        [470, 45]
-          Branch {
-            DstComponent  "Powerstage"
-            DstTerminal   1
-          }
-          Branch {
-            DstComponent  "Logical\nOperator"
-            DstTerminal   2
-          }
         }
         Connection {
           Type          Signal
@@ -4838,14 +4855,14 @@ Plecs {
           Type          Signal
           SrcComponent  "QEP Decode"
           SrcTerminal   2
-          Points        [235, 750]
+          Points        [710, 820]
           Branch {
-            Points        [335, 750; 335, 785]
+            Points        [810, 820; 810, 855]
             DstComponent  "Electrical Position"
             DstTerminal   2
           }
           Branch {
-            Points        [235, 830]
+            Points        [710, 900]
             DstComponent  "Switch"
             DstTerminal   2
           }
@@ -4854,13 +4871,13 @@ Plecs {
           Type          Signal
           SrcComponent  "Hall Decode"
           SrcTerminal   2
-          Points        [235, 840]
+          Points        [710, 910]
           Branch {
             DstComponent  "Switch"
             DstTerminal   3
           }
           Branch {
-            Points        [235, 860; 335, 860; 335, 795]
+            Points        [710, 930; 810, 930; 810, 865]
             DstComponent  "Electrical Position"
             DstTerminal   3
           }
@@ -4876,7 +4893,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Enabled\nSubsystem"
           SrcTerminal   2
-          Points        [510, 205]
+          Points        [415, 850]
           DstComponent  "Subtract"
           DstTerminal   2
         }
@@ -4891,9 +4908,9 @@ Plecs {
           Type          Signal
           SrcComponent  "QEP Decode"
           SrcTerminal   3
-          Points        [215, 760]
+          Points        [690, 830]
           Branch {
-            Points        [215, 715]
+            Points        [690, 785]
             DstComponent  "QEP OK"
             DstTerminal   1
           }
@@ -4906,7 +4923,7 @@ Plecs {
           Type          Signal
           SrcComponent  "EnableC2"
           SrcTerminal   1
-          Points        [305, 760]
+          Points        [780, 830]
           DstComponent  "Manual Switch4"
           DstTerminal   2
         }
@@ -4928,9 +4945,9 @@ Plecs {
           Type          Signal
           SrcComponent  "Mux"
           SrcTerminal   1
-          Points        [435, 235]
+          Points        [335, 880]
           Branch {
-            Points        [435, 205]
+            Points        [335, 850]
             DstComponent  "Enabled\nSubsystem"
             DstTerminal   1
           }
@@ -4950,7 +4967,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Demux1"
           SrcTerminal   2
-          Points        [380, 320; 380, 245]
+          Points        [295, 960; 295, 890]
           DstComponent  "Mux"
           DstTerminal   4
         }
@@ -4958,7 +4975,7 @@ Plecs {
           Type          Signal
           SrcComponent  "ADC-C"
           SrcTerminal   1
-          Points        [380, 145; 380, 225]
+          Points        [295, 785; 295, 870]
           DstComponent  "Mux"
           DstTerminal   2
         }
@@ -4966,7 +4983,7 @@ Plecs {
           Type          Signal
           SrcComponent  "EnableC"
           SrcTerminal   1
-          Points        [380, 30]
+          Points        [90, 65]
           DstComponent  "Enable"
           DstTerminal   2
         }
@@ -4974,7 +4991,7 @@ Plecs {
           Type          Signal
           SrcComponent  "EnableC3"
           SrcTerminal   1
-          Points        [380, 60]
+          Points        [90, 95]
           DstComponent  "Enable"
           DstTerminal   3
         }
@@ -4982,28 +4999,14 @@ Plecs {
           Type          Signal
           SrcComponent  "QEP"
           SrcTerminal   1
-          Points        [120, 740]
+          Points        [595, 810]
           Branch {
             DstComponent  "QEP Decode"
             DstTerminal   1
           }
           Branch {
-            Points        [120, 685]
+            Points        [595, 755]
             DstComponent  "Scope"
-            DstTerminal   1
-          }
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Demux1"
-          SrcTerminal   3
-          Points        [410, 330]
-          Branch {
-            DstComponent  "Vdc"
-            DstTerminal   1
-          }
-          Branch {
-            DstComponent  "Goto"
             DstTerminal   1
           }
         }
@@ -5011,13 +5014,13 @@ Plecs {
           Type          Signal
           SrcComponent  "QEP"
           SrcTerminal   3
-          Points        [130, 750]
+          Points        [605, 820]
           Branch {
             DstComponent  "QEP Decode"
             DstTerminal   4
           }
           Branch {
-            Points        [130, 695]
+            Points        [605, 765]
             DstComponent  "Scope"
             DstTerminal   2
           }
@@ -5026,13 +5029,13 @@ Plecs {
           Type          Signal
           SrcComponent  "QEP"
           SrcTerminal   2
-          Points        [140, 760]
+          Points        [615, 830]
           Branch {
             DstComponent  "QEP Decode"
             DstTerminal   5
           }
           Branch {
-            Points        [140, 705]
+            Points        [615, 775]
             DstComponent  "Scope"
             DstTerminal   3
           }
@@ -5041,13 +5044,13 @@ Plecs {
           Type          Signal
           SrcComponent  "Switch"
           SrcTerminal   1
-          Points        [325, 835; 325, 775]
+          Points        [800, 905; 800, 845]
           Branch {
             DstComponent  "Electrical Position"
             DstTerminal   1
           }
           Branch {
-            Points        [325, 705]
+            Points        [800, 775]
             DstComponent  "Goto1"
             DstTerminal   1
           }
@@ -5056,7 +5059,7 @@ Plecs {
           Type          Signal
           SrcComponent  "From1"
           SrcTerminal   1
-          Points        [930, 295]
+          Points        [570, 1195]
           DstComponent  "3ph->RRF1"
           DstTerminal   3
         }
@@ -5064,7 +5067,7 @@ Plecs {
           Type          Signal
           SrcComponent  "From11"
           SrcTerminal   1
-          Points        [930, 320]
+          Points        [570, 1215]
           DstComponent  "3ph->RRF1"
           DstTerminal   1
         }
@@ -5072,7 +5075,7 @@ Plecs {
           Type          Event
           SrcComponent  "ADC-A"
           SrcTerminal   2
-          Points        [345, 340; 345, 360; 385, 360; 385, 375]
+          Points        [270, 980; 270, 990]
           DstComponent  "Control Task\nTrigger"
           DstTerminal   1
         }
@@ -5115,13 +5118,13 @@ Plecs {
           Type          Signal
           SrcComponent  "Powerstage"
           SrcTerminal   2
-          Points        [620, 45]
+          Points        [310, 80]
           Branch {
             DstComponent  "PWM en"
             DstTerminal   1
           }
           Branch {
-            Points        [620, 70]
+            Points        [310, 105]
             DstComponent  "Goto2"
             DstTerminal   1
           }
@@ -5158,14 +5161,14 @@ Plecs {
           Type          Signal
           SrcComponent  "Current PI d-axis"
           SrcTerminal   3
-          Points        [1140, 690]
+          Points        [1060, 460]
           Branch {
-            Points        [1140, 765; 1010, 765]
+            Points        [1060, 535; 930, 535]
             DstComponent  "Product"
             DstTerminal   2
           }
           Branch {
-            Points        [1150, 690]
+            Points        [1070, 460]
             DstComponent  "Mux2"
             DstTerminal   2
           }
@@ -5174,14 +5177,14 @@ Plecs {
           Type          Signal
           SrcComponent  "Current PI q -axis"
           SrcTerminal   3
-          Points        [1140, 805]
+          Points        [1060, 575]
           Branch {
-            Points        [1140, 875]
+            Points        [1060, 645]
             DstComponent  "Product1"
             DstTerminal   2
           }
           Branch {
-            Points        [1150, 805]
+            Points        [1070, 575]
             DstComponent  "Mux2"
             DstTerminal   3
           }
@@ -5190,7 +5193,7 @@ Plecs {
           Type          Signal
           SrcComponent  "From10"
           SrcTerminal   1
-          Points        [1000, 765]
+          Points        [920, 535]
           DstComponent  "Product"
           DstTerminal   3
         }
@@ -5212,7 +5215,6 @@ Plecs {
           Type          Signal
           SrcComponent  "Demux"
           SrcTerminal   2
-          Points        [1020, 310; 1020, 305]
           DstComponent  "Goto7"
           DstTerminal   1
         }
@@ -5220,7 +5222,6 @@ Plecs {
           Type          Signal
           SrcComponent  "Demux"
           SrcTerminal   3
-          Points        [1020, 320; 1020, 325]
           DstComponent  "Goto8"
           DstTerminal   1
         }
@@ -5233,34 +5234,11 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Manual Switch3"
-          SrcTerminal   1
-          DstComponent  "RRF->3ph"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Vdq*"
-          SrcTerminal   1
-          Points        [925, 255; 925, 245]
-          DstComponent  "Manual Switch3"
-          DstTerminal   3
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "From2"
           SrcTerminal   1
-          Points        [985, 230]
+          Points        [570, 1140]
           DstComponent  "RRF->3ph"
           DstTerminal   3
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "From8"
-          SrcTerminal   1
-          Points        [925, 225; 925, 235]
-          DstComponent  "Manual Switch3"
-          DstTerminal   2
         }
         Connection {
           Type          Signal
@@ -5280,31 +5258,14 @@ Plecs {
           Type          Signal
           SrcComponent  "3ph->RRF1"
           SrcTerminal   2
-          Points        [985, 305]
+          Points        [620, 1205]
           Branch {
-            Points        [985, 315]
             DstComponent  "Demux"
             DstTerminal   1
           }
           Branch {
-            Points        [985, 285]
+            Points        [620, 1185]
             DstComponent  "Goto11"
-            DstTerminal   1
-          }
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "From14"
-          SrcTerminal   1
-          Points        [375, 505]
-          Branch {
-            Points        [375, 485]
-            DstComponent  "Currents"
-            DstTerminal   2
-          }
-          Branch {
-            Points        [375, 520]
-            DstComponent  "Display"
             DstTerminal   1
           }
         }
@@ -5326,7 +5287,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Min/Max"
           SrcTerminal   1
-          Points        [970, 490]
+          Points        [1670, 435]
           DstComponent  "Divide1"
           DstTerminal   3
         }
@@ -5362,23 +5323,21 @@ Plecs {
           Type          Event
           SrcComponent  "PWM"
           SrcTerminal   3
-          Points        [250, 175]
+          Points        [185, 840; 185, 835; 195, 835]
           Branch {
-            Points        [250, 95; 310, 95]
+            Points        [195, 740; 235, 740]
             DstComponent  "ADC-C"
             DstTerminal   3
           }
           Branch {
-            Points        [250, 195]
-            Branch {
-              DstComponent  "ADC-B"
-              DstTerminal   3
-            }
-            Branch {
-              Points        [250, 285]
-              DstComponent  "ADC-A"
-              DstTerminal   3
-            }
+            Points        [235, 835]
+            DstComponent  "ADC-B"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [195, 925]
+            DstComponent  "ADC-A"
+            DstTerminal   3
           }
         }
         Connection {
@@ -5388,39 +5347,105 @@ Plecs {
           DstComponent  "Goto3"
           DstTerminal   1
         }
+        Connection {
+          Type          Signal
+          SrcComponent  "From8"
+          SrcTerminal   1
+          Points        [570, 1160]
+          DstComponent  "RRF->3ph"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Enable"
+          SrcTerminal   1
+          Points        [170, 80]
+          Branch {
+            DstComponent  "Powerstage"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "Goto4"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From9"
+          SrcTerminal   1
+          DstComponent  "Logical\nOperator"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From16"
+          SrcTerminal   1
+          DstComponent  "Vdc"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Demux1"
+          SrcTerminal   3
+          DstComponent  "Goto"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From14"
+          SrcTerminal   1
+          Points        [90, 240]
+          Branch {
+            Points        [90, 220]
+            DstComponent  "Currents"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [90, 255]
+            DstComponent  "idq vals"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "OT detect"
+          SrcTerminal   1
+          DstComponent  "temp OK?"
+          DstTerminal   1
+        }
         Annotation {
-          Name          "<html><body>\n<p align=\"center\">Add filtering to Vd"
-"c?</p></body></html>"
-          Position      [480, 300]
+          Name          "<html><body>\n<p align=\"center\">Add filtering?</p><"
+"/body></html>"
+          Position      [390, 930]
         } 
         Annotation {
           Name          "<html><body>\n<p align=\"center\">IMPORTANT: </p>\n<p"
 " align=\"center\">Make sure JP6 &amp; J5 is populated!</p>\n<p align=\"center"
 "\">JP1,2,3 unconnected</p></body></html>"
-          Position      [535, 775]
+          Position      [1010, 845]
         } 
         Annotation {
           Name          "<html><body>\n<p><span style=\" font-size:12px;\">Hal"
 "l deactivated!</span></p></body></html>"
-          Position      [285, 875]
+          Position      [760, 945]
         } 
         Annotation {
           Name          "<html><body>\n<p><span style=\" font-size:12px;\">ADC"
 " C -&gt; Ia</span></p></body></html>"
-          Position      [370, 130]
+          Position      [300, 770]
         } 
         Annotation {
           Name          "<html><body>\n<p>ADC A -&gt; Ic + Vc</p></body></html"
 ">"
-          Position      [310, 380]
+          Position      [160, 965]
         } 
         Annotation {
           Name          "<html><body>\n<p>Low to high to enable</p></body></ht"
 "ml>"
-          Position      [385, 80]
+          Position      [95, 115]
         } 
         RectangleAnnotation {
-          Position     [245, 780]
+          Position     [720, 850]
           Width        400
           Height       240
           CornerRadius 3
@@ -5433,15 +5458,15 @@ Plecs {
         Annotation {
           Name          "<html><body>\n<p>Control updated only when new ADC va"
 "lue ready</p></body></html>"
-          Position      [575, 375]
+          Position      [300, 1015]
         } 
         Annotation {
           Name          "<html><body>\n<p>Rotor position estimation</p></body>"
 "</html>"
-          Position      [115, 645]
+          Position      [590, 715]
         } 
         RectangleAnnotation {
-          Position     [1045, 500]
+          Position     [1745, 445]
           Width        360
           Height       110
           CornerRadius 3
@@ -5453,12 +5478,12 @@ Plecs {
         } 
         Annotation {
           Name          "<html><body>\n<p>index generation</p></body></html>"
-          Position      [905, 430]
+          Position      [1605, 375]
         } 
         RectangleAnnotation {
-          Position     [970, 270]
-          Width        260
-          Height       160
+          Position     [605, 1180]
+          Width        190
+          Height       120
           CornerRadius 3
           Thickness    2
           PenColor     4278190080
@@ -5469,7 +5494,53 @@ Plecs {
         Annotation {
           Name          "<html><body>\n<p>Clarke-Park transformation</p></body"
 "></html>"
-          Position      [905, 175]
+          Position      [575, 1105]
+        } 
+        RectangleAnnotation {
+          Position     [265, 885]
+          Width        460
+          Height       310
+          CornerRadius 3
+          Thickness    2
+          PenColor     4278190080
+          PenAlpha     1
+          BrushColor   0
+          BrushAlpha   0
+        } 
+        Annotation {
+          Name          "<html><body>\n<p>Input / output</p></body></html>"
+          Position      [70, 715]
+        } 
+        RectangleAnnotation {
+          Position     [235, 90]
+          Width        410
+          Height       100
+          CornerRadius 3
+          Thickness    2
+          PenColor     4278190080
+          PenAlpha     1
+          BrushColor   0
+          BrushAlpha   0
+        } 
+        Annotation {
+          Name          "<html><body>\n<p>Enable system: low to hight to enabl"
+"e</p></body></html>"
+          Position      [120, 30]
+        } 
+        RectangleAnnotation {
+          Position     [125, 295]
+          Width        170
+          Height       230
+          CornerRadius 3
+          Thickness    2
+          PenColor     4278190080
+          PenAlpha     1
+          BrushColor   0
+          BrushAlpha   0
+        } 
+        Annotation {
+          Name          "<html><body>\n<p>Measurements</p></body></html>"
+          Position      [75, 170]
         } 
       }
     }
@@ -5478,7 +5549,7 @@ Plecs {
       SrcComponent  "Components/Electrical/Machines/Perm.-Magnet SM"
       Name          "PMSM"
       Show          on
-      Position      [770, 230]
+      Position      [880, 220]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -5558,7 +5629,7 @@ Plecs {
       Type          Subsystem
       Name          "2-Level\nIGBT\nConv."
       Show          off
-      Position      [645, 230]
+      Position      [760, 220]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -6523,16 +6594,16 @@ Plecs {
       Type          Voltmeter
       Name          "Vm4"
       Show          off
-      Position      [550, 240]
-      Direction     up
-      Flipped       off
-      LabelPosition west
+      Position      [630, 220]
+      Direction     down
+      Flipped       on
+      LabelPosition east
     }
     Component {
       Type          ThreePhaseMeter
       Name          "3ph Meter"
       Show          off
-      Position      [700, 230]
+      Position      [815, 220]
       Direction     up
       Flipped       off
       LabelPosition southSoutheast
@@ -6546,10 +6617,10 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_dc"
       Show          off
-      Position      [510, 240]
+      Position      [680, 220]
       Direction     up
       Flipped       off
-      LabelPosition west
+      LabelPosition north
       Parameter {
         Variable      "V"
         Value         "D.Vbat"
@@ -6560,7 +6631,7 @@ Plecs {
       Type          Goto
       Name          "Goto4"
       Show          off
-      Position      [735, 180]
+      Position      [840, 185]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6584,7 +6655,7 @@ Plecs {
       Type          Inertia
       Name          "Inertia"
       Show          on
-      Position      [835, 260]
+      Position      [945, 250]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -6608,7 +6679,7 @@ Plecs {
       Type          Goto
       Name          "Goto6"
       Show          off
-      Position      [800, 135]
+      Position      [925, 140]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6632,7 +6703,7 @@ Plecs {
       Type          Goto
       Name          "Goto2"
       Show          off
-      Position      [680, 280]
+      Position      [795, 295]
       Direction     down
       Flipped       off
       LabelPosition west
@@ -6656,10 +6727,10 @@ Plecs {
       Type          TransferFunction
       Name          "Filter"
       Show          on
-      Position      [745, 135]
+      Position      [870, 140]
       Direction     right
       Flipped       off
-      LabelPosition south
+      LabelPosition north
       Frame         [-30, -15; 30, 15]
       Parameter {
         Variable      "Numerator"
@@ -6681,7 +6752,7 @@ Plecs {
       Type          RotationalFriction
       Name          "Rotational\nFriction"
       Show          off
-      Position      [870, 260]
+      Position      [980, 250]
       Direction     down
       Flipped       on
       LabelPosition south
@@ -6705,7 +6776,7 @@ Plecs {
       Type          RotationalReference
       Name          "Rotational\nFrame"
       Show          off
-      Position      [890, 260]
+      Position      [1000, 250]
       Direction     left
       Flipped       off
       LabelPosition east
@@ -6714,7 +6785,7 @@ Plecs {
       Type          From
       Name          "From1"
       Show          off
-      Position      [630, 50]
+      Position      [105, 60]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6738,7 +6809,7 @@ Plecs {
       Type          From
       Name          "From9"
       Show          off
-      Position      [630, 70]
+      Position      [105, 80]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6762,10 +6833,10 @@ Plecs {
       Type          ConfigurableSubsystem
       Name          "Current Sensing"
       Show          on
-      Position      [690, 60]
+      Position      [160, 70]
       Direction     up
       Flipped       off
-      LabelPosition south
+      LabelPosition north
       Frame         [-20, -20; 20, 20]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -7056,7 +7127,7 @@ Plecs {
       Type          Subsystem
       Name          "QEP"
       Show          on
-      Position      [775, 330]
+      Position      [225, 220]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -7990,7 +8061,7 @@ Plecs {
       Type          Subsystem
       Name          "Subsystem"
       Show          off
-      Position      [465, 155]
+      Position      [580, 145]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -8288,7 +8359,7 @@ Plecs {
       Type          Subsystem
       Name          "Hall"
       Show          on
-      Position      [775, 380]
+      Position      [225, 280]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -8766,7 +8837,7 @@ Plecs {
       Type          SignalMux
       Name          "Mux"
       Show          off
-      Position      [200, 165]
+      Position      [325, 155]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8780,7 +8851,7 @@ Plecs {
       Type          Gain
       Name          "G2"
       Show          off
-      Position      [130, 170]
+      Position      [245, 160]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8814,7 +8885,7 @@ Plecs {
       Type          Gain
       Name          "Gain1"
       Show          off
-      Position      [55, 80]
+      Position      [225, 70]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8848,7 +8919,7 @@ Plecs {
       Type          Sum
       Name          "Sum"
       Show          off
-      Position      [100, 80]
+      Position      [270, 70]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -8877,15 +8948,15 @@ Plecs {
       Type          Constant
       Name          "Constant1"
       Show          off
-      Position      [50, 130]
+      Position      [235, 120]
       Direction     right
       Flipped       off
       LabelPosition south
-      Frame         [-10, -10; 10, 10]
+      Frame         [-20, -10; 20, 10]
       Parameter {
         Variable      "Value"
         Value         "Im.O"
-        Show          on
+        Show          off
       }
       Parameter {
         Variable      "DataType"
@@ -8896,8 +8967,8 @@ Plecs {
     Component {
       Type          PlecsProbe
       Name          "Probe"
-      Show          on
-      Position      [695, 355]
+      Show          off
+      Position      [140, 250]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8911,7 +8982,7 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          off
-      Position      [835, 195]
+      Position      [760, 80]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -8968,7 +9039,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux"
       Show          off
-      Position      [175, 80]
+      Position      [300, 70]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -8981,8 +9052,8 @@ Plecs {
     Component {
       Type          Scope
       Name          "Scope1"
-      Show          on
-      Position      [845, 100]
+      Show          off
+      Position      [680, 80]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -9039,7 +9110,7 @@ Plecs {
       Type          From
       Name          "From"
       Show          off
-      Position      [800, 100]
+      Position      [635, 80]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -9060,73 +9131,16 @@ Plecs {
       }
     }
     Component {
-      Type          Scope
-      Name          "Scope2"
-      Show          on
-      Position      [575, 355]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Location      [0, 24; 2048, 1239]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASgAAAA"
-"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
-"AAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":165,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
-      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0.0"
-      ScrollingMode "1"
-      SingleTimeAxis "1"
-      Open          "0"
-      Ts            "-1"
-      SampleLimit   "0"
-      XAxisLabel    "Time / s"
-      ShowLegend    "1"
-      Axis {
-        Name          ""
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Fourier {
-        SingleXAxis       on
-        AxisLabel         "Frequency / Hz"
-        Scaling           0
-        PhaseDisplay      0
-        ShowFourierLegend off
-        Axis {
-          Name          ""
-          AutoScale     1
-          MinValue      0
-          MaxValue      1
-          Signals       {}
-          Untangle      0
-          KeepBaseline  off
-          BaselineValue 0
-        }
-      }
-    }
-    Component {
       Type          From
       Name          "From2"
       Show          off
-      Position      [530, 355]
+      Position      [725, 80]
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
         Variable      "Tag"
-        Value         "ibr"
+        Value         "is"
         Show          off
       }
       Parameter {
@@ -9137,6 +9151,75 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto"
+      Show          off
+      Position      [600, 220]
+      Direction     left
+      Flipped       off
+      LabelPosition north
+      Parameter {
+        Variable      "Tag"
+        Value         "vin"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From3"
+      Show          off
+      Position      [205, 160]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "vin"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Constant
+      Name          "Constant"
+      Show          on
+      Position      [1140, 375]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      CommentOut    DisabledOpenCircuit
+      Frame         [-10, -10; 10, 10]
+      Parameter {
+        Variable      "Value"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "10"
         Show          off
       }
     }
@@ -9163,38 +9246,22 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "Vm4"
-      SrcTerminal   1
-      Points        [550, 170]
-      Branch {
-        Points        [645, 170]
-        DstComponent  "2-Level\nIGBT\nConv."
-        DstTerminal   5
-      }
-      Branch {
-        Points        [510, 170]
-        DstComponent  "V_dc"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
       SrcComponent  "3ph Meter"
       SrcTerminal   9
-      Points        [700, 310; 645, 310]
+      Points        [815, 280; 760, 280]
       Branch {
         DstComponent  "2-Level\nIGBT\nConv."
         DstTerminal   6
       }
       Branch {
-        Points        [550, 310]
+        Points        [680, 280]
         Branch {
-          DstComponent  "Vm4"
+          DstComponent  "V_dc"
           DstTerminal   2
         }
         Branch {
-          Points        [510, 310]
-          DstComponent  "V_dc"
+          Points        [630, 280]
+          DstComponent  "Vm4"
           DstTerminal   2
         }
       }
@@ -9203,7 +9270,7 @@ Plecs {
       Type          Signal
       SrcComponent  "3ph Meter"
       SrcTerminal   7
-      Points        [695, 135]
+      Points        [810, 140]
       DstComponent  "Filter"
       DstTerminal   1
     }
@@ -9218,31 +9285,15 @@ Plecs {
       Type          Signal
       SrcComponent  "2-Level\nIGBT\nConv."
       SrcTerminal   7
-      Points        [680, 250]
+      Points        [795, 240]
       DstComponent  "Goto2"
       DstTerminal   1
     }
     Connection {
       Type          Signal
-      SrcComponent  "Hall"
-      SrcTerminal   1
-      Points        [825, 380; 825, 415; 215, 415; 215, 200]
-      DstComponent  "Controller"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "QEP"
-      SrcTerminal   1
-      Points        [835, 330; 835, 425; 200, 425; 200, 185]
-      DstComponent  "Controller"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Constant1"
       SrcTerminal   1
-      Points        [100, 130]
+      Points        [270, 120]
       DstComponent  "Sum"
       DstTerminal   3
     }
@@ -9257,14 +9308,14 @@ Plecs {
       Type          Signal
       SrcComponent  "Probe"
       SrcTerminal   1
-      Points        [725, 355]
+      Points        [175, 250]
       Branch {
-        Points        [725, 330]
+        Points        [175, 220]
         DstComponent  "QEP"
         DstTerminal   2
       }
       Branch {
-        Points        [725, 380]
+        Points        [175, 280]
         DstComponent  "Hall"
         DstTerminal   2
       }
@@ -9273,7 +9324,6 @@ Plecs {
       Type          Signal
       SrcComponent  "Current Sensing"
       SrcTerminal   2
-      Points        [735, 60; 735, 10; 20, 10; 20, 80]
       DstComponent  "Gain1"
       DstTerminal   1
     }
@@ -9337,40 +9387,17 @@ Plecs {
       Type          Signal
       SrcComponent  "Subsystem"
       SrcTerminal   2
-      Points        [660, 155]
+      Points        [775, 145]
       DstComponent  "2-Level\nIGBT\nConv."
       DstTerminal   4
     }
     Connection {
       Type          Signal
       SrcComponent  "Controller"
-      SrcTerminal   6
-      Points        [440, 175; 440, 180]
+      SrcTerminal   5
+      Points        [555, 165; 555, 170]
       DstComponent  "Subsystem"
       DstTerminal   3
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Vm4"
-      SrcTerminal   3
-      Points        [600, 240; 600, 275; 95, 275; 95, 170]
-      DstComponent  "G2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter"
-      SrcTerminal   8
-      Points        [705, 195]
-      Branch {
-        Points        [705, 180]
-        DstComponent  "Goto4"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "Scope"
-        DstTerminal   1
-      }
     }
     Connection {
       Type          Signal
@@ -9384,7 +9411,7 @@ Plecs {
       SrcComponent  "Mux"
       SrcTerminal   1
       DstComponent  "Controller"
-      DstTerminal   9
+      DstTerminal   8
     }
     Connection {
       Type          Signal
@@ -9397,7 +9424,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux"
       SrcTerminal   4
-      Points        [185, 90]
+      Points        [310, 80]
       DstComponent  "Mux"
       DstTerminal   2
     }
@@ -9405,15 +9432,15 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux"
       SrcTerminal   3
-      Points        [210, 80; 210, 155]
+      Points        [335, 70; 335, 145]
       DstComponent  "Controller"
-      DstTerminal   8
+      DstTerminal   7
     }
     Connection {
       Type          Signal
       SrcComponent  "Demux"
       SrcTerminal   2
-      Points        [220, 70; 220, 145]
+      Points        [345, 60]
       DstComponent  "Controller"
       DstTerminal   1
     }
@@ -9432,10 +9459,63 @@ Plecs {
       DstTerminal   1
     }
     Connection {
+      Type          Wire
+      SrcComponent  "V_dc"
+      SrcTerminal   1
+      Points        [680, 160]
+      Branch {
+        Points        [760, 160]
+        DstComponent  "2-Level\nIGBT\nConv."
+        DstTerminal   5
+      }
+      Branch {
+        Points        [630, 160]
+        DstComponent  "Vm4"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "QEP"
+      SrcTerminal   1
+      Points        [310, 220; 310, 175]
+      DstComponent  "Controller"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Hall"
+      SrcTerminal   1
+      Points        [320, 280; 320, 190]
+      DstComponent  "Controller"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter"
+      SrcTerminal   8
+      DstComponent  "Goto4"
+      DstTerminal   1
+    }
+    Connection {
       Type          Signal
       SrcComponent  "From2"
       SrcTerminal   1
-      DstComponent  "Scope2"
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Vm4"
+      SrcTerminal   3
+      DstComponent  "Goto"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From3"
+      SrcTerminal   1
+      DstComponent  "G2"
       DstTerminal   1
     }
   }
