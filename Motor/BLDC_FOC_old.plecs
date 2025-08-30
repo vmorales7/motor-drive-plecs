@@ -1,9 +1,9 @@
 Plecs {
-  Name          "BLDC_FOC"
+  Name          "BLDC_FOC_old"
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "2"
+  TimeSpan      "1"
   Timeout       ""
   Solver        "dopri"
   MaxStep       "1e-3"
@@ -99,9 +99,9 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 24; 2048, 1190]
+    Location      [1, 30; 1023, 1188]
     ZoomFactor    1.96258
-    SliderPosition [0, 0]
+    SliderPosition [745, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -311,9 +311,9 @@ Plecs {
         Index         "6"
       }
       Schematic {
-        Location      [0, 24; 2048, 1190]
-        ZoomFactor    1.30957
-        SliderPosition [0, 0]
+        Location      [1, 30; 1023, 1188]
+        ZoomFactor    1.96256
+        SliderPosition [-1, 462]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -1252,7 +1252,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "SwitchState"
-            Value         "2"
+            Value         "1"
             Show          off
           }
         }
@@ -1396,7 +1396,7 @@ Plecs {
           Frame         [-10, -10; 10, 10]
           Parameter {
             Variable      "Value"
-            Value         "[0 0.1]"
+            Value         "[0 3]"
             Show          on
           }
           Parameter {
@@ -1413,11 +1413,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 24; 2048, 1257]
+          Location      [1, 30; 1023, 1219]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASy"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA/4AAASG"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -6457,7 +6457,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [415, 55; 896, 265]
+        Location      [415, 55; 896, 281]
         ZoomFactor    1
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -8581,14 +8581,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "QEP"
-      SrcTerminal   1
-      Points        [835, 330; 835, 425; 200, 425; 200, 185]
-      DstComponent  "Controller"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Constant1"
       SrcTerminal   1
       Points        [100, 130]
@@ -8786,6 +8778,14 @@ Plecs {
       SrcTerminal   1
       DstComponent  "Scope2"
       DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "QEP"
+      SrcTerminal   1
+      Points        [835, 330; 835, 425; 200, 425; 200, 185]
+      DstComponent  "Controller"
+      DstTerminal   2
     }
   }
 }
