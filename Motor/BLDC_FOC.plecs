@@ -230,7 +230,7 @@ Plecs {
 "AGEAcgBkAAAAAgAyAAAAFgBiAHUAaQBsAGQAQwBvAG4AZgBpAGcAAAACADIAAAAIAGMAaABpAHAAA"
 "AACADEAAAASAGUAeAB0AEMAbABrAE0ASAB6AAAABAAzADAAAAAiAGUAeAB0AE0AbwBkAGUAQgB1AG"
 "YAZgBlAHIAUwBpAHoAZQAAAAgAMQAwADAAMAAAABwAZQB4AHQATQBvAGQAZQBTAGMAaQBQAGkAbgB"
-"zAAAADgBbADQAMwAsADQAMgBdAAAADgBnAGUAbgBPAG4AbAB5AAAAAgAzAAAAFABpAG4AcwB0AGEA"
+"zAAAADgBbADQAMwAsADQAMgBdAAAADgBnAGUAbgBPAG4AbAB5AAAAAgAyAAAAFABpAG4AcwB0AGEA"
 "bABsAEQAaQByAAAAAAAAABwAaQBuAHMAdABhAGwAbABEAGkAcgBDAHAAdQAyAAAAAAAAABIAcwB5A"
 "HMAQwBsAGsATQBIAHoAAAAGADEAOQAwAAAAFgB0AGEAcwBrAEYAcgBlAHEAVABvAGwAAAACADIAAA"
 "AYAHUAbgBpAGYAbABhAHMAaABGAGkAbABlAAAAAAAAABIAdQBzAGUASQBuAHQATwBzAGMAAAACADE"
@@ -356,9 +356,9 @@ Plecs {
         Index         "1"
       }
       Schematic {
-        Location      [0, 23; 2048, 1189]
+        Location      [0, 24; 2048, 1190]
         ZoomFactor    0.999992
-        SliderPosition [103, 0]
+        SliderPosition [0, 0]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -1021,7 +1021,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "SwitchState"
-            Value         "1"
+            Value         "2"
             Show          off
           }
         }
@@ -1133,11 +1133,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition north
-          Location      [0, 23; 2048, 1211]
+          Location      [0, 24; 2048, 1221]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAP+AAA"
-"AtvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAAA/4AAABEAP///wAACAAAAASF"
+"AtvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAAA/4AAABEAP///wAACAAAAASO"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -4557,7 +4557,7 @@ Plecs {
           Frame         [-10, -10; 10, 10]
           Parameter {
             Variable      "Value"
-            Value         "1"
+            Value         "0.5"
             Show          off
           }
           Parameter {
