@@ -107,29 +107,29 @@ Plecs {
 "ZWZmID0gUmkuS3B6X3R1c3RpbiArIFJpLktpel90dXN0aW47CiVSaS5LYXd6X2VmZiA9IFJpLktpe"
 "l9lZmYgLi8gUmkuS3B6X2VmZjsKCgolJSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
 "09PT09PT09PT09CiUgIFRvcnF1ZSBDb250cm9sbGVyIChQSSArIEFXVSkKJSUgPT09PT09PT09PT0"
-"9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpSVC5LcCA9IDEwMDsgICAgICAgICAgICAg"
-"ICAgICAgICUgUHJvcG9ydGlvbmFsIGdhaW4KUlQuS2kgPSAxMDAwOyAgICAgICAgICAgICAgICAgI"
-"CAlIEludGVncmFsIGdhaW4KUlQuS2F3ID0gMSAvIFJULktpOyAgICAgICAgICAgJSBBbnRpLXdpbm"
-"R1cCBnYWluCgoKJSUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQo"
-"lICBTcGVlZCBDb250cm9sbGVyIFBhcmFtZXRlcnMgKFBJICsgQVdVKQolJSA9PT09PT09PT09PT09"
-"PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ClJTLktwID0gMC41OyAgICAgICAgICAgICAgI"
-"CAgICAlIFByb3BvcnRpb25hbCBnYWluClJTLktpID0gMTsgICAgICAgICAgICAgICAgICAgICAlIE"
-"ludGVncmFsIGdhaW4KUlMuS2F3ID0gMSAvIFJTLktpOyAgICAgICAgICAgICAlIEFudGktd2luZHV"
-"wIGdhaW4KCgolID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
-"PT09PT09PT09PT09PT09PT09PT09PT09CiUgRGVyaXZhdGl2ZSBjYWxjCiUgPT09PT09PT09PT09P"
+"9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpSVC5LcCA9IDI7ICAgICAgICAgICAgICAg"
+"ICAgICAlIFByb3BvcnRpb25hbCBnYWluClJULktpID0gNTAwOyAgICAgICAgICAgICAgICAgICAlI"
+"EludGVncmFsIGdhaW4KUlQuS2F3ID0gMSAvIFJULktpOyAgICAgICAgICAgJSBBbnRpLXdpbmR1cC"
+"BnYWluCgoKJSUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQolICB"
+"TcGVlZCBDb250cm9sbGVyIFBhcmFtZXRlcnMgKFBJICsgQVdVKQolJSA9PT09PT09PT09PT09PT09"
+"PT09PT09PT09PT09PT09PT09PT09PT09PT09ClJTLktwID0gMC4wMDAxOyAgICAgICAgICAgICAgI"
+"CAgICAlIFByb3BvcnRpb25hbCBnYWluClJTLktpID0gMC4wMDE7ICAgICAgICAgICAgICAgICAgIC"
+"AgJSBJbnRlZ3JhbCBnYWluClJTLkthdyA9IDEwMCAvIFJTLktpOyAgICAgICAgICAgICAlIEFudGk"
+"td2luZHVwIGdhaW4KCgolID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
+"PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiUgRGVyaXZhdGl2ZSBjYWxjCiUgPT09PT09P"
 "T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
-"0Kc3BlZWRCVyA9IDEwOyAlIFtIel0KZmMgPSBtaW4oMSAqIHNwZWVkQlcsIGZjdHJsLzEwKTsgJSA"
-"gW0h6XQpkdF9taW4gPSBUY3RybCAqIDAuNTsKZHRfbWF4ID0gVGN0cmwgKiAyLjA7CndfbiA9IE0u"
-"d19uOwoKCiUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09P"
-"T09PT09PT09PT09PT09PT09PT09PT0KJSBTaW11bGF0aW9uIGRhdGEKJSA9PT09PT09PT09PT09PT"
-"09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQo"
-"lJSBJbml0aWFsIGNvbmRpdGlvbnMgYXNzdW1pbmcgaW5pdGlhbCBwb3NpdGlvbiA9IDAgYW5kIFkg"
-"Y29ubmVjdGlvbgpNLndtMCA9IDA7Ck0udGhtMCA9IDA7Ck0uSWQwID0gMDsKTS5JcTAgPSAwOwpNL"
-"klzMCA9IFswIDBdOwoKJSUgSW5pdGlhbCBjb25kaXRpb25zIGZvciBjdXJyZW50IGNvbnRyb2wKJV"
-"JpLlZkMCA9IE0uUnMgKiBNLklxMDsKJVJpLlZxMCA9IE0uUnMgKiBNLklkMCArIE0ud20wKk0ucHA"
-"qKE0uUHNpX20rTS5MZCpNLklkMCk7CiVSaS5WMCA9IFtSaS5WZDAgUmkuVnEwXTsKCiUlIExvYWRz"
-"OiBpbmVydGlhcyBhbmQgbWFzc2VzIGluIHN5c3RlbSAtPiBmb3Igc2ltdWxhdGlvbgpQLkptID0gM"
-"C4wMDE7ICUgbW90b3IKUC52ZiA9IDAuMDE7ICUgZnJpY3Rpb24KCg=="
+"09PT09PT0Kc3BlZWRCVyA9IDEwOyAlIFtIel0KZmMgPSBtaW4oMSAqIHNwZWVkQlcsIGZjdHJsLzE"
+"wKTsgJSAgW0h6XQpkdF9taW4gPSBUY3RybCAqIDAuNTsKZHRfbWF4ID0gVGN0cmwgKiAyLjA7Cndf"
+"biA9IE0ud19uOwoKCiUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09P"
+"T09PT09PT09PT09PT09PT09PT09PT09PT09PT0KJSBTaW11bGF0aW9uIGRhdGEKJSA9PT09PT09PT"
+"09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0"
+"9PT09PQolJSBJbml0aWFsIGNvbmRpdGlvbnMgYXNzdW1pbmcgaW5pdGlhbCBwb3NpdGlvbiA9IDAg"
+"YW5kIFkgY29ubmVjdGlvbgpNLndtMCA9IDA7Ck0udGhtMCA9IDA7Ck0uSWQwID0gMDsKTS5JcTAgP"
+"SAwOwpNLklzMCA9IFswIDBdOwoKJSUgSW5pdGlhbCBjb25kaXRpb25zIGZvciBjdXJyZW50IGNvbn"
+"Ryb2wKJVJpLlZkMCA9IE0uUnMgKiBNLklxMDsKJVJpLlZxMCA9IE0uUnMgKiBNLklkMCArIE0ud20"
+"wKk0ucHAqKE0uUHNpX20rTS5MZCpNLklkMCk7CiVSaS5WMCA9IFtSaS5WZDAgUmkuVnEwXTsKCiUl"
+"IExvYWRzOiBpbmVydGlhcyBhbmQgbWFzc2VzIGluIHN5c3RlbSAtPiBmb3Igc2ltdWxhdGlvbgpQL"
+"kptID0gMC4wMDE7ICUgbW90b3IKUC52ZiA9IDAuMDE7ICUgMC4wMSBmcmljdGlvbgoK"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -154,9 +154,9 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 24; 2048, 1190]
-    ZoomFactor    2.24592
-    SliderPosition [532, 0]
+    Location      [0, 23; 2048, 1189]
+    ZoomFactor    1.49865
+    SliderPosition [407, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -365,9 +365,9 @@ Plecs {
         Index         "1"
       }
       Schematic {
-        Location      [0, 24; 2048, 1190]
-        ZoomFactor    0.999992
-        SliderPosition [38, 0]
+        Location      [1, 30; 1023, 1188]
+        ZoomFactor    1.14436
+        SliderPosition [-1, -1]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -7207,11 +7207,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 23; 2048, 1211]
+          Location      [0, 24; 2048, 1221]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASF"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASO"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -7330,7 +7330,7 @@ Plecs {
           Type          Scope
           Name          "speed"
           Show          on
-          Position      [330, 355]
+          Position      [320, 355]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -7393,7 +7393,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Tag"
-            Value         "we"
+            Value         "nm"
             Show          off
           }
           Parameter {
@@ -7415,11 +7415,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 23; 2048, 1211]
+          Location      [0, 24; 2048, 1221]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAIEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASF"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASO"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -7805,16 +7805,16 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition north
-          Location      [0, 24; 2048, 1239]
+          Location      [1025, 30; 2047, 1219]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAIEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
-"AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAgAAAA"
-"A1vwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACAAAAABEAP///wAACAAAAAPE"
+"AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAP+AAA"
+"A1vwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA/4AAABEAP///wAAA/4AAAOq"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":185,\"Labels\""
-":[],\"VisualIdxs\":[]}"
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":88,\"Labels\":"
+"[],\"VisualIdxs\":[]}"
           PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAA=="
@@ -8068,11 +8068,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition north
-          Location      [0, 24; 2048, 1263]
+          Location      [1025, 30; 2047, 1237]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
-"AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAgAAAA"
-"ApfwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACAAAAABEAP///wAACAAAAAQN"
+"AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAP+AAA"
+"ApfwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA/4AAABEAP///wAAA/4AAAPt"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -8752,7 +8752,7 @@ Plecs {
           Frame         [-15, -10; 15, 10]
           Parameter {
             Variable      "Value"
-            Value         "0.08"
+            Value         "0.05"
             Show          off
           }
           Parameter {
@@ -8946,7 +8946,7 @@ Plecs {
           Frame         [-15, -10; 15, 10]
           Parameter {
             Variable      "Value"
-            Value         "2000"
+            Value         "100"
             Show          off
           }
           Parameter {
@@ -9081,7 +9081,7 @@ Plecs {
           Frame         [-10, -10; 10, 10]
           Parameter {
             Variable      "Value"
-            Value         "3"
+            Value         "2"
             Show          off
           }
           Parameter {
@@ -10042,6 +10042,266 @@ Plecs {
             Show          off
           }
         }
+        Component {
+          Type          From
+          Name          "From86"
+          Show          off
+          Position      [560, 470]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "nm"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalMux
+          Name          "Mux8"
+          Show          off
+          Position      [600, 460]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Width"
+            Value         "2"
+            Show          off
+          }
+        }
+        Component {
+          Type          Scope
+          Name          "Speed control\nscope"
+          Show          on
+          Position      [640, 480]
+          Direction     up
+          Flipped       off
+          LabelPosition north
+          Location      [1025, 30; 2047, 1210]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAP+AAA"
+"AlPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA/4AAABEAP///wAAA/4AAAPj"
+"AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
+"AAAAAAAAA=="
+          SavedViews    "AAAAAgAAAAA="
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":131,\"Labels\""
+":[],\"VisualIdxs\":[]}"
+          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          Axes          "2"
+          TimeRange     "0.0"
+          ScrollingMode "1"
+          SingleTimeAxis "1"
+          Open          "0"
+          Ts            "-1"
+          SampleLimit   "0"
+          XAxisLabel    "Time / s"
+          ShowLegend    "2"
+          Axis {
+            Name          "Speed"
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {"Speed ref", "Speed meas."}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Axis {
+            Name          "Torque"
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {"Torque ref.", "Torque meas."}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Fourier {
+            SingleXAxis       on
+            AxisLabel         "Frequency / Hz"
+            Scaling           0
+            PhaseDisplay      0
+            ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {"Speed ref", "Speed meas."}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {"Torque ref.", "Torque meas."}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+          }
+        }
+        Component {
+          Type          From
+          Name          "From87"
+          Show          off
+          Position      [560, 490]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "Tem*"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          From
+          Name          "From88"
+          Show          off
+          Position      [560, 450]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "nm*"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Scope
+          Name          "Scope2"
+          Show          on
+          Position      [850, 1180]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Location      [704, 376; 1054, 607]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAA"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAV4AAADI"
+"AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
+"AAAAAAAAA=="
+          SavedViews    "AAAAAgAAAAA="
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":94,\"Labels\":"
+"[],\"VisualIdxs\":[]}"
+          PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          Axes          "1"
+          TimeRange     "0.0"
+          ScrollingMode "1"
+          SingleTimeAxis "1"
+          Open          "0"
+          Ts            "-1"
+          SampleLimit   "0"
+          XAxisLabel    "Time / s"
+          ShowLegend    "1"
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Fourier {
+            SingleXAxis       on
+            AxisLabel         "Frequency / Hz"
+            Scaling           0
+            PhaseDisplay      0
+            ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+          }
+        }
+        Component {
+          Type          SignalMux
+          Name          "Mux9"
+          Show          off
+          Position      [600, 500]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Width"
+            Value         "2"
+            Show          off
+          }
+        }
+        Component {
+          Type          From
+          Name          "From89"
+          Show          off
+          Position      [560, 510]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "Tem"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
         Connection {
           Type          Signal
           SrcComponent  "Logical\nOperator"
@@ -10940,18 +11200,6 @@ Plecs {
         }
         Connection {
           Type          Signal
-          Points        [300, 355]
-          DstComponent  "speed"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "From49"
-          SrcTerminal   1
-          Points        [265, 355]
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "From51"
           SrcTerminal   1
           Points        [459, 470]
@@ -11538,13 +11786,6 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "From81"
-          SrcTerminal   1
-          DstComponent  "elec2mech"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "elec2mech"
           SrcTerminal   2
           DstComponent  "Goto5"
@@ -11572,6 +11813,74 @@ Plecs {
           Points        [120, 625]
           DstComponent  "Speed control"
           DstTerminal   7
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From88"
+          SrcTerminal   1
+          Points        [580, 450; 580, 455]
+          DstComponent  "Mux8"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From86"
+          SrcTerminal   1
+          Points        [580, 470; 580, 465]
+          DstComponent  "Mux8"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Mux8"
+          SrcTerminal   1
+          DstComponent  "Speed control\nscope"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From81"
+          SrcTerminal   1
+          Points        [790, 1255]
+          Branch {
+            DstComponent  "elec2mech"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [790, 1180]
+            DstComponent  "Scope2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Mux9"
+          SrcTerminal   1
+          DstComponent  "Speed control\nscope"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From87"
+          SrcTerminal   1
+          Points        [580, 490; 580, 495]
+          DstComponent  "Mux9"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From89"
+          SrcTerminal   1
+          Points        [580, 510; 580, 505]
+          DstComponent  "Mux9"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From49"
+          SrcTerminal   1
+          DstComponent  "speed"
+          DstTerminal   1
         }
         Annotation {
           Name          "<html><body>\n<p align=\"center\">Add filtering?</p><"
@@ -13854,11 +14163,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 24; 2048, 1230]
+      Location      [0, 23; 2048, 1211]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASXAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASFAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -15542,7 +15851,7 @@ Plecs {
       Probe {
         Component     "PMSM"
         Path          ""
-        Signals       {"Rotational speed", "Electrical torque"}
+        Signals       {"Electrical torque", "Rotational speed"}
       }
     }
     Component {
@@ -15567,11 +15876,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [704, 376; 1054, 616]
+      Location      [1, 30; 1023, 1210]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAV4AAADRAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA/4AAAR9AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
