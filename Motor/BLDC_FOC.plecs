@@ -381,9 +381,9 @@ Plecs {
         Index         "1"
       }
       Schematic {
-        Location      [0, 23; 2048, 1189]
-        ZoomFactor    0.999995
-        SliderPosition [0, 0]
+        Location      [0, 24; 2048, 1190]
+        ZoomFactor    1.71498
+        SliderPosition [680, 294]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -1130,32 +1130,10 @@ Plecs {
           SampleTime    "-1"
           CodeGenDiscretizationMethod "2"
           CodeGenTarget "Generic"
-          MaskType      "Hall Sensor Decoder"
-          MaskDescription "Gives the electrical angle for a set of three hall "
-"sensors A->B->C. The input is a digital (0 or 1) signal coming from a Digital"
-" In block connected to the sensor terminals."
           MaskDisplayLang "2"
           MaskIconFrame on
           MaskIconOpaque off
           MaskIconRotates on
-          Parameter {
-            Variable      "lut"
-            Prompt        "Decoding lookup"
-            Type          FreeText
-            Value         "M.HallLUT"
-            Show          off
-            Tunable       off
-            TabName       ""
-          }
-          Parameter {
-            Variable      "offset"
-            Prompt        "Offset [e-rad]"
-            Type          FreeText
-            Value         "M.HallOffset"
-            Show          off
-            Tunable       off
-            TabName       ""
-          }
           Terminal {
             Type          Input
             Position      [-20, 0]
@@ -1336,7 +1314,7 @@ Plecs {
               }
               Parameter {
                 Variable      "f(x)"
-                Value         "lut"
+                Value         "M.HallLUT"
                 Show          off
               }
               Parameter {
@@ -1424,7 +1402,7 @@ Plecs {
               Frame         [-20, -10; 20, 10]
               Parameter {
                 Variable      "Offset"
-                Value         "offset"
+                Value         "M.HallOffset"
                 Show          on
               }
               Parameter {
