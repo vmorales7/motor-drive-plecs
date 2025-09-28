@@ -58,82 +58,82 @@ Plecs {
 "nICh2YWxvcmVzIFNhbnRpKQolSW0uSyA9IC05LjkxNDsKJUltLk8gPSAtMTYuMzIvSW0uSzsKCiUl"
 "IEN1cnJlbnQgc2Vuc2luZwpJbS5LID0gLTAuMDA1KjIwOyAlID0gLTAuMSAtPiBzZW5zb3IgZ2Fpb"
 "gpJbS5PID0gMy4zLzIuMDsgICAlID0gMS42NSAtPiBzZW5zb3Igb2Zmc2V0CgolJSBEQyBWb2x0YW"
-"dlIHNlbnNpbmcgKHBvbGUgYXQgMzY0LjY5MiBIeikKVm0uUjEgPSAxMDBlMzsKVm0uUjIgPSA0LjI"
-"yZTM7ClZtLkMgID0gMzNlLTk7ClZtLksgID0gVm0uUjIgLyAoVm0uUjErVm0uUjIpOwpWbS5UICA9"
-"IFZtLkMqVm0uUjEqVm0uUjIgLyAoVm0uUjErVm0uUjIpOyAlIGZvciBzaW0KCiUlIEZhdWx0IHByb"
-"3RlY3Rpb24KJWFkYyA9IFswIDAgOCAxIDddOwpkaW5fZmF1bHQgPSAyNDsgICUgSW52ZXJ0ZXIgdG"
-"VtcCBmYXVsdCBmbGFnIEdQSU8gYWN0aXZlIGxvdwpkb3V0X3BzZW4gPSAxMjQ7ICUgUG93ZXIgc3R"
-"hZ2UgcHJvdGVjdGlvbiBHUElPCgolJSBQV00KcHdtID0gWzEgMiAzXTsgJSBTZWxlY3RlZCBwd20g"
-"Z2VuZXJhdG9ycwpELmZwd20gPSAyMGUzOyAlIE5lZWRzIHRvIGJlIGhpZ2hlciB0aGFuIGNvbnRyb"
-"2wgZnJlcXVlbmN5CkQuVHB3bSA9IDEgLyBELmZwd207CkQuVGR0ID0gMC4wMSAqIEQuVHB3bTsgJS"
-"BEZWFkIHRpbWUgPSAxJQoKCiUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0"
-"9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KJSBIYXJkd2FyZTogRW5jb2RlciArIEhh"
-"bGwKJSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09P"
-"T09PT09PT09PT09PT09PT09PQolJSBFbmNvZGVyCk0uUWVwQ1BSICAgICAgICAgPSAxMDAwOyAgIC"
-"AgICAgICAgICAgJSBzYW50aSA9IDEwMjQKTS5RZXBSYWRQZXJDb3VudCA9IDIqcGkgLyBNLlFlcEN"
-"QUjsKTS5RZXBFZGdlcyAgICAgICA9IE0uUWVwQ1BSICogNDsgICAgICAlIEZ1bGwgcXVhZHJhdHVy"
-"ZSBxZXAKTS5RZXBSYWRQZXJFZGdlICA9IDIqcGkgLyBNLlFlcEVkZ2VzOwpNLlFlcERpciAgICAgI"
-"CAgID0gMTsgICAgICAgICAgICAgICAgICUgMSA9IEIgZm9sbG93cyBBOyAtMSBpZiBBIGZvbGxvd3"
-"MgQgpNLlFlcE9mZnNldCAgICAgID0gMipwaSoxMi82MiAvIE0ucHA7ICUgT0cgdmFsIHdhcyBlbGV"
-"jdHJpY2FsIChyYWQpCgolIEhhbGwKTS5IYWxsT2Zmc2V0ID0gTS5RZXBPZmZzZXQgKiBNLnBwOyAl"
-"IEhhbGwgZ2l2ZXMgZWxlY3RyaWNhbCBkYXRhCk0uSGFsbExVVCAgICA9IFszIDUgNCAxIDIgMF07I"
-"AoKCiUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
-"09PT09PT09PT09PT09PT09PT0KJSBDb250cm9sOiBWb2x0YWdlICYgc3BlZWQgbGltaXRzCiUgPT0"
+"dlIHNlbnNpbmcgKHBvbGUgYXQgMzY0LjY5MiBIeikgLT4gdXNlZCBpbiBBREMKVm0uUjEgPSAxMDB"
+"lMzsKVm0uUjIgPSA0LjIyZTM7ClZtLkMgID0gMzNlLTk7ClZtLksgID0gVm0uUjIgLyAoVm0uUjEr"
+"Vm0uUjIpOwpWbS5UICA9IFZtLkMqVm0uUjEqVm0uUjIgLyAoVm0uUjErVm0uUjIpOwoKJSUgRmF1b"
+"HQgcHJvdGVjdGlvbgolYWRjID0gWzAgMCA4IDEgN107CmRpbl9mYXVsdCA9IDI0OyAgJSBJbnZlcn"
+"RlciB0ZW1wIGZhdWx0IGZsYWcgR1BJTyBhY3RpdmUgbG93CmRvdXRfcHNlbiA9IDEyNDsgJSBQb3d"
+"lciBzdGFnZSBwcm90ZWN0aW9uIEdQSU8KCiUlIFBXTQpwd20gPSBbMSAyIDNdOyAlIFNlbGVjdGVk"
+"IHB3bSBnZW5lcmF0b3JzCkQuZnB3bSA9IDIwZTM7ICUgTmVlZHMgdG8gYmUgaGlnaGVyIHRoYW4gY"
+"29udHJvbCBmcmVxdWVuY3kKRC5UcHdtID0gMSAvIEQuZnB3bTsKRC5UZHQgPSAwLjAxICogRC5UcH"
+"dtOyAlIERlYWQgdGltZSA9IDElCgoKJSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0"
+"9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQolIEhhcmR3YXJlOiBFbmNvZGVy"
+"ICsgSGFsbAolID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09P"
+"T09PT09PT09PT09PT09PT09PT09PT09CiUlIEVuY29kZXIKTS5RZXBDUFIgICAgICAgICA9IDEwMD"
+"A7ICAgICAgICAgICAgICAlIHNhbnRpID0gMTAyNApNLlFlcFJhZFBlckNvdW50ID0gMipwaSAvIE0"
+"uUWVwQ1BSOwpNLlFlcEVkZ2VzICAgICAgID0gTS5RZXBDUFIgKiA0OyAgICAgICUgRnVsbCBxdWFk"
+"cmF0dXJlIHFlcApNLlFlcFJhZFBlckVkZ2UgID0gMipwaSAvIE0uUWVwRWRnZXM7Ck0uUWVwRGlyI"
+"CAgICAgICAgPSAxOyAgICAgICAgICAgICAgICAgJSAxID0gQiBmb2xsb3dzIEE7IC0xIGlmIEEgZm"
+"9sbG93cyBCCk0uUWVwT2Zmc2V0ICAgICAgPSAyKnBpKjEyLzYyIC8gTS5wcDsgJSBPRyB2YWwgd2F"
+"zIGVsZWN0cmljYWwgKHJhZCkKCiUgSGFsbApNLkhhbGxPZmZzZXQgPSBNLlFlcE9mZnNldCAqIE0u"
+"cHA7ICUgSGFsbCBnaXZlcyBlbGVjdHJpY2FsIGRhdGEKTS5IYWxsTFVUICAgID0gWzMgNSA0IDEgM"
+"iAwXTsgCgoKJSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
+"09PT09PT09PT09PT09PT09PT09PT09PQolIENvbnRyb2w6IFZvbHRhZ2UgJiBzcGVlZCBsaW1pdHM"
+"KJSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
+"PT09PT09PT09PT09PT09PQpNLlZkYyA9IDI0OwoKJSBNYXggdy8gc3B3bSBtb2R1bGF0aW9uICYgd"
+"y9vIGZpZWxkIHdlYWtlbmluZyAKTS5LX1ZzX3Nwd20gPSAxLzI7CQkJCQkJIApNLlZzX3BrX3Nwd2"
+"0gID0gTS5WZGMgKiBNLktfVnNfc3B3bTsgJSAxMi4wMCBWCk0ud21fbWF4X3Nwd20gPSAzMzAuMDs"
+"gICAgICAgICAgICAgICAlIDMzMS4zOTYgW3JhZC9zXQpNLnJwbV9tYXhfc3B3bSA9IDMwMDA7ICAg"
+"ICAgICAgICAgICAgJSAzMTY0LjYgW3JwbV0KCiUgVXNpbmcgc3B3bQpNLlZzX21heCA9IE0uVnNfc"
+"Gtfc3B3bTsKTS5LX1ZzID0gTS5LX1ZzX3Nwd207IAoKJSBEUSB2b2x0YWdlIGxpbWl0cwpNLktfVn"
+"NfZCA9IDAuNDM1ICogTS5LX1ZzOwpNLktfVnNfcSA9IDAuOSAqIE0uS19WczsgIAoKCiUgPT09PT0"
 "9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
-"PT09PT09PT09PT0KTS5WZGMgPSAyNDsKCiUgTWF4IHcvIHNwd20gbW9kdWxhdGlvbiAmIHcvbyBma"
-"WVsZCB3ZWFrZW5pbmcgCk0uS19Wc19zcHdtID0gMS8yOwkJCQkJCSAKTS5Wc19wa19zcHdtICA9IE"
-"0uVmRjICogTS5LX1ZzX3Nwd207ICUgMTIuMDAgVgpNLndtX21heF9zcHdtID0gMzMwLjA7ICAgICA"
-"gICAgICAgICAgJSAzMzEuMzk2IFtyYWQvc10KTS5ycG1fbWF4X3Nwd20gPSAzMDAwOyAgICAgICAg"
-"ICAgICAgICUgMzE2NC42IFtycG1dCgolIFVzaW5nIHNwd20KTS5Wc19tYXggPSBNLlZzX3BrX3Nwd"
-"207Ck0uS19WcyA9IE0uS19Wc19zcHdtOyAKCiUgRFEgdm9sdGFnZSBsaW1pdHMKTS5LX1ZzX2QgPS"
-"AwLjQzNSAqIE0uS19WczsKTS5LX1ZzX3EgPSAwLjkgKiBNLktfVnM7ICAKCgolID09PT09PT09PT0"
-"9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
-"PT09CiUgQ29udHJvbDogY3VycmVudCByZWd1bGF0b3IKJSA9PT09PT09PT09PT09PT09PT09PT09P"
-"T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQolJSBTYW1wbG"
-"luZyBwZXJpb2Q6IGRlZmluZWQgYnkgUFdNIGdlbmVyYXRpbmcgZmxhZyBldmVyeSBYIG92ZXIvdW5"
-"kZXIgZmxvd3MKVGN0cmxfaWRlYWwgICAgICAgICA9IFRzX21jdTsgJSBJZGVhbCBwZXJpb2QgZm9y"
-"IHVwZGF0aW5nIGNvbnRyb2wgbG9vcApELnB3bVRyaWdnZXJEaXZpZGVyID0gbWF4KGZsb29yKEQuZ"
-"nB3bSAqIFRjdHJsX2lkZWFsKSwgMSk7CmZjdHJsICAgICAgICAgICAgICAgPSBELmZwd20gLyBELn"
-"B3bVRyaWdnZXJEaXZpZGVyOwpUY3RybCAgICAgICAgICAgICAgID0gMSAvIGZjdHJsOwpSaS5UcyA"
-"gICAgICAgICAgICAgID0gVGN0cmw7ICUgQ3VycmVudCByZWFkaW5nIChBREMgcmVhZHkpIGlzIHJl"
-"c3BvbnNpYmxlIGZvciBjYWxjdWxhdGluZyBjb250cm9sCgolJSBFcXVpdmFsZW50IHNtYWxsIHRpb"
-"WUgY29uc3RhbnQgKGZvciBjdXJyZW50IHJlZ3VsYXRvciB0dW5pbmcpClJpLlRjYWxjID0gMC41IC"
-"ogUmkuVHM7ClJpLlRhICAgID0gMC41ICogUmkuVHM7ClJpLlRzaCAgID0gMC41ICogUmkuVHM7CkQ"
-"uVGNzICAgID0gMS8oMipwaSoxMDAwMDApOyAlIEN1cnJlbnQgc2Vuc29yIGJhbmR3aWR0aApSaS5U"
-"cCAgICA9IFJpLlRjYWxjICsgUmkuVGEgKyBSaS5Uc2ggKyBELlRjczsKCiUlIEN1cnJlbnQgcmVnd"
-"WxhdG9yIHR1bmluZwpSaS5SYSAgPSAwLjA7ICUgTWF5YmUgMC4wMDUgKHJlc2lzdGFuY2UgdXNlZC"
-"BpbiBjdXJyZW50IHNlbnNvcikKUmkuUiAgID0gTS5ScyArIFJpLlJhOwpSaS5UaWkgPSAyL1JpLlI"
-"gKiBSaS5UcDsKUmkuVG5pID0gTS5MZHEgLi8gUmkuUjsKCiUlIEFuYWxvZyBnYWlucwpSaS5LcCAg"
-"PSBSaS5UbmkgLi8gUmkuVGlpOwpSaS5LaSAgPSBbMSAxXSAuLyBSaS5UaWk7ClJpLkthdyA9IFJpL"
-"ktpIC4vIFJpLktwOwoKCiUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
-"09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KJSAgVG9ycXVlIENvbnRyb2xsZXIgKFBJKQo"
-"lID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
-"PT09PT09PT09PT09PT09ClRzX3RvcnF1ZSA9IDEwICogVGN0cmw7ICUgMTAgdGltZXMgc2xvd2VyI"
-"HRoYW4gY3VycmVudCBjb250cm9sClJULktwID0gMjsgICAgICAgICAgICAgICUgUHJvcG9ydGlvbm"
-"FsIGdhaW4KUlQuS2kgPSA1MDA7ICAgICAgICAgICAgJSBJbnRlZ3JhbCBnYWluClJULkthdyA9IDE"
-"gLyBSVC5LaTsgICAgICUgQW50aS13aW5kdXAgZ2FpbgoKCiUgPT09PT09PT09PT09PT09PT09PT09"
-"PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KJSAgU3BlZ"
-"WQgQ29udHJvbGxlciBQYXJhbWV0ZXJzIChQSSkKJSA9PT09PT09PT09PT09PT09PT09PT09PT09PT"
-"09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpUc19zcGVlZCA9IDE"
-"wICogVHNfdG9ycXVlOwkgICAlIDEwIHRpbWVzIHNsb3dlciB0aGFuIHRvcnF1ZSBjb250cm9sClJT"
-"LktwICAgID0gMWUtNTsgICAgICAgICAgICAgICUgUHJvcG9ydGlvbmFsIGdhaW4KUlMuS2kgICAgP"
-"SAxZS01OyAgICAgICAgICAgICAgJSBJbnRlZ3JhbCBnYWluClJTLkthdyA9IHNxcnQoUlMuS2kgLy"
-"BSUy5LcCk7ICUgQW50aS13aW5kdXAgZ2FpbgolUlMuS2F3ID0gMTAwMDAwMDAgLyBSUy5LaTsgICA"
-"KCgolID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
-"PT09PT09PT09PT09PT09PT09CiUgRmlsdGVyaW5nCiUgPT09PT09PT09PT09PT09PT09PT09PT09P"
-"T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KJSUgREMgdm9sdG"
-"FnZQphbHBoYV92ZGMgPSBlXigtMipwaSo1MCpUY3RybCk7CgolJSBGb3Igc3BlZWQgZGVyaXZhdGl"
-"2ZQpzcGVlZEJXID0gMTA7ICUgW0h6XQpmYyA9IG1pbigxICogc3BlZWRCVywgZmN0cmwvMTApOyAl"
-"ICBbSHpdCmdhbW1hID0gMipwaSpmYypUY3RybCAvICgxICsgMipwaSpmYypUY3RybCk7CgoKJSA9P"
-"T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
-"09PT09PT09PT09PQolIFNpbXVsYXRpb24gcGFyYW1ldGVycwolID09PT09PT09PT09PT09PT09PT0"
-"9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiUlIExv"
-"YWRzOiBpbmVydGlhcyBhbmQgbWFzc2VzIGluIHN5c3RlbQpQLkptID0gTS5KOyAgICAgICAgICAgI"
-"CAlIEVxdWFsIGNvdXBsZWQgbW90b3IKUC52ZiA9IE0uVF9uIC8gTS53X24gKiAwLjU7ICUgZnJpY3"
-"Rpb24uIE9HID0gMC4wMSAKCiUlIFNvbWUgcGFyYW1ldGVycyBhcmUgcmUtZGVmaW5lZCBmb3Igc2l"
-"tdWxhdGlvbiBwdXJwb3NlcwppZiAob3BfbW9kZSA9PSAwKQoJdF9pbml0ID0gMC4xOyAgJSBTaG9y"
-"dGVyIHN0YXJ0dXAgcGVyaW9kCglSUy5LaSAgPSAxZS00OyAlIEhpZ2hlciBnYWluICAgICAKCVJTL"
-"kthdyA9IHNxcnQoUlMuS2kgLyBSUy5LcCk7CmVuZAo="
+"PT09PT09PT0KJSBDb250cm9sOiBjdXJyZW50IHJlZ3VsYXRvcgolID09PT09PT09PT09PT09PT09P"
+"T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiUlIF"
+"NhbXBsaW5nIHBlcmlvZDogZGVmaW5lZCBieSBQV00gZ2VuZXJhdGluZyBmbGFnIGV2ZXJ5IFggb3Z"
+"lci91bmRlciBmbG93cwpUY3RybF9pZGVhbCAgICAgICAgID0gVHNfbWN1OyAlIElkZWFsIHBlcmlv"
+"ZCBmb3IgdXBkYXRpbmcgY29udHJvbCBsb29wCkQucHdtVHJpZ2dlckRpdmlkZXIgPSBtYXgoZmxvb"
+"3IoRC5mcHdtICogVGN0cmxfaWRlYWwpLCAxKTsKZmN0cmwgICAgICAgICAgICAgICA9IEQuZnB3bS"
+"AvIEQucHdtVHJpZ2dlckRpdmlkZXI7ClRjdHJsICAgICAgICAgICAgICAgPSAxIC8gZmN0cmw7ClJ"
+"pLlRzICAgICAgICAgICAgICAgPSBUY3RybDsgJSBDdXJyZW50IHJlYWRpbmcgKEFEQyByZWFkeSkg"
+"aXMgcmVzcG9uc2libGUgZm9yIGNhbGN1bGF0aW5nIGNvbnRyb2wKCiUlIEVxdWl2YWxlbnQgc21hb"
+"GwgdGltZSBjb25zdGFudCAoZm9yIGN1cnJlbnQgcmVndWxhdG9yIHR1bmluZykKUmkuVGNhbGMgPS"
+"AwLjUgKiBSaS5UczsKUmkuVGEgICAgPSAwLjUgKiBSaS5UczsKUmkuVHNoICAgPSAwLjUgKiBSaS5"
+"UczsKRC5UY3MgICAgPSAxLygyKnBpKjEwMDAwMCk7ICUgQ3VycmVudCBzZW5zb3IgYmFuZHdpZHRo"
+"ClJpLlRwICAgID0gUmkuVGNhbGMgKyBSaS5UYSArIFJpLlRzaCArIEQuVGNzOwoKJSUgQ3VycmVud"
+"CByZWd1bGF0b3IgdHVuaW5nClJpLlJhICA9IDAuMDsgJSBNYXliZSAwLjAwNSAocmVzaXN0YW5jZS"
+"B1c2VkIGluIGN1cnJlbnQgc2Vuc29yKQpSaS5SICAgPSBNLlJzICsgUmkuUmE7ClJpLlRpaSA9IDI"
+"vUmkuUiAqIFJpLlRwOwpSaS5UbmkgPSBNLkxkcSAuLyBSaS5SOwoKJSUgQW5hbG9nIGdhaW5zClJp"
+"LktwICA9IFJpLlRuaSAuLyBSaS5UaWk7ClJpLktpICA9IFsxIDFdIC4vIFJpLlRpaTsKUmkuS2F3I"
+"D0gUmkuS2kgLi8gUmkuS3A7CgoKJSA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
+"09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQolICBUb3JxdWUgQ29udHJvbGxlciA"
+"oUEkpCiUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
+"PT09PT09PT09PT09PT09PT09PT0KVHNfdG9ycXVlID0gMTAgKiBUY3RybDsgJSAxMCB0aW1lcyBzb"
+"G93ZXIgdGhhbiBjdXJyZW50IGNvbnRyb2wKUlQuS3AgPSAyOyAgICAgICAgICAgICAgJSBQcm9wb3"
+"J0aW9uYWwgZ2FpbgpSVC5LaSA9IDUwMDsgICAgICAgICAgICAlIEludGVncmFsIGdhaW4KUlQuS2F"
+"3ID0gMSAvIFJULktpOyAgICAgJSBBbnRpLXdpbmR1cCBnYWluCgoKJSA9PT09PT09PT09PT09PT09"
+"PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQolI"
+"CBTcGVlZCBDb250cm9sbGVyIFBhcmFtZXRlcnMgKFBJKQolID09PT09PT09PT09PT09PT09PT09PT"
+"09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ClRzX3NwZWV"
+"kID0gMTAgKiBUc190b3JxdWU7CSAgICUgMTAgdGltZXMgc2xvd2VyIHRoYW4gdG9ycXVlIGNvbnRy"
+"b2wKUlMuS3AgICAgPSAxZS01OyAgICAgICAgICAgICAgJSBQcm9wb3J0aW9uYWwgZ2FpbgpSUy5La"
+"SAgICA9IDFlLTU7ICAgICAgICAgICAgICAlIEludGVncmFsIGdhaW4KUlMuS2F3ID0gc3FydChSUy"
+"5LaSAvIFJTLktwKTsgJSBBbnRpLXdpbmR1cCBnYWluCiVSUy5LYXcgPSAxMDAwMDAwMCAvIFJTLkt"
+"pOyAgIAoKCiUgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09"
+"PT09PT09PT09PT09PT09PT09PT09PT0KJSBGaWx0ZXJpbmcKJSA9PT09PT09PT09PT09PT09PT09P"
+"T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQolJSBEQy"
+"B2b2x0YWdlCmFscGhhX3ZkYyA9IGVeKC0yKnBpKjUwKlRjdHJsKTsKCiUlIEZvciBzcGVlZCBkZXJ"
+"pdmF0aXZlCnNwZWVkQlcgPSAxMDsgJSBbSHpdCmZjID0gbWluKDEgKiBzcGVlZEJXLCBmY3RybC8x"
+"MCk7ICUgIFtIel0KZ2FtbWEgPSAyKnBpKmZjKlRjdHJsIC8gKDEgKyAyKnBpKmZjKlRjdHJsKTsKC"
+"golID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT"
+"09PT09PT09PT09PT09PT09CiUgU2ltdWxhdGlvbiBwYXJhbWV0ZXJzCiUgPT09PT09PT09PT09PT0"
+"9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0K"
+"JSUgTG9hZHM6IGluZXJ0aWFzIGFuZCBtYXNzZXMgaW4gc3lzdGVtClAuSm0gPSBNLko7ICAgICAgI"
+"CAgICAgICUgRXF1YWwgY291cGxlZCBtb3RvcgpQLnZmID0gTS5UX24gLyBNLndfbiAqIDAuNTsgJS"
+"BmcmljdGlvbi4gT0cgPSAwLjAxIAoKJSUgU29tZSBwYXJhbWV0ZXJzIGFyZSByZS1kZWZpbmVkIGZ"
+"vciBzaW11bGF0aW9uIHB1cnBvc2VzCmlmIChvcF9tb2RlID09IDApCgl0X2luaXQgPSAwLjE7ICAl"
+"IFNob3J0ZXIgc3RhcnR1cCBwZXJpb2QKCVJTLktpICA9IDFlLTQ7ICUgSGlnaGVyIGdhaW4gICAgI"
+"AoJUlMuS2F3ID0gc3FydChSUy5LaSAvIFJTLktwKTsKZW5kCg=="
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -159,8 +159,8 @@ Plecs {
   ScriptsDialogSplitterPos "0"
   Schematic {
     Location      [0, 24; 2048, 1190]
-    ZoomFactor    1.30959
-    SliderPosition [27, 0]
+    ZoomFactor    1.49865
+    SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -339,13 +339,13 @@ Plecs {
       }
       Terminal {
         Type          Input
-        Position      [-75, 0]
+        Position      [-75, 15]
         Direction     left
         Index         "2"
       }
       Terminal {
         Type          Input
-        Position      [-75, 15]
+        Position      [-75, 35]
         Direction     left
         Index         "3"
       }
@@ -979,7 +979,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "SwitchState"
-            Value         "2"
+            Value         "1"
             Show          off
           }
         }
@@ -12609,7 +12609,7 @@ Plecs {
       SrcComponent  "Components/Electrical/Machines/Perm.-Magnet SM"
       Name          "PMSM"
       Show          on
-      Position      [880, 220]
+      Position      [840, 180]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -12689,7 +12689,7 @@ Plecs {
       Type          Subsystem
       Name          "2-Level\nIGBT\nConv."
       Show          off
-      Position      [760, 220]
+      Position      [720, 180]
       Direction     down
       Flipped       on
       LabelPosition west
@@ -13654,7 +13654,7 @@ Plecs {
       Type          Voltmeter
       Name          "Vm4"
       Show          off
-      Position      [630, 220]
+      Position      [620, 180]
       Direction     down
       Flipped       on
       LabelPosition east
@@ -13663,7 +13663,7 @@ Plecs {
       Type          ThreePhaseMeter
       Name          "3ph Meter"
       Show          off
-      Position      [815, 220]
+      Position      [780, 180]
       Direction     up
       Flipped       off
       LabelPosition southSoutheast
@@ -13677,7 +13677,7 @@ Plecs {
       Type          DCVoltageSource
       Name          "V_dc"
       Show          off
-      Position      [680, 220]
+      Position      [660, 180]
       Direction     up
       Flipped       off
       LabelPosition north
@@ -13688,34 +13688,10 @@ Plecs {
       }
     }
     Component {
-      Type          Goto
-      Name          "Goto4"
-      Show          off
-      Position      [840, 185]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "is"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
       Type          Inertia
       Name          "Inertia"
       Show          on
-      Position      [945, 250]
+      Position      [900, 210]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -13736,83 +13712,10 @@ Plecs {
       }
     }
     Component {
-      Type          Goto
-      Name          "Goto6"
-      Show          off
-      Position      [925, 140]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "vs0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto2"
-      Show          off
-      Position      [795, 295]
-      Direction     down
-      Flipped       off
-      LabelPosition west
-      Parameter {
-        Variable      "Tag"
-        Value         "ibr"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
-      Type          TransferFunction
-      Name          "Filter"
-      Show          on
-      Position      [870, 140]
-      Direction     right
-      Flipped       off
-      LabelPosition north
-      Frame         [-30, -15; 30, 15]
-      Parameter {
-        Variable      "Numerator"
-        Value         "[1]"
-        Show          off
-      }
-      Parameter {
-        Variable      "Denominator"
-        Value         "[Vm.T 1]"
-        Show          off
-      }
-      Parameter {
-        Variable      "X0"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
       Type          RotationalFriction
       Name          "Rotational\nFriction"
       Show          off
-      Position      [980, 250]
+      Position      [935, 210]
       Direction     down
       Flipped       on
       LabelPosition south
@@ -13836,67 +13739,19 @@ Plecs {
       Type          RotationalReference
       Name          "Rotational\nFrame"
       Show          off
-      Position      [1000, 250]
+      Position      [955, 210]
       Direction     left
       Flipped       off
       LabelPosition east
     }
     Component {
-      Type          From
-      Name          "From1"
+      Type          Subsystem
+      Name          "Subsystem"
       Show          off
-      Position      [100, 70]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "is"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From9"
-      Show          off
-      Position      [100, 90]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "ibr"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          ConfigurableSubsystem
-      Name          "Current Sensing"
-      Show          on
-      Position      [155, 80]
+      Position      [570, 155]
       Direction     up
       Flipped       off
-      LabelPosition north
+      LabelPosition south
       Frame         [-20, -20; 20, 20]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -13911,307 +13766,13 @@ Plecs {
       }
       Terminal {
         Type          Output
-        Position      [24, 0]
+        Position      [24, -10]
         Direction     right
       }
       Terminal {
         Type          Input
         Position      [-20, 10]
         Direction     left
-      }
-      TerminalNames { "Is", "I", "Ibr" }
-      Location      [1, 30; 1023, 1160]
-      ZoomFactor    1
-      SliderPosition [0, 0]
-      ShowBrowser   off
-      BrowserWidth  100
-      Configurations {
-        Name          "Line Sensors"
-        Schematic {
-          Component {
-            Type          Input
-            Name          "Is"
-            Show          on
-            Position      [40, 75]
-            Direction     right
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "Index"
-              Value         "1"
-              Show          on
-            }
-            Parameter {
-              Variable      "Width"
-              Value         "-1"
-              Show          off
-            }
-          }
-          Component {
-            Type          Output
-            Name          "I"
-            Show          on
-            Position      [330, 75]
-            Direction     right
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "Index"
-              Value         "2"
-              Show          on
-            }
-            Parameter {
-              Variable      "Width"
-              Value         "-1"
-              Show          off
-            }
-          }
-          Component {
-            Type          Input
-            Name          "Ibr"
-            Show          on
-            Position      [40, 125]
-            Direction     right
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "Index"
-              Value         "3"
-              Show          on
-            }
-            Parameter {
-              Variable      "Width"
-              Value         "-1"
-              Show          off
-            }
-          }
-          Connection {
-            Type          Signal
-            SrcComponent  "Is"
-            SrcTerminal   1
-            DstComponent  "I"
-            DstTerminal   1
-          }
-        }
-        Name          "Shunt Sensors"
-        Schematic {
-          Component {
-            Type          Input
-            Name          "Is"
-            Show          on
-            Position      [50, 35]
-            Direction     right
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "Index"
-              Value         "1"
-              Show          on
-            }
-            Parameter {
-              Variable      "Width"
-              Value         "-1"
-              Show          off
-            }
-          }
-          Component {
-            Type          Output
-            Name          "I"
-            Show          on
-            Position      [395, 75]
-            Direction     right
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "Index"
-              Value         "2"
-              Show          on
-            }
-            Parameter {
-              Variable      "Width"
-              Value         "-1"
-              Show          off
-            }
-          }
-          Component {
-            Type          Input
-            Name          "Ibr"
-            Show          on
-            Position      [50, 75]
-            Direction     right
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "Index"
-              Value         "3"
-              Show          on
-            }
-            Parameter {
-              Variable      "Width"
-              Value         "-1"
-              Show          off
-            }
-          }
-          Component {
-            Type          SignalDemux
-            Name          "Demux"
-            Show          off
-            Position      [185, 110]
-            Direction     right
-            Flipped       on
-            LabelPosition south
-            Parameter {
-              Variable      "Width"
-              Value         "3"
-              Show          off
-            }
-          }
-          Component {
-            Type          Sum
-            Name          "Sum2"
-            Show          off
-            Position      [285, 75]
-            Direction     up
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "IconShape"
-              Value         "2"
-              Show          off
-            }
-            Parameter {
-              Variable      "Inputs"
-              Value         "|-+"
-              Show          off
-            }
-            Parameter {
-              Variable      "DataType"
-              Value         "11"
-              Show          off
-            }
-            Parameter {
-              Variable      "DataTypeOverflowMode"
-              Value         "1"
-              Show          off
-            }
-          }
-          Component {
-            Type          Sum
-            Name          "Sum3"
-            Show          off
-            Position      [245, 110]
-            Direction     up
-            Flipped       off
-            LabelPosition south
-            Parameter {
-              Variable      "IconShape"
-              Value         "1"
-              Show          off
-            }
-            Parameter {
-              Variable      "Inputs"
-              Value         "+++"
-              Show          off
-            }
-            Parameter {
-              Variable      "DataType"
-              Value         "11"
-              Show          off
-            }
-            Parameter {
-              Variable      "DataTypeOverflowMode"
-              Value         "1"
-              Show          off
-            }
-          }
-          Connection {
-            Type          Signal
-            SrcComponent  "Demux"
-            SrcTerminal   2
-            DstComponent  "Sum3"
-            DstTerminal   2
-          }
-          Connection {
-            Type          Signal
-            SrcComponent  "Demux"
-            SrcTerminal   3
-            DstComponent  "Sum3"
-            DstTerminal   3
-          }
-          Connection {
-            Type          Signal
-            SrcComponent  "Demux"
-            SrcTerminal   4
-            DstComponent  "Sum3"
-            DstTerminal   4
-          }
-          Connection {
-            Type          Signal
-            SrcComponent  "Sum3"
-            SrcTerminal   1
-            Points        [285, 110]
-            DstComponent  "Sum2"
-            DstTerminal   3
-          }
-          Connection {
-            Type          Signal
-            SrcComponent  "Sum2"
-            SrcTerminal   1
-            DstComponent  "I"
-            DstTerminal   1
-          }
-          Connection {
-            Type          Signal
-            SrcComponent  "Ibr"
-            SrcTerminal   1
-            Points        [145, 75]
-            Branch {
-              Points        [145, 110]
-              DstComponent  "Demux"
-              DstTerminal   1
-            }
-            Branch {
-              DstComponent  "Sum2"
-              DstTerminal   2
-            }
-          }
-        }
-      }
-      Parameter {
-        Variable      "Configuration"
-        Value         "2"
-        Show          on
-      }
-    }
-    Component {
-      Type          Subsystem
-      Name          "Subsystem"
-      Show          off
-      Position      [580, 145]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-30, -10; 30, 10]
-      SampleTime    "-1"
-      CodeGenDiscretizationMethod "2"
-      CodeGenTarget "Generic"
-      MaskIconFrame on
-      MaskIconOpaque off
-      MaskIconRotates on
-      Terminal {
-        Type          Input
-        Position      [-30, 0]
-        Direction     left
-      }
-      Terminal {
-        Type          Output
-        Position      [34, 0]
-        Direction     right
-      }
-      Terminal {
-        Type          Input
-        Position      [0, 10]
-        Direction     down
       }
       Schematic {
         Location      [1025, 30; 2047, 1188]
@@ -14502,7 +14063,7 @@ Plecs {
       Position      [245, 160]
       Direction     right
       Flipped       off
-      LabelPosition south
+      LabelPosition westSouthwest
       Parameter {
         Variable      "K"
         Value         "Vm.K"
@@ -14536,7 +14097,7 @@ Plecs {
       Position      [220, 80]
       Direction     right
       Flipped       off
-      LabelPosition south
+      LabelPosition north
       Parameter {
         Variable      "K"
         Value         "Im.K"
@@ -14596,7 +14157,7 @@ Plecs {
       Type          Constant
       Name          "Constant1"
       Show          off
-      Position      [100, 130]
+      Position      [220, 125]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -14616,7 +14177,7 @@ Plecs {
       Type          PlecsProbe
       Name          "Probe"
       Show          off
-      Position      [135, 250]
+      Position      [180, 220]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -14624,63 +14185,6 @@ Plecs {
         Component     "PMSM"
         Path          ""
         Signals       {"Rotor position", "Rotational speed"}
-      }
-    }
-    Component {
-      Type          Scope
-      Name          "Scope"
-      Show          off
-      Position      [760, 80]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Location      [0, 24; 2048, 1221]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASOAAAA"
-"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
-"AAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":174,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
-      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0.0"
-      ScrollingMode "1"
-      SingleTimeAxis "1"
-      Open          "0"
-      Ts            "-1"
-      SampleLimit   "0"
-      XAxisLabel    ""
-      ShowLegend    "1"
-      Axis {
-        Name          ""
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Fourier {
-        SingleXAxis       on
-        AxisLabel         "Frequency"
-        Scaling           0
-        PhaseDisplay      0
-        ShowFourierLegend off
-        Axis {
-          Name          ""
-          AutoScale     1
-          MinValue      0
-          MaxValue      1
-          Signals       {}
-          Untangle      0
-          KeepBaseline  off
-          BaselineValue 0
-        }
       }
     }
     Component {
@@ -14698,163 +14202,10 @@ Plecs {
       }
     }
     Component {
-      Type          Scope
-      Name          "Scope1"
-      Show          off
-      Position      [680, 80]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Location      [0, 24; 2048, 1263]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAAS4AAAA"
-"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
-"AAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":99,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
-      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0.0"
-      ScrollingMode "1"
-      SingleTimeAxis "1"
-      Open          "0"
-      Ts            "-1"
-      SampleLimit   "0"
-      XAxisLabel    "Time / s"
-      ShowLegend    "1"
-      Axis {
-        Name          ""
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Fourier {
-        SingleXAxis       on
-        AxisLabel         "Frequency / Hz"
-        Scaling           0
-        PhaseDisplay      0
-        ShowFourierLegend off
-        Axis {
-          Name          ""
-          AutoScale     1
-          MinValue      0
-          MaxValue      1
-          Signals       {}
-          Untangle      0
-          KeepBaseline  off
-          BaselineValue 0
-        }
-      }
-    }
-    Component {
-      Type          From
-      Name          "From"
-      Show          off
-      Position      [635, 80]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "vs0"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From2"
-      Show          off
-      Position      [725, 80]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "is"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto"
-      Show          off
-      Position      [600, 220]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      Parameter {
-        Variable      "Tag"
-        Value         "vin"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From3"
-      Show          off
-      Position      [205, 160]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "vin"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
       Type          Constant
       Name          "Constant"
       Show          on
-      Position      [1040, 400]
+      Position      [1000, 320]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -14872,71 +14223,14 @@ Plecs {
       }
     }
     Component {
-      Type          Scope
-      Name          "Scope2"
-      Show          on
-      Position      [415, 290]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Location      [704, 376; 1054, 616]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
-"G0AQQByAGUAYQAAAAAA/////wAAADEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAV4AAADRAAAA"
-"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
-"AAAAA=="
-      SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":176,\"Labels\":[],"
-"\"VisualIdxs\":[]}"
-      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-      Axes          "1"
-      TimeRange     "0.0"
-      ScrollingMode "1"
-      SingleTimeAxis "1"
-      Open          "0"
-      Ts            "-1"
-      SampleLimit   "0"
-      XAxisLabel    "Time / s"
-      ShowLegend    "1"
-      Axis {
-        Name          ""
-        AutoScale     1
-        MinValue      0
-        MaxValue      1
-        Signals       {}
-        SignalTypes   [ ]
-        Untangle      0
-        KeepBaseline  off
-        BaselineValue 0
-      }
-      Fourier {
-        SingleXAxis       on
-        AxisLabel         "Frequency / Hz"
-        Scaling           0
-        PhaseDisplay      0
-        ShowFourierLegend off
-        Axis {
-          Name          ""
-          AutoScale     1
-          MinValue      0
-          MaxValue      1
-          Signals       {}
-          Untangle      0
-          KeepBaseline  off
-          BaselineValue 0
-        }
-      }
-    }
-    Component {
       Type          Subsystem
       Name          "Hall"
       Show          on
-      Position      [220, 280]
+      Position      [260, 240]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-25, -15; 25, 15]
+      Frame         [-20, -10; 20, 10]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
       CodeGenTarget "Generic"
@@ -15001,12 +14295,12 @@ Plecs {
       }
       Terminal {
         Type          Output
-        Position      [29, 0]
+        Position      [24, 0]
         Direction     right
       }
       Terminal {
         Type          Input
-        Position      [-25, 0]
+        Position      [-20, 0]
         Direction     left
       }
       Schematic {
@@ -15410,11 +14704,11 @@ Plecs {
       Type          Subsystem
       Name          "QEP"
       Show          on
-      Position      [220, 220]
+      Position      [260, 200]
       Direction     up
       Flipped       off
       LabelPosition south
-      Frame         [-25, -15; 25, 15]
+      Frame         [-20, -10; 20, 10]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
       CodeGenTarget "Generic"
@@ -15424,12 +14718,12 @@ Plecs {
       MaskIconRotates on
       Terminal {
         Type          Output
-        Position      [29, 0]
+        Position      [24, 0]
         Direction     right
       }
       Terminal {
         Type          Input
-        Position      [-25, 0]
+        Position      [-20, 0]
         Direction     left
       }
       Schematic {
@@ -16316,9 +15610,9 @@ Plecs {
     }
     Component {
       Type          PlecsProbe
-      Name          "Probe1"
+      Name          "Motor probe"
       Show          on
-      Position      [680, 340]
+      Position      [410, 80]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -16332,7 +15626,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux1"
       Show          off
-      Position      [735, 340]
+      Position      [470, 80]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -16344,21 +15638,172 @@ Plecs {
     }
     Component {
       Type          Scope
-      Name          "Scope3"
+      Name          "Scope - Motor"
       Show          on
-      Position      [785, 340]
+      Position      [510, 80]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1, 30; 1023, 1264]
+      Location      [1, 30; 1023, 1269]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA/4AAASzAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAA/4AAAS4AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      Axes          "2"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux2"
+      Show          off
+      Position      [80, 120]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Sum
+      Name          "Sum2"
+      Show          off
+      Position      [160, 80]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "IconShape"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "|-+"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Sum
+      Name          "Sum3"
+      Show          off
+      Position      [120, 120]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "IconShape"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "+++"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataType"
+        Value         "11"
+        Show          off
+      }
+      Parameter {
+        Variable      "DataTypeOverflowMode"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope - Stator"
+      Show          on
+      Position      [815, 130]
+      Direction     up
+      Flipped       off
+      LabelPosition north
+      Location      [0, 24; 2048, 1221]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAACAAAAASOAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":215,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
@@ -16446,31 +15891,23 @@ Plecs {
       Type          Wire
       SrcComponent  "3ph Meter"
       SrcTerminal   9
-      Points        [815, 280; 760, 280]
+      Points        [780, 220; 720, 220]
       Branch {
         DstComponent  "2-Level\nIGBT\nConv."
         DstTerminal   6
       }
       Branch {
-        Points        [680, 280]
+        Points        [660, 220]
         Branch {
           DstComponent  "V_dc"
           DstTerminal   2
         }
         Branch {
-          Points        [630, 280]
+          Points        [620, 220]
           DstComponent  "Vm4"
           DstTerminal   2
         }
       }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter"
-      SrcTerminal   7
-      Points        [810, 140]
-      DstComponent  "Filter"
-      DstTerminal   1
     }
     Connection {
       Type          Rotational
@@ -16481,17 +15918,9 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "2-Level\nIGBT\nConv."
-      SrcTerminal   7
-      Points        [795, 240]
-      DstComponent  "Goto2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Constant1"
       SrcTerminal   1
-      Points        [265, 130]
+      Points        [265, 125]
       DstComponent  "Sum"
       DstTerminal   3
     }
@@ -16506,22 +15935,22 @@ Plecs {
       Type          Signal
       SrcComponent  "Probe"
       SrcTerminal   1
-      Points        [170, 250]
+      Points        [210, 220]
       Branch {
-        Points        [170, 220]
+        Points        [210, 200]
         DstComponent  "QEP"
         DstTerminal   2
       }
       Branch {
-        Points        [170, 280]
+        Points        [210, 240]
         DstComponent  "Hall"
         DstTerminal   2
       }
     }
     Connection {
       Type          Signal
-      SrcComponent  "Current Sensing"
-      SrcTerminal   2
+      SrcComponent  "Sum2"
+      SrcTerminal   1
       DstComponent  "Gain1"
       DstTerminal   1
     }
@@ -16562,20 +15991,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "From9"
-      SrcTerminal   1
-      DstComponent  "Current Sensing"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From1"
-      SrcTerminal   1
-      DstComponent  "Current Sensing"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Controller"
       SrcTerminal   4
       DstComponent  "Subsystem"
@@ -16585,7 +16000,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Subsystem"
       SrcTerminal   2
-      Points        [775, 145]
+      Points        [595, 130; 735, 130]
       DstComponent  "2-Level\nIGBT\nConv."
       DstTerminal   4
     }
@@ -16635,31 +16050,17 @@ Plecs {
       DstTerminal   1
     }
     Connection {
-      Type          Signal
-      SrcComponent  "Filter"
-      SrcTerminal   2
-      DstComponent  "Goto6"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From"
-      SrcTerminal   1
-      DstComponent  "Scope1"
-      DstTerminal   1
-    }
-    Connection {
       Type          Wire
       SrcComponent  "V_dc"
       SrcTerminal   1
-      Points        [680, 160]
+      Points        [660, 140]
       Branch {
-        Points        [760, 160]
+        Points        [720, 140]
         DstComponent  "2-Level\nIGBT\nConv."
         DstTerminal   5
       }
       Branch {
-        Points        [630, 160]
+        Points        [620, 140]
         DstComponent  "Vm4"
         DstTerminal   1
       }
@@ -16668,57 +16069,13 @@ Plecs {
       Type          Signal
       SrcComponent  "Hall"
       SrcTerminal   1
-      Points        [320, 280; 320, 190]
+      Points        [320, 240; 320, 210]
       DstComponent  "Controller"
       DstTerminal   3
     }
     Connection {
       Type          Signal
-      SrcComponent  "3ph Meter"
-      SrcTerminal   8
-      DstComponent  "Goto4"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From2"
-      SrcTerminal   1
-      DstComponent  "Scope"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Vm4"
-      SrcTerminal   3
-      DstComponent  "Goto"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From3"
-      SrcTerminal   1
-      DstComponent  "G2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "QEP"
-      SrcTerminal   1
-      Points        [290, 220]
-      Branch {
-        Points        [310, 220; 310, 175]
-        DstComponent  "Controller"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [290, 290]
-        DstComponent  "Scope2"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Probe1"
+      SrcComponent  "Motor probe"
       SrcTerminal   1
       DstComponent  "Demux1"
       DstTerminal   1
@@ -16727,23 +16084,97 @@ Plecs {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   2
-      DstComponent  "Scope3"
+      DstComponent  "Scope - Motor"
       DstTerminal   1
     }
     Connection {
       Type          Signal
       SrcComponent  "Demux1"
       SrcTerminal   3
-      DstComponent  "Scope3"
+      DstComponent  "Scope - Motor"
       DstTerminal   2
     }
     Connection {
       Type          Signal
       SrcComponent  "Controller"
       SrcTerminal   8
-      Points        [555, 165; 555, 170]
       DstComponent  "Subsystem"
       DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "QEP"
+      SrcTerminal   1
+      Points        [310, 200; 310, 190]
+      DstComponent  "Controller"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   2
+      DstComponent  "Sum3"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   3
+      DstComponent  "Sum3"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   4
+      DstComponent  "Sum3"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sum3"
+      SrcTerminal   1
+      Points        [160, 120]
+      DstComponent  "Sum2"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter"
+      SrcTerminal   7
+      Points        [775, 125]
+      DstComponent  "Scope - Stator"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter"
+      SrcTerminal   8
+      DstComponent  "Scope - Stator"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Vm4"
+      SrcTerminal   3
+      Points        [605, 280; 40, 280; 40, 160]
+      DstComponent  "G2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "2-Level\nIGBT\nConv."
+      SrcTerminal   7
+      Points        [750, 35; 40, 35; 40, 80]
+      Branch {
+        DstComponent  "Sum2"
+        DstTerminal   2
+      }
+      Branch {
+        Points        [40, 120]
+        DstComponent  "Demux2"
+        DstTerminal   1
+      }
     }
   }
 }
