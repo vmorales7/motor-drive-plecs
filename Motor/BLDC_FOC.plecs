@@ -13601,7 +13601,7 @@ Plecs {
 "-size:12px;\">Make sure JP6 &amp; J5 is populated!</span></p>\n<p align=\"cen"
 "ter\"><span style=\" font-size:12px;\">JP1,2,3 unconnected</span></p></body><"
 "/html>"
-          Position      [185, 500]
+          Position      [200, 500]
         } 
         Annotation {
           Name          "<html><body>\n<p><span style=\" font-size:12px;\">ADC"
