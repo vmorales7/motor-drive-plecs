@@ -1045,10 +1045,10 @@ La familia de modulación por ancho de pulso (PWM) es el enfoque dominante para 
 	\label{fig:pwm_clasif_rashid}
 \end{figure}
 
-\paragraph{Carrier-based / convencional:}
+\subsubsection{Carrier-based / convencional PWM}
 En las técnicas carrier-based se compara una modulante (habitualmente sinusoidal por fase) con una portadora de alta frecuencia (triangular o diente de sierra) para generar los estados de los semipuentes. Destacan por su sencillez, linealidad en la región de modulación, frecuencia de conmutación fija y control directo del índice de modulación. Incluyen SPWM (senoidal pura), variantes con inyección de tercera armónica, muestreo natural o regular y extensiones a convertidores multinivel \cite{Bushra2024PWMReview}.
 
-\paragraph{Space Vector PWM (SVPWM):}
+\subsubsection{Space vector PWM (SVPWM)}
 SVPWM opera directamente en el plano \(\alpha\beta\), tratando al inversor como un generador de vectores espaciales. En cada período de conmutación selecciona secuencias de vectores activos y nulos para sintetizar el vector de referencia. En inversores de dos niveles suele ofrecer mejor utilización del bus DC (mayor amplitud máxima del voltaje fundamental), menor distorsión armónica total y control sistemático del orden de conmutaciones y de los estados nulos. Sus variantes para topologías multinivel permiten además mitigar tensión de modo común \cite{BenMahmoud2024SVPWMReview}.
 
 \begin{figure}[H]
@@ -1058,13 +1058,14 @@ SVPWM opera directamente en el plano \(\alpha\beta\), tratando al inversor como 
 	\label{fig:svpwm}
 \end{figure}
 
-\paragraph{Optimal PWM (SHE/SHM/OPP):}
+\subsubsection{Optimal PWM (SHE/SHM/OPP)}
 Dentro de \textit{optimal PWM} se agrupan técnicas que determinan \textit{a priori} (fuera de línea) los instantes/ángulos de conmutación que optimizan un criterio (i.e. minimizar armónicos) sujeto a restricciones (número de conmutaciones, simetrías, límites de tensión/corriente) \cite{PWMreview_Wiley}. Entre las más usadas están: (i) \textit{Selective Harmonic Elimination} (SHE), que anula armónicos específicos resolviendo ecuaciones para los ángulos de disparo como función del índice de modulación; (ii) \textit{Selective Harmonic Mitigation} (SHM), que permite tolerancias no nulas en armónicos objetivo para mejorar robustez frente a variaciones del bus DC; y (iii) \textit{Optimal Pulse Patterns} (OPP), que minimizan una función de costo global (i.e. THD ponderada) y son populares en accionamientos de media/alta potencia con bajas frecuencias de conmutación. Sus ventajas típicas son muy bajo contenido armónico con pocas conmutaciones y alta eficiencia, mientras que sus limitaciones incluyen mayor complejidad de diseño (tablas e interpolación), menor ancho de banda dinámico y sensibilidad a desajustes del sistema \cite{Bushra2024PWMReview}. Estas metodologías se aplican tanto a inversores de dos niveles como multinivel, y conviven con variantes “óptimas” basadas en SVPWM reportadas en la literatura reciente \cite{BenMahmoud2024SVPWMReview}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bigskip
-\subsection{Modulación PWM Sinusoidal (SPWM)}
+\subsection{Modulación PWM sinusoidal (SPWM)}
+\subsubsection{Concepto general}
 Este trabajo se centra en el PWM sinusoidal (SPWM), que es parte de los PWM basados en señal portadora (CB-PWM). Este método utiliza tres señales de referencia trifásicas desfasadas \(120^\circ\), \(v_a^\ast(t)\), \(v_b^\ast(t)\) y \(v_c^\ast(t)\), junto con una señal portadora \(v_\triangle(t)\) de alta frecuencia de forma triangular o \textit{sawtooth}. En el contexto FOC, la referencia \(v_d^\ast, v_q^\ast\) debe convertirse a \(abc\) antes del modulador. Así, la conmutación por fase se define comparando cada modulante con la portadora: el interruptor superior del semipuente se enciende cuando la modulante supera a la portadora y el interruptor inferior se enciende en el instante complementario. Formalmente:
 
 \begin{equation}
@@ -1087,6 +1088,9 @@ De este modo se generan las seis señales de conmutación para los seis interrup
 	\label{fig:inversor_rashid2}
 \end{figure}
 
+\subsubsection{Tiempo muerto}
+En la implementación práctica de inversores de dos niveles, es común introducir un tiempo muerto entre el apagado de un interruptor y el encendido de su complemento para evitar el cortocircuito del bus DC por superposición de tiempos de conmutación y cargas de recuperación de los diodos. Este retardo, típicamente de algunos cientos de nanosegundos a pocos microsegundos según el semiconductor y la frecuencia de conmutación, reduce el ciclo útil efectivo y provoca una deformación del voltaje de fase dependiente del sentido de la corriente, generando distorsión armónica adicional y ondulación de torque a bajas velocidades.
+
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{0.49\linewidth}
@@ -1100,10 +1104,11 @@ De este modo se generan las seis señales de conmutación para los seis interrup
 	\caption{Señales de conmutación y tensiones resultantes con SPWM \cite{rashid_book}.}
 	\label{fig:pwm_ejemplo_rashid}
 \end{figure}
+ 
 
-\paragraph{Tiempo muerto:} En la implementación práctica de inversores de dos niveles, es común introducir un tiempo muerto entre el apagado de un interruptor y el encendido de su complemento para evitar el cortocircuito del bus DC por superposición de tiempos de conmutación y cargas de recuperación de los diodos. Este retardo, típicamente de algunos cientos de nanosegundos a pocos microsegundos según el semiconductor y la frecuencia de conmutación, reduce el ciclo útil efectivo y provoca una deformación del voltaje de fase dependiente del sentido de la corriente, generando distorsión armónica adicional y ondulación de torque a bajas velocidades.
 
-\paragraph{Sobremodulación:} En SPWM existe una zona lineal donde la amplitud del voltaje fundamental fase-neutro generado crece proporcionalmente con la amplitud de la modulante. Al definir el índice de modulación
+\subsubsection{Sobremodulación}
+En SPWM existe una zona lineal donde la amplitud del voltaje fundamental fase-neutro generado crece proporcionalmente con la amplitud de la modulante. Al definir el índice de modulación
 
 \begin{equation}
 	\label{eq:ma_def_new}
@@ -1128,7 +1133,7 @@ El límite superior de la región lineal se alcanza con \(m_a=1\). En ese punto,
 
 Por encima de este valor se entra en sobremodulación: aumenta la utilización del bus pero se pierde la proporcionalidad entre referencia y fundamental, además de crecer la distorsión armónica \cite{rashid_book}.
 
-\paragraph{Frecuencia de portadora y de conmutación}
+\subsubsection{Frecuencia de portadora y de conmutación}
 La frecuencia de la portadora \(f_c\) fija, en general, la frecuencia de conmutación efectiva de los semiconductores del inversor. En SPWM con portadora triangular centrada y comparación continua, cada semipuente conmuta aproximadamente a \(f_c\) por ciclo. Aumentar \(f_c\) desplaza el espectro de armónicos hacia frecuencias más altas y reduce su amplitud en la banda baja, lo que se traduce en menor contenido armónico en la corriente estatórica y, por ende, en un torque más limpio. No obstante, frecuencias más elevadas incrementan las pérdidas de conmutación, las exigencias térmicas y el esfuerzo EMI, por lo que la elección de \(f_c\) resulta de un compromiso entre pérdidas, rizado de corriente, requisitos acústicos y dinámica del control.
 
 En convertidores de baja potencia con MOSFET de silicio o carburo de silicio pueden emplearse frecuencias altas, típicamente entre 20 kHz y 100 kHz. En inversores de mayor potencia (cientos de kW a algunos MW) con IGBT, son habituales rangos del orden de 2 kHz a 10 kHz. Mientras que en aplicaciones de muy alta tensión y potencia, con dispositivos como GCT, la frecuencia de conmutación suele situarse entre algunos cientos de hercios y unos pocos kilohert. 
@@ -1136,19 +1141,21 @@ En convertidores de baja potencia con MOSFET de silicio o carburo de silicio pue
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bigskip
-\subsection{Saturación dinámica de voltaje}
+\subsection{Saturación de voltaje}
 
-El voltaje aplicado al estator de una máquina síncrona no solo se encuentra limitado por el nivel de aislamiento de los devanados, sino principalmente por el voltaje disponible en el \textit{link-DC} que alimenta al inversor y por el tipo de modulación utilizada. En el caso de la modulación sinusoidal por ancho de pulso (SPWM), la magnitud máxima de la componente fundamental del voltaje de fase no puede exceder la mitad del voltaje del bus DC:
+El voltaje aplicado al estator de una máquina síncrona no solo se encuentra limitado por el nivel de aislamiento de los devanados, sino principalmente por el voltaje disponible en el \textit{link-DC} que alimenta al inversor y por el tipo de modulación utilizada. En el caso de la modulación sinusoidal por ancho de pulso (SPWM), para mantenerse en el rango de modulación lineal, la magnitud máxima de la componente fundamental del voltaje fase-neutro no puede exceder la mitad del voltaje del bus DC. En espacio $dq$ esto implica un límite en la magnitud del vector de tensión:
 
 \begin{equation}
 	\label{eqn:limite_vdq_general}
 	\sqrt{v_d^2 + v_q^2} \; \leq \; V_s^{\text{max}} = \dfrac{V_{DC}}{2}
 \end{equation}
 
-Este límite define una circunferencia en el plano $dq$, dentro de la cual debe ubicarse el vector de referencia $\underline{v}_{dq}$ generado por los controladores de corriente. El cumplimiento de esta restricción es fundamental para evitar saturación en el modulador y distorsiones en la corriente de fase, especialmente en condiciones de altas velocidades donde la caída por fuerza contraelectromotriz (\textit{back-EMF}) se aproxima al voltaje disponible.
+Este límite define una circunferencia en el plano $dq$, dentro de la cual debe ubicarse el vector de referencia $\underline{v}_{dq}$ generado por los controladores de corriente. El cumplimiento de esta restricción es fundamental para evitar saturación en el modulador y distorsiones en la corriente de fase.
 
-\bigskip
-\textbf{Saturación vectorial del voltaje.}
+A continuación, se abarcan dos conceptos importantes en lo que respecta a la saturación del voltaje. Por un lado, se satura la totalidad del voltaje, en marco $d-q$, que se entrega a la etapa de modulación.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Saturación vectorial del voltaje}
 El primer concepto consiste en la saturación de la magnitud total del vector $\underline{v}_{dq}$, de manera que, si la magnitud $\sqrt{v_d^2 + v_q^2}$ supera el límite impuesto por el enlace DC, se realiza una reasignación proporcional (rescaling) manteniendo el mismo ángulo eléctrico. Este método conserva la dirección del fasor de voltaje, evitando cambios abruptos en el ángulo del campo girante y garantizando una transición suave entre la zona lineal y la de saturación del modulador.
 
 \begin{equation}
@@ -1160,23 +1167,68 @@ El primer concepto consiste en la saturación de la magnitud total del vector $\
 	\end{cases}
 \end{equation}
 
-\bigskip
-\textbf{Saturación dinámica de los lazos PI.}
-El segundo concepto corresponde a la saturación dinámica aplicada a los reguladores PI de corriente en los ejes $d$ y $q$. En este caso, los límites de salida de cada PI se ajustan dinámicamente según el voltaje disponible restante en el vector de referencia. De esta forma, si el eje $q$ utiliza una fracción significativa del voltaje total (por demanda de torque), el límite del eje $d$ se reduce automáticamente para mantener la condición de saturación circular de \eqref{eqn:limite_vdq_general}.
+Existen alternativas más simples, pero menos eficientes, para limitar el voltaje en los controladores de corriente. Una de ellas consiste en asignar un límite fijo e independiente para cada eje, de modo que la suma de ambos valores se mantenga dentro del máximo permitido por el modulador. Por ejemplo, definir
 
-\bigskip
-Este enfoque, basado en reasignación dinámica del voltaje disponible, permite priorizar el control del componente $v_q$ (relacionado con el torque) sobre el eje $d$ (relacionado con el flujo), evitando la pérdida de linealidad del modulador sin comprometer la estabilidad de los lazos internos. El proceso se complementa con un mecanismo de \textit{anti-windup} por retrocálculo, que realimenta al integrador la diferencia entre el voltaje saturado y el solicitado, previniendo acumulación de error integral durante la saturación.
+\[
+v_d^{\text{max}} = 0.4\,V_s^{\text{max}}
+\qquad \qquad \qquad \qquad
+v_q^{\text{max}} = 0.9\,V_s^{\text{max}}
+\]
+
+Si bien este método es sencillo de implementar, tiene dos desventajas principales: (i) el vector de salida deja de mantener su dirección original, ya que los ejes se limitan de forma independiente, y (ii) el sistema desaprovecha parte del voltaje disponible, pues no se utiliza la totalidad del círculo definido por la ecuación \eqref{eqn:limite_vdq_general}. En la práctica, esto da como resultado una saturación de tipo \textit{rectangular} en el plano $dq$, en lugar de una circular. Tiene el beneficio de poder priorizar la asignación de voltaje en alguno de los ejes, lo cual no permite hacer el método de re-escalamiento vectorial.
+
+Una opción más avanzada es la saturación dinámica con prioridad, en la cual se asigna prioridad al eje $q$ (asociado al control de torque), utilizando primero el voltaje necesario en dicho eje y limitando el eje $d$ con el voltaje restante:
+
+\[
+v_{d,\text{max}} \; = \; \sqrt{(V_s^{\text{max}})^2 - v_{q,\text{cmd}}^2}.
+\]
+
+De este modo, se preserva el esfuerzo de control del torque incluso en condiciones de saturación, sacrificando en menor medida el control de flujo ($i_d$). Esta técnica es especialmente útil durante transitorios de carga, y puede implementarse en forma suave mediante escalamiento dinámico o con una lógica de prioridad discreta.
+
+Cualquiera sea el caso, es interesante notar que se puede permitir cierto grado de sobre-modulación al reescalar el voltaje máximo según un factor arbitrario, mayor a uno (1), pero razonable:
 
 \begin{equation}
-	\dot{I}_{\text{int},dq} = K_{\text{aw}} \left( v_{dq}^* - v_{dq}^{\text{PI}} \right)
+	V_s^{max} \; = \; k \cdot \dfrac{V_{DC}}{2}
 \end{equation}
 
-\bigskip
-En la práctica, se adopta un margen de seguridad $\gamma \approx 0.95$ sobre el límite teórico, definiendo:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Saturación dinámica de los lazos PI}
+El segundo concepto corresponde a la saturación dinámica de los reguladores PI de corriente en los ejes $d$ y $q$. En este esquema, los límites de salida de cada regulador no son fijos, sino que se ajustan continuamente en función del voltaje remanente luego de incorporar los términos de acoplamiento cruzado (fuerza contraelectromotriz).De esta forma, el voltaje total aplicado en cada eje se compone de dos partes:
+
 \begin{equation}
-	V_s^{\text{max}} = \gamma \, \dfrac{V_{DC,\text{med}}}{2}
+v_{d|q}^{\text{tot}} \; = \; v_{d|q}^{\text{PI}} + v_{d|q}^{\text{coup}}
 \end{equation}
-donde $V_{DC,\text{med}}$ corresponde a la medida filtrada del bus DC. Este método ofrece una utilización óptima del voltaje disponible y una respuesta suave ante variaciones del enlace DC, siendo ampliamente preferido frente a estrategias de reparto fijo de voltaje entre ejes (\textit{fixed axis allocation}), que reducen innecesariamente el rango operativo y degradan la dinámica del control vectorial.
+
+donde $v_{d|q}^{\text{coup}}$ representa los términos de acoplamiento, ya sea en el eje directo o en cuadratura. Típicamente:
+
+\begin{equation}
+v_d^{\text{coup}} = -\omega_e L_s i_q 
+\qquad \qquad \qquad \qquad
+v_q^{\text{coup}} = +\omega_e L_s i_d + \omega_e \psi_m.
+\end{equation}
+
+Para asegurar que el voltaje total permanezca dentro del límite impuesto por el bus DC, se restringe la salida del PI de modo que:
+
+\begin{equation}
+	\label{eqn:condicion_saturacion_dinamica}
+	|v_{d|q}^{\text{PI}}| \; \leq \; v_{d|q}^{\text{lim}} \; = \; V_{s,d|q}^{\text{max}} - |v_{d|q}^{\text{coup}}|.
+\end{equation}
+
+Esta formulación garantiza que, sin importar el método empleado para calcular $V_s^{\text{max}}$ (ya sea reasignación vectorial, saturación dinámica prioritaria o reparto fijo), el regulador PI siempre opere dentro de un rango que preserve la condición:
+
+\begin{equation}
+v_{d|q}^{\text{PI}} + v_{d|q}^{\text{coup}} \leq V_{s|dq}^{\text{max}},
+\end{equation}
+
+En términos prácticos, este enfoque evita que el término de retroalimentación (PI) intente compensar los efectos de la fuerza contraelectromotriz, lo que produciría una saturación prematura y pérdida de linealidad. Además, la interacción entre ambos ejes se mantiene controlada, ya que el acoplamiento cruzado está explícitamente considerado dentro del cálculo del margen de voltaje remanente.
+
+El mecanismo se complementa con un esquema de \textit{anti-windup} por \textit{back-calculation}, que corrige el estado integral del PI según la diferencia entre el voltaje saturado y el solicitado:
+
+\begin{equation}
+	\Delta I_{\text{int},dq} = K_{\text{aw}} \left( v_{dq}^* - v_{dq}^{\text{PI}} - v_{dq}^{\text{coup}} \right),
+\end{equation}
+
+manteniendo la linealidad del control y evitando acoplamientos no deseados entre ejes.
 
 
 
