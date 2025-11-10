@@ -5,6 +5,53 @@
 *~
 *.user
 
+# === LaTeX / BibTeX / Biber / latexmk ===
+*.aux
+*.bbl
+*.bcf
+*.blg
+*-blx.bib
+*.run.xml
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.lot
+*.lof
+*.lol
+*.out
+*.out.ps
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.xdv
+*.thm
+*.upa
+*.upb
+*.ilg
+*.idx
+*.ind
+*.ist
+*.glo
+*.gls
+*.glg
+*.glsdefs
+*.acn
+*.acr
+*.alg
+*.nlo
+*.nls
+*.nlg
+*.lox
+*.pdf_tex        # exports de Inkscape
+._minted*        # minted cache (macOS variant)
+minted-output*/  # si usas directorio custom para minted
+_minted*/        # minted por defecto
+*.pyg
+
+
 # === Archivos de simulación y caché de PLECS / Simulink ===
 *.mat
 *.out
@@ -39,8 +86,6 @@ Release/
 # === Archivos de compiladores y temporales ===
 *.dep
 *.mk
-*.map
-*.lst
 *.sdf
 *.xcl
 *.xsm
@@ -51,18 +96,29 @@ Release/
 .vscode/
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
 
 # === Archivos del sistema operativo ===
 .DS_Store
 Thumbs.db
 
 # === Archivos generados por scripts o herramientas ===
-*.csv
-*.xlsx
 *.zip
 *.tar.gz
-*.pdf
+*.gz
+*.7z
+*.xlsx
+*.csv
 
-# === Opcional: ignorar modelos PLECS específicos ===
-# *.plecs
+# === Mantener bibliografía y fuentes LaTeX ===
+# (NO ignores .bib ni .tex)
+!*.bib
+!*.tex
+!*.sty
+!*.cls
+!*.bst
+!*.tikz
+!*.pgf
+
+# === Opcional: ignorar modelos PLECS específicos === 
 *_codegen/
